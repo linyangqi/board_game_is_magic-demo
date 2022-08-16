@@ -1,0 +1,11 @@
+res://ui/menu/menu.tscn
+res://ui/menu/menu_pic.tscn
+res://ui/menu/links/my_links.tscn
+res://ui/scripts/change_scene_button.gd
+res://ui/audio/music/change_music.gd
+res://ui/audio/music/music_dj.tscn
+res://ui/audio/music/music_dj.gd
+res://ui/theme/ui_theme.tres
+res://ui/menu/credit/credit.tscn
+res://ui/scripts/link_button.gd
+res://game/character_select/character_select.tscn

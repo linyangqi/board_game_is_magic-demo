@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwce3y1ra8lxm"]
+
+[ext_resource type="Script" path="res://ui/audio/music/music_dj.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://cqii4sjssapdm" path="res://ui/audio/music/music_files/the last dance remix.mp3" id="2_njwxs"]
+
+[node name="MusicDJ" type="Node"]
+script = ExtResource("2")
+
+[node name="1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_njwxs")
+volume_db = -10.0

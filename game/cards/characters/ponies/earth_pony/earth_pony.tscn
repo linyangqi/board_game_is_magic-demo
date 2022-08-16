@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://game/cards/characters/ponies/earth_pony/earth_pony.gd" id="1_wxajx"]
+
+[node name="EarthPony"]
+script = ExtResource("1_wxajx")

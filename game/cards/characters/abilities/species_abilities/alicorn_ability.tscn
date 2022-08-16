@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b45nhucrj8dok"]
+
+[ext_resource type="Script" path="res://game/cards/characters/abilities/species_abilities/alicorn_ability.gd" id="1_kqhx1"]
+
+[node name="AlicornAbility" type="Node"]
+script = ExtResource("1_kqhx1")

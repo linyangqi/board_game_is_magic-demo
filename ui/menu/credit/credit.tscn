@@ -1,0 +1,194 @@
+[gd_scene load_steps=5 format=3 uid="uid://lcn7yxm6t02t"]
+
+[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1_gkrod"]
+[ext_resource type="Script" path="res://ui/scripts/change_scene_button.gd" id="3"]
+[ext_resource type="Script" path="res://ui/scripts/link_button.gd" id="5"]
+
+[sub_resource type="Shortcut" id="4"]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("1_gkrod")
+
+[node name="Coorperate" type="Control" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+
+[node name="Icon" type="TextureRect" parent="Coorperate"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+
+[node name="Links" type="GridContainer" parent="Coorperate"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+
+[node name="CloudMusic" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+offset_right = 60.0
+offset_bottom = 23.0
+focus_mode = 2
+text = "网易云"
+underline = 2
+script = ExtResource("5")
+link = "https://music.163.com/#/artist?id=35422428"
+
+[node name="Twitter" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "Twitter"
+underline = 2
+script = ExtResource("5")
+link = "https://twitter.com/lin_yangqi"
+
+[node name="Bilibili" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "Bilibili"
+underline = 2
+script = ExtResource("5")
+link = "https://space.bilibili.com/24599280"
+
+[node name="Youtube" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "Youtube"
+underline = 2
+script = ExtResource("5")
+link = "https://www.youtube.com/channel/UCbT7Mb_NHLuWRwjDIrMvm7w"
+
+[node name="DeviantArt" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "DeviantArt"
+underline = 2
+script = ExtResource("5")
+link = "https://www.deviantart.com/linyangqicn"
+
+[node name="Bandcamp" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "Bandcamp"
+underline = 2
+script = ExtResource("5")
+link = "https://robot-wbw.bandcamp.com"
+
+[node name="Github" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "github (Project)"
+underline = 2
+script = ExtResource("5")
+link = "https://github.com/linyangqi/godot_game-all_colors_in_control"
+
+[node name="itch" type="LinkButton" parent="Coorperate/Links"]
+visible = false
+focus_mode = 2
+text = "itch.io (Project)"
+underline = 2
+script = ExtResource("5")
+link = "https://linyangqi.itch.io/all-colors-in-control"
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_top = 35.0
+offset_right = 80.0
+offset_bottom = 61.0
+grow_horizontal = 2
+text = "Credits"
+metadata/_edit_layout_mode = 1
+
+[node name="Back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -26.0
+offset_top = -75.0
+offset_right = 20.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 0
+shortcut_in_tooltip = false
+shortcut = SubResource("4")
+text = "Back"
+flat = true
+script = ExtResource("3")
+scene_path = "res://ui/menu/menu.tscn"
+metadata/_edit_layout_mode = 1
+
+[node name="Software" type="GridContainer" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+
+[node name="Title" type="Label" parent="Software"]
+offset_right = 133.0
+offset_bottom = 22.0
+text = "使用软件："
+
+[node name="Godot" type="LinkButton" parent="Software"]
+offset_top = 26.0
+offset_right = 133.0
+offset_bottom = 45.0
+focus_mode = 2
+text = "引擎-Godot (\"戈多\")"
+underline = 2
+script = ExtResource("5")
+link = "https://godotengine.org/"
+
+[node name="LMMS" type="LinkButton" parent="Software"]
+offset_top = 49.0
+offset_right = 133.0
+offset_bottom = 68.0
+focus_mode = 2
+text = "音乐-LMMS"
+underline = 2
+script = ExtResource("5")
+link = "https://lmms.io/"
+
+[node name="Pixelorama" type="LinkButton" parent="Software"]
+offset_top = 72.0
+offset_right = 133.0
+offset_bottom = 91.0
+focus_mode = 2
+text = "美术-Pixelorama"
+underline = 2
+script = ExtResource("5")
+link = "https://orama-interactive.itch.io/pixelorama"
+
+[node name="Addons" type="GridContainer" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+
+[node name="Title" type="Label" parent="Addons"]
+offset_right = 189.0
+offset_bottom = 22.0
+text = "使用插件："
+
+[node name="Dialogic" type="LinkButton" parent="Addons"]
+offset_top = 26.0
+offset_right = 189.0
+offset_bottom = 45.0
+focus_mode = 2
+text = "对话系统-Dialogic"
+underline = 2
+script = ExtResource("5")
+link = "https://godotengine.org/asset-library/asset/833"
+
+[node name="PlatformerBody2D" type="LinkButton" parent="Addons"]
+offset_top = 49.0
+offset_right = 189.0
+offset_bottom = 68.0
+focus_mode = 2
+text = "角色运动-PlatformerBody2D"
+underline = 2
+script = ExtResource("5")
+link = "https://godotengine.org/asset-library/asset/1084"

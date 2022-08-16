@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/cards/characters/abilities/ability_basic.tscn" id="1_ustso"]
+[ext_resource type="Script" path="res://game/cards/characters/abilities/passive_abilities/passive_ability.gd" id="2_0fh2j"]
+
+[node name="PassiveAbility" instance=ExtResource("1_ustso")]
+script = ExtResource("2_0fh2j")
