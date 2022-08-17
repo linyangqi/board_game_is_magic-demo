@@ -19,6 +19,11 @@ config/icon="res://icon.png"
 
 MusicDj="*res://ui/audio/music/music_dj.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [rendering]
 
 vulkan/rendering/back_end=1
+environment/defaults/default_clear_color=Color(0.541176, 0.439216, 0.117647, 1)
