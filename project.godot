@@ -24,6 +24,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/cards/characters/ponies/species/alicorn/alicorn.gd"
 }, {
+"base": "ToolCard",
+"class": &"ArmorCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/types/armor/armor_card.gd"
+}, {
 "base": "ActionCard",
 "class": &"AttackCard",
 "language": &"GDScript",
@@ -34,10 +39,40 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/cards/characters/ponies/species/character_basic.gd"
 }, {
+"base": "Node",
+"class": &"Condition",
+"language": &"GDScript",
+"path": "res://game/mechanisms/effect_logic/conditions/condition_basic.gd"
+}, {
 "base": "CharacterBasic",
 "class": &"EarthPony",
 "language": &"GDScript",
 "path": "res://game/cards/characters/ponies/species/earth_pony/earth_pony.gd"
+}, {
+"base": "Node",
+"class": &"Effect",
+"language": &"GDScript",
+"path": "res://game/mechanisms/effect_logic/effect/effect_basic.gd"
+}, {
+"base": "ToolCard",
+"class": &"EffectCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/types/effect/effect_card.gd"
+}, {
+"base": "ToolCard",
+"class": &"ElementCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/types/element/element_card.gd"
+}, {
+"base": "Sprite2D",
+"class": &"EventCard",
+"language": &"GDScript",
+"path": "res://game/cards/events/event_card.gd"
+}, {
+"base": "ToolCard",
+"class": &"HealingCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/types/heal/healing_card.gd"
 }, {
 "base": "CharacterBasic",
 "class": &"MultiCharacter",
@@ -50,9 +85,9 @@ _global_script_classes=[{
 "path": "res://game/cards/characters/ponies/species/other/other_species.gd"
 }, {
 "base": "CharacterBasic",
-"class": &"Pagasus",
+"class": &"Pegasus",
 "language": &"GDScript",
-"path": "res://game/cards/characters/ponies/species/pagasus/pagasus.gd"
+"path": "res://game/cards/characters/ponies/species/pegasus/pegasus.gd"
 }, {
 "base": "Sprite2D",
 "class": &"PlayableCard",
@@ -62,26 +97,39 @@ _global_script_classes=[{
 "base": "PlayableCard",
 "class": &"ToolCard",
 "language": &"GDScript",
-"path": "res://game/cards/playable/tools/tool_card.gd"
+"path": "res://game/cards/playable/tools/types/tool_card.gd"
 }, {
 "base": "CharacterBasic",
 "class": &"Unicorn",
 "language": &"GDScript",
 "path": "res://game/cards/characters/ponies/species/unicorn/unicorn.gd"
+}, {
+"base": "ToolCard",
+"class": &"WeaponCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/types/weapon/weapon_card.gd"
 }]
 _global_script_class_icons={
 "AbilityBasic": "",
 "ActionCard": "",
 "Alicorn": "",
+"ArmorCard": "",
 "AttackCard": "",
 "CharacterBasic": "",
+"Condition": "",
 "EarthPony": "",
+"Effect": "",
+"EffectCard": "",
+"ElementCard": "",
+"EventCard": "",
+"HealingCard": "",
 "MultiCharacter": "",
 "OtherSpecies": "",
-"Pagasus": "",
+"Pegasus": "",
 "PlayableCard": "",
 "ToolCard": "",
-"Unicorn": ""
+"Unicorn": "",
+"WeaponCard": ""
 }
 
 [application]
@@ -105,4 +153,4 @@ window/stretch/mode="canvas_items"
 [rendering]
 
 vulkan/rendering/back_end=1
-environment/defaults/default_clear_color=Color(0.541176, 0.439216, 0.117647, 1)
+environment/defaults/default_clear_color=Color(0.184314, 0.509804, 0.482353, 1)

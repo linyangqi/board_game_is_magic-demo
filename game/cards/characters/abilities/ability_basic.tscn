@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://ldmdcgg7hc7i"]
+[gd_scene load_steps=3 format=3 uid="uid://ldmdcgg7hc7i"]
 
 [ext_resource type="Script" path="res://game/cards/characters/abilities/ability_basic.gd" id="1_2tqmh"]
+[ext_resource type="PackedScene" uid="uid://cjbknlea6ja4" path="res://game/mechanisms/effect_logic/conditions/condition_manager.tscn" id="2_g0hyw"]
 
 [node name="AbilityBasic" type="Node"]
 script = ExtResource("1_2tqmh")
+
+[node name="ConditionManager" parent="." instance=ExtResource("2_g0hyw")]

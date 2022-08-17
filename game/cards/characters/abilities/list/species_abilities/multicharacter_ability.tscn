@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://br0tuawa45m22"]
+
+[ext_resource type="Script" path="res://game/cards/characters/abilities/list/species_abilities/multicharacter_ability.gd" id="1_7ti12"]
+
+[node name="MultiCharacterAbility" type="Node"]
+script = ExtResource("1_7ti12")
+ability_name = "多种族技能"

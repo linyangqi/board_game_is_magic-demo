@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmqyapamiuhqr"]
+
+[ext_resource type="PackedScene" uid="uid://del7edfy7cs78" path="res://game/cards/playable/playable_card.tscn" id="1_qp50p"]
+[ext_resource type="Script" path="res://game/cards/playable/tools/types/tool_card.gd" id="2_rw6k6"]
+
+[node name="ToolCard" instance=ExtResource("1_qp50p")]
+script = ExtResource("2_rw6k6")
+is_bonus = false
+card_name = "道具牌"

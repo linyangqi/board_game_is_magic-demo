@@ -1,14 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://6pwbxvthyn4x"]
+[gd_scene load_steps=7 format=3 uid="uid://d4ho53nmjnxji"]
 
 [ext_resource type="PackedScene" uid="uid://bcmaolfgyidq1" path="res://ui/game_ui/world_map/world_map.tscn" id="1_dlfit"]
+[ext_resource type="Script" path="res://game/main/main.gd" id="1_ng00m"]
 [ext_resource type="PackedScene" uid="uid://b0v55x7jpoy8j" path="res://ui/game_ui/cards/cards_ui.tscn" id="2_7ttcw"]
 [ext_resource type="Script" path="res://game/main/GlobalEffects.gd" id="3_xw84s"]
+[ext_resource type="Script" path="res://game/main/players.gd" id="5_jm47g"]
+[ext_resource type="Script" path="res://game/main/characters.gd" id="6_pwpgx"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_ng00m")
 
 [node name="WorldMap" parent="." instance=ExtResource("1_dlfit")]
 
-[node name="Cards" parent="." instance=ExtResource("2_7ttcw")]
+[node name="UI" parent="." instance=ExtResource("2_7ttcw")]
 
 [node name="GlobalEffects" type="Node" parent="."]
 script = ExtResource("3_xw84s")
+
+[node name="Players" type="Node" parent="."]
+script = ExtResource("5_jm47g")
+
+[node name="Characters" type="Node" parent="."]
+script = ExtResource("6_pwpgx")

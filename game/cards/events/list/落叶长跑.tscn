@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg8w3m33553ef"]
+
+[ext_resource type="PackedScene" uid="uid://qj04gcs268lu" path="res://game/cards/events/event_card.tscn" id="1_bdsbr"]
+[ext_resource type="Texture2D" uid="uid://s2qly5s474p6" path="res://ui/pictures/cards/正式版事件牌/IMG.png" id="2_eu36r"]
+
+[node name="落叶长跑" instance=ExtResource("1_bdsbr")]
+texture = ExtResource("2_eu36r")
+event_name = "落叶长跑"

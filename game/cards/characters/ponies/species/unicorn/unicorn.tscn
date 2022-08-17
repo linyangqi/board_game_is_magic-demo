@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://nkigjxidp365"]
 
-[ext_resource type="PackedScene" path="res://game/cards/characters/ponies/species/character_basic.tscn" id="1_uf781"]
+[ext_resource type="PackedScene" uid="uid://c6i1vnhty4u3l" path="res://game/cards/characters/ponies/species/character_basic.tscn" id="1_uf781"]
 [ext_resource type="Script" path="res://game/cards/characters/ponies/species/unicorn/unicorn.gd" id="2_3oqft"]
+[ext_resource type="PackedScene" uid="uid://6nrglrwtd65b" path="res://game/cards/characters/abilities/list/species_abilities/unicorn_ability.tscn" id="3_meold"]
 
 [node name="Unicorn" instance=ExtResource("1_uf781")]
 script = ExtResource("2_3oqft")
+
+[node name="UnicornAbility" parent="Abilities" index="0" instance=ExtResource("3_meold")]

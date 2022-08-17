@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjbknlea6ja4"]
+
+[ext_resource type="Script" path="res://game/mechanisms/effect_logic/conditions/condition_manager.gd" id="1_fdrps"]
+
+[node name="ConditionManager" type="Node"]
+script = ExtResource("1_fdrps")

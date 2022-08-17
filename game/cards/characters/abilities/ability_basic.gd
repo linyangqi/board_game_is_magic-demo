@@ -10,11 +10,14 @@ class_name AbilityBasic
 #但是会有个问题……被动技能有时候甚至是直接修改游戏机制的操作……可能在游戏开始时就会需要检查
 #或者，被动技能可以给一下触发方式之类的？
 
-@onready var conditions = $Conditions #留空表示无需特殊条件
+@onready var condition_manager = $ConditionManager
+ #留空表示无需特殊条件
 #——但是”触发时间/触发方式“呢？
 #主动技能的实现实际上是加”选择/决定“条件吧……或者”等待点击“之类的？
+#————新版本后，condition主要分在effect_logic中了……不过这里也可以用的
 
-@onready var character = $"../.."
+
+@onready var character = $"../.." #位置固定
 #此外，其实种族本身也是可以有“种族技能”的——有些是被动，有些是主动，不过还是就另外建一个文件夹吧
 
 
