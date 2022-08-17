@@ -67,6 +67,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 9.0
+offset_right = -150.0
+offset_bottom = 9.0
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_layout_mode = 1
 
 [node name="me" type="Control" parent="GodotVersionDevelop"]
 anchor_left = 1.0
@@ -79,29 +86,29 @@ metadata/_edit_layout_mode = 1
 [node name="wbw" type="TextureRect" parent="GodotVersionDevelop/me"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = -313.0
-offset_top = -95.0
-offset_right = -228.0
-offset_bottom = -10.0
+offset_left = -437.0
+offset_top = -175.0
+offset_right = -295.0
+offset_bottom = -33.0
 grow_vertical = 2
 texture = ExtResource("4_p7u4y")
 ignore_texture_size = true
 metadata/_edit_layout_mode = 1
 
 [node name="name" type="Label" parent="GodotVersionDevelop/me/wbw"]
-offset_left = -20.0
-offset_top = -67.0
-offset_right = 106.0
-offset_bottom = -15.0
+offset_left = -4.0
+offset_top = -88.0
+offset_right = 154.0
+offset_bottom = -12.0
 text = "godot版开发
 林扬骐"
 horizontal_alignment = 1
 
 [node name="name2" type="Label" parent="GodotVersionDevelop/me/wbw"]
-offset_left = -23.0
-offset_top = 93.0
-offset_right = 103.0
-offset_bottom = 119.0
+offset_left = -12.0
+offset_top = 143.0
+offset_right = 145.0
+offset_bottom = 181.0
 text = "机器人WBW"
 horizontal_alignment = 1
 
@@ -117,8 +124,8 @@ metadata/_edit_group_ = true
 metadata/_edit_layout_mode = 1
 
 [node name="Twitter" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_right = 126.0
-offset_bottom = 23.0
+offset_right = 189.0
+offset_bottom = 35.0
 focus_mode = 2
 text = "Twitter"
 underline = 2
@@ -126,9 +133,9 @@ script = ExtResource("5_y2jpx")
 link = "https://twitter.com/lin_yangqi"
 
 [node name="Bilibili" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 27.0
-offset_right = 126.0
-offset_bottom = 50.0
+offset_top = 39.0
+offset_right = 189.0
+offset_bottom = 74.0
 focus_mode = 2
 text = "Bilibili"
 underline = 2
@@ -136,9 +143,9 @@ script = ExtResource("5_y2jpx")
 link = "https://space.bilibili.com/24599280"
 
 [node name="Youtube" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 54.0
-offset_right = 126.0
-offset_bottom = 77.0
+offset_top = 78.0
+offset_right = 189.0
+offset_bottom = 113.0
 focus_mode = 2
 text = "Youtube"
 underline = 2
@@ -146,9 +153,9 @@ script = ExtResource("5_y2jpx")
 link = "https://www.youtube.com/channel/UCbT7Mb_NHLuWRwjDIrMvm7w"
 
 [node name="DeviantArt" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 81.0
-offset_right = 126.0
-offset_bottom = 104.0
+offset_top = 117.0
+offset_right = 189.0
+offset_bottom = 152.0
 focus_mode = 2
 text = "DeviantArt"
 underline = 2
@@ -156,9 +163,9 @@ script = ExtResource("5_y2jpx")
 link = "https://www.deviantart.com/linyangqicn"
 
 [node name="CloudMusic" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 108.0
-offset_right = 126.0
-offset_bottom = 131.0
+offset_top = 156.0
+offset_right = 189.0
+offset_bottom = 191.0
 focus_mode = 2
 text = "网易云"
 underline = 2
@@ -166,9 +173,9 @@ script = ExtResource("5_y2jpx")
 link = "https://music.163.com/#/artist?id=53330967"
 
 [node name="Bandcamp" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 135.0
-offset_right = 126.0
-offset_bottom = 158.0
+offset_top = 195.0
+offset_right = 189.0
+offset_bottom = 230.0
 focus_mode = 2
 text = "Bandcamp"
 underline = 2
@@ -176,9 +183,9 @@ script = ExtResource("5_y2jpx")
 link = "https://robot-wbw.bandcamp.com"
 
 [node name="Github" type="LinkButton" parent="GodotVersionDevelop/me/Links"]
-offset_top = 162.0
-offset_right = 126.0
-offset_bottom = 185.0
+offset_top = 234.0
+offset_right = 189.0
+offset_bottom = 269.0
 focus_mode = 2
 text = "Github (Project)"
 underline = 2
@@ -208,14 +215,14 @@ metadata/_edit_group_ = true
 metadata/_edit_layout_mode = 1
 
 [node name="Title" type="Label" parent="GodotVersionDevelop/Software"]
-offset_right = 258.0
-offset_bottom = 26.0
+offset_right = 386.0
+offset_bottom = 38.0
 text = "使用软件："
 
 [node name="Godot" type="LinkButton" parent="GodotVersionDevelop/Software"]
-offset_top = 30.0
-offset_right = 258.0
-offset_bottom = 53.0
+offset_top = 42.0
+offset_right = 386.0
+offset_bottom = 77.0
 focus_mode = 2
 text = "引擎-Godot (\"戈多\")"
 underline = 2
@@ -223,9 +230,9 @@ script = ExtResource("5_y2jpx")
 link = "https://godotengine.org/"
 
 [node name="LMMS" type="LinkButton" parent="GodotVersionDevelop/Software"]
-offset_top = 57.0
-offset_right = 258.0
-offset_bottom = 80.0
+offset_top = 81.0
+offset_right = 386.0
+offset_bottom = 116.0
 focus_mode = 2
 text = "音乐-LMMS"
 underline = 2
@@ -233,9 +240,9 @@ script = ExtResource("5_y2jpx")
 link = "https://lmms.io/"
 
 [node name="Pixelorama" type="LinkButton" parent="GodotVersionDevelop/Software"]
-offset_top = 84.0
-offset_right = 258.0
-offset_bottom = 107.0
+offset_top = 120.0
+offset_right = 386.0
+offset_bottom = 155.0
 focus_mode = 2
 text = "美术（不含卡牌）-Pixelorama"
 underline = 2
@@ -262,29 +269,29 @@ metadata/_edit_layout_mode = 1
 [node name="icon" type="TextureRect" parent="Group/QQGroup"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 84.0
-offset_top = 103.0
-offset_right = 169.0
-offset_bottom = 188.0
+offset_left = 187.0
+offset_top = 83.0
+offset_right = 331.0
+offset_bottom = 225.0
 grow_vertical = 2
 texture = ExtResource("6_ox8f6")
 ignore_texture_size = true
 metadata/_edit_layout_mode = 1
 
 [node name="name" type="Label" parent="Group/QQGroup/icon"]
-offset_left = -22.0
-offset_top = -60.0
-offset_right = 104.0
-offset_bottom = -8.0
+offset_left = -3.0
+offset_top = -83.0
+offset_right = 147.0
+offset_bottom = -7.0
 text = "制作组
 桌游是魔法"
 horizontal_alignment = 1
 
 [node name="name2" type="Label" parent="Group/QQGroup/icon"]
-offset_left = -23.0
-offset_top = 93.0
-offset_right = 103.0
-offset_bottom = 119.0
+offset_left = -5.0
+offset_top = 164.0
+offset_right = 145.0
+offset_bottom = 240.0
 text = "玩家qq群号
 241518994"
 horizontal_alignment = 1

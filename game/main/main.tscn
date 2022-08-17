@@ -1,17 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://6pwbxvthyn4x"]
+[gd_scene load_steps=4 format=3 uid="uid://6pwbxvthyn4x"]
 
-[ext_resource type="PackedScene" path="res://game/map/map/map2.tscn" id="1_qp5af"]
+[ext_resource type="PackedScene" uid="uid://bcmaolfgyidq1" path="res://ui/game_ui/world_map/world_map.tscn" id="1_dlfit"]
+[ext_resource type="PackedScene" uid="uid://b0v55x7jpoy8j" path="res://ui/game_ui/cards/cards_ui.tscn" id="2_7ttcw"]
+[ext_resource type="Script" path="res://game/main/GlobalEffects.gd" id="3_xw84s"]
 
 [node name="Main" type="Node"]
 
-[node name="WorldMap" type="Node2D" parent="."]
-scale = Vector2(1, 0.8)
+[node name="WorldMap" parent="." instance=ExtResource("1_dlfit")]
 
-[node name="Map" parent="WorldMap" instance=ExtResource("1_qp5af")]
+[node name="Cards" parent="." instance=ExtResource("2_7ttcw")]
 
-[node name="Camera2D" type="Camera2D" parent="WorldMap"]
-position = Vector2(442, 451)
-current = true
-zoom = Vector2(0.578, 0.578)
-
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="GlobalEffects" type="Node" parent="."]
+script = ExtResource("3_xw84s")

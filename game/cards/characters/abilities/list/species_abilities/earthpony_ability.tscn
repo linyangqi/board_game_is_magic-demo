@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cme64gm0dudqi"]
+
+[ext_resource type="Script" path="res://game/cards/characters/abilities/list/species_abilities/earthpony_ability.gd" id="1_7gxsw"]
+
+[node name="EarthPonyAbility" type="Node"]
+script = ExtResource("1_7gxsw")

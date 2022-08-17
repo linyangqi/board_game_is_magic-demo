@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://10hmdejdiw1p"]
+
+[ext_resource type="PackedScene" uid="uid://ldmdcgg7hc7i" path="res://game/cards/characters/abilities/ability_basic.tscn" id="1_abiv1"]
+
+[node name="盾卫" instance=ExtResource("1_abiv1")]
+ability_name = "盾卫"

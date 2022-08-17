@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/cards/characters/ponies/species/character_basic.tscn" id="1_e32hn"]
+[ext_resource type="Script" path="res://game/cards/characters/ponies/species/pagasus/pagasus.gd" id="2_tq23i"]
+
+[node name="Pagasus" instance=ExtResource("1_e32hn")]
+script = ExtResource("2_tq23i")

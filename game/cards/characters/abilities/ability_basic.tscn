@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=2 format=3 uid="uid://ldmdcgg7hc7i"]
 
-[ext_resource type="Script" path="res://game/cards/characters/abilities/ability_basic.gd" id="1_vh4r6"]
+[ext_resource type="Script" path="res://game/cards/characters/abilities/ability_basic.gd" id="1_2tqmh"]
 
 [node name="AbilityBasic" type="Node"]
-script = ExtResource("1_vh4r6")
+script = ExtResource("1_2tqmh")

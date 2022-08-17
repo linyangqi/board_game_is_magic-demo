@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="Script" path="res://game/cards/characters/ponies/alicorn/alicorn.gd" id="1_7p47d"]
-
-[node name="Alicorn"]
-script = ExtResource("1_7p47d")

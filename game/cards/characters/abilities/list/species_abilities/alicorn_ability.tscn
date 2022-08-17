@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqw87qk25e040"]
+
+[ext_resource type="Script" path="res://game/cards/characters/abilities/species_abilities/alicorn_ability.gd" id="1_u8csp"]
+
+[node name="AlicornAbility" type="Node"]
+script = ExtResource("1_u8csp")
+ability_name = "天角兽种族技能"

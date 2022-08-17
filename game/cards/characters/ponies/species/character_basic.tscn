@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6i1vnhty4u3l"]
+
+[ext_resource type="Script" path="res://game/cards/characters/ponies/species/character_basic.gd" id="1_o8wie"]
+[ext_resource type="Texture2D" uid="uid://dogbc6ail6wyq" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_014.png" id="1_t2or5"]
+
+[node name="CharacterBasic" type="Sprite2D"]
+texture = ExtResource("1_t2or5")
+script = ExtResource("1_o8wie")
+
+[node name="Abilities" type="Node" parent="."]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccvalx7ejmntq"]
+
+[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1_c60y3"]
+
+[node name="CharacterSelect" type="Control"]
+theme = ExtResource("1_c60y3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 409.0
+offset_top = 14.0
+offset_right = 609.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 40
+text = "请选择角色"

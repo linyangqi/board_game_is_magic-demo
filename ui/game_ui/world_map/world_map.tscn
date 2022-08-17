@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcmaolfgyidq1"]
+
+[ext_resource type="PackedScene" path="res://game/map/maps/map2.tscn" id="1_ofkya"]
+
+[node name="WorldMap" type="Node2D"]
+scale = Vector2(1, 0.8)
+
+[node name="Map" parent="." instance=ExtResource("1_ofkya")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(442, 451)
+current = true
+zoom = Vector2(0.578, 0.578)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]

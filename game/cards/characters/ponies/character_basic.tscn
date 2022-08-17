@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://56touhoftp41"]
-
-[ext_resource type="Script" path="res://game/cards/characters/ponies/character_basic.gd" id="1_o8wie"]
-
-[node name="CharacterBasic" type="Sprite2D"]
-script = ExtResource("1_o8wie")
-
-[node name="Abilities" type="Node" parent="."]

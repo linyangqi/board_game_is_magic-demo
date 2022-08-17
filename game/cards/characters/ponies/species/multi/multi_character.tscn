@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/cards/characters/ponies/species/character_basic.tscn" id="1_0gvtn"]
+[ext_resource type="Script" path="res://game/cards/characters/ponies/species/multi/multi_character.gd" id="2_04not"]
+
+[node name="MultiCharacter" instance=ExtResource("1_0gvtn")]
+script = ExtResource("2_04not")

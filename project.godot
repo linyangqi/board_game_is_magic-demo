@@ -8,6 +8,82 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Node",
+"class": &"AbilityBasic",
+"language": &"GDScript",
+"path": "res://game/cards/characters/abilities/ability_basic.gd"
+}, {
+"base": "PlayableCard",
+"class": &"ActionCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/actions/action_card.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"Alicorn",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/alicorn/alicorn.gd"
+}, {
+"base": "ActionCard",
+"class": &"AttackCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/actions/attacks/attack_card.gd"
+}, {
+"base": "Node2D",
+"class": &"CharacterBasic",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/character_basic.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"EarthPony",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/earth_pony/earth_pony.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"MultiCharacter",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/multi/multi_character.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"OtherSpecies",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/other/other_species.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"Pagasus",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/pagasus/pagasus.gd"
+}, {
+"base": "Sprite2D",
+"class": &"PlayableCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/playable_card.gd"
+}, {
+"base": "PlayableCard",
+"class": &"ToolCard",
+"language": &"GDScript",
+"path": "res://game/cards/playable/tools/tool_card.gd"
+}, {
+"base": "CharacterBasic",
+"class": &"Unicorn",
+"language": &"GDScript",
+"path": "res://game/cards/characters/ponies/species/unicorn/unicorn.gd"
+}]
+_global_script_class_icons={
+"AbilityBasic": "",
+"ActionCard": "",
+"Alicorn": "",
+"AttackCard": "",
+"CharacterBasic": "",
+"EarthPony": "",
+"MultiCharacter": "",
+"OtherSpecies": "",
+"Pagasus": "",
+"PlayableCard": "",
+"ToolCard": "",
+"Unicorn": ""
+}
+
 [application]
 
 config/name="Board Game Is Magic-demo"
@@ -21,6 +97,9 @@ MusicDj="*res://ui/audio/music/music_dj.tscn"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/fullscreen=true
 window/stretch/mode="canvas_items"
 
 [rendering]

@@ -188,17 +188,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -30.208
-offset_top = -25.0
-offset_right = 30.208
-offset_bottom = 25.0
+offset_left = -40.0
+offset_top = -48.0
+offset_right = 40.0
+offset_bottom = 48.0
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
+metadata/_edit_group_ = true
 
 [node name="Start" type="LinkButton" parent="VBoxContainer"]
-offset_right = 60.0
-offset_bottom = 35.0
-theme_override_font_sizes/font_size = 30
+offset_right = 80.0
+offset_bottom = 46.0
+theme_override_font_sizes/font_size = 40
 shortcut_in_tooltip = false
 shortcut = SubResource("2")
 text = "开始"
@@ -207,10 +208,10 @@ script = ExtResource("7")
 scene_path = "res://game/main/main.tscn"
 
 [node name="Exit" type="LinkButton" parent="VBoxContainer"]
-offset_top = 39.0
-offset_right = 60.0
-offset_bottom = 74.0
-theme_override_font_sizes/font_size = 30
+offset_top = 50.0
+offset_right = 80.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 40
 shortcut_in_tooltip = false
 shortcut = SubResource("4")
 text = "退出"
@@ -225,7 +226,7 @@ offset_top = 119.0
 offset_right = 153.0
 offset_bottom = 191.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 80
 text = "桌游是魔法"
 metadata/_edit_layout_mode = 1
 
@@ -240,7 +241,7 @@ offset_right = 89.0
 offset_bottom = 47.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 40
 text = "Board Game is Magic"
 metadata/_edit_layout_mode = 1
 
@@ -252,7 +253,7 @@ offset_top = -66.0
 offset_right = 108.0
 offset_bottom = -31.0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 40
 text = "Credits"
 underline = 2
 script = ExtResource("7")
