@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bwlcnvgixoibj"]
+[gd_scene load_steps=6 format=3 uid="uid://bwlcnvgixoibj"]
 
-[ext_resource type="Script" path="res://game/main/character_places.gd" id="1_o7q0q"]
 [ext_resource type="Script" path="res://game/main/ui/UI.gd" id="1_onxev"]
-[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
+[ext_resource type="Theme" uid="uid://b74fnelnu1wk1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
 [ext_resource type="PackedScene" path="res://game/main/ui/character_place/character_place_display.tscn" id="3_2tlnm"]
 [ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="3_4uxp0"]
 [ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="5_ck7ql"]
@@ -23,7 +22,6 @@ custom_minimum_size = Vector2(300, 100)
 offset_right = 300.0
 offset_bottom = 620.0
 alignment = 1
-script = ExtResource("1_o7q0q")
 
 [node name="CharacterPlace" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
 anchor_right = 0.0

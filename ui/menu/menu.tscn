@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://ua1d56wtrfhp"]
 
-[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1"]
+[ext_resource type="Theme" uid="uid://b74fnelnu1wk1" path="res://ui/theme/ui_theme.tres" id="1"]
 [ext_resource type="Script" path="res://ui/scripts/exit_button.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/background/backgroung.png" id="3_0oyjn"]
 [ext_resource type="PackedScene" path="res://ui/audio/music/change_music.tscn" id="6"]
@@ -173,7 +173,6 @@ _data = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource("1")
-script = ExtResource("9")
 
 [node name="Background" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.501961)
@@ -205,7 +204,7 @@ shortcut = SubResource("2")
 text = "开始"
 underline = 2
 script = ExtResource("7")
-scene_path = "res://game/main/main.tscn"
+scene_path = "res://ui/lobby/lobby.tscn"
 
 [node name="Exit" type="LinkButton" parent="VBoxContainer"]
 offset_top = 50.0

@@ -134,6 +134,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/main/character_manage/player.gd"
 }, {
+"base": "Node",
+"class": &"PlayerRound",
+"language": &"GDScript",
+"path": "res://game/main/process_manage/player_round.gd"
+}, {
 "base": "PlayableCard",
 "class": &"ToolCard",
 "language": &"GDScript",
@@ -175,6 +180,7 @@ _global_script_class_icons={
 "Pegasus": "",
 "PlayableCard": "",
 "Player": "",
+"PlayerRound": "",
 "ToolCard": "",
 "Unicorn": "",
 "WeaponCard": ""

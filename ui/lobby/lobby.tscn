@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://qp7l4lv0bgdn"]
+
+[ext_resource type="Theme" uid="uid://b74fnelnu1wk1" path="res://ui/theme/ui_theme.tres" id="1"]
+[ext_resource type="Script" path="res://ui/lobby/lobby.gd" id="2_tvyg5"]
+[ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/background/backgroung.png" id="3_0oyjn"]
+[ext_resource type="PackedScene" path="res://ui/audio/music/change_music.tscn" id="6"]
+[ext_resource type="Script" path="res://ui/scripts/change_scene_button.gd" id="7"]
+[ext_resource type="Script" path="res://ui/audio/music/change_music.gd" id="9"]
+
+[node name="Lobby" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("1")
+script = ExtResource("2_tvyg5")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.501961)
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("3_0oyjn")
+ignore_texture_size = true
+metadata/_edit_lock_ = true
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -147.0
+offset_top = 119.0
+offset_right = 153.0
+offset_bottom = 191.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 80
+text = "联机大厅"
+metadata/_edit_layout_mode = 1
+
+[node name="Title2" type="Label" parent="Title"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = 21.0
+offset_right = 89.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "然而目前只能单人……"
+metadata/_edit_layout_mode = 1
+
+[node name="Back" type="LinkButton" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -117.0
+offset_right = 56.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "返回"
+underline = 2
+script = ExtResource("7")
+scene_path = "res://ui/menu/menu.tscn"
+metadata/_edit_layout_mode = 1
+
+[node name="Music" parent="." instance=ExtResource("6")]
+script = ExtResource("9")
+music_id = 1
+
+[node name="Join" type="LinkButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -23.0
+offset_right = 45.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 90
+text = "加入游戏"
+underline = 2
+metadata/_edit_layout_mode = 1
+
+[connection signal="pressed" from="Join" to="." method="_on_join_pressed"]

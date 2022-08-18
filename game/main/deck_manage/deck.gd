@@ -6,10 +6,10 @@ signal run_out #本来想加debt_count，不过感觉记录“欠牌数”好像
 var cards:Array[String] #现在使用文本方式对其调用了
 #设置，加减，打乱
 
-func add_cards_by_plan(plan:Array): #初始设置牌库
-	for item in plan:
-		for i in range(item["count"]):
-			cards.append(item["name"])
+func add_cards_by_plan(amount_plan:Dictionary): #初始设置牌库
+	for card_name in amount_plan.keys:
+		for i in amount_plan[card_name]: #键：名称；值：数量
+			cards.append(card_name)
 	shuffle()
 
 func shuffle():

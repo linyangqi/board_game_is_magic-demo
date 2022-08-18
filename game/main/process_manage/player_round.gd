@@ -1,8 +1,7 @@
 extends Node
-#子节点或许可以挂点效果之类的……？
+class_name PlayerRound
 
-
-
+var character_place_id:int
 
 func prepare():
 	pass

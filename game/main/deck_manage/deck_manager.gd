@@ -13,10 +13,10 @@ signal resource_run_out
 #现在各个deck的特殊功能由manager管理，deck内部就不用分子类了吧
 #理论上来说直接用Array也可以，不过万一Deck有一些一般功能呢……所以还是象征性地建一下类吧
 func init():
-	character_deck.add_cards_by_plan(DeckPlan.LIST["characters"])
-	event_deck.add_cards_by_plan(DeckPlan.LIST["events"])
-	resource_deck.add_cards_by_plan(DeckPlan.LIST["resource"])
-	bonus_deck.add_cards_by_plan(DeckPlan.LIST["bonus"])
+	character_deck.add_cards_by_plan(DeckPlan.CARD_AMOUNTS["characters"])
+	event_deck.add_cards_by_plan(DeckPlan.CARD_AMOUNTS["events"])
+	resource_deck.add_cards_by_plan(DeckPlan.CARD_AMOUNTS["resource"])
+	bonus_deck.add_cards_by_plan(DeckPlan.CARD_AMOUNTS["bonus"])
 	
 	resource_deck.connect("run_out", _on_resource_deck_run_out) 
 	#connect的语法在4.0变了……直接加函数名，可以查错吧

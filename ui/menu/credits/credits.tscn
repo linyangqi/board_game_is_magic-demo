@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://lcn7yxm6t02t"]
 
-[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1_73fjc"]
+[ext_resource type="Theme" uid="uid://b74fnelnu1wk1" path="res://ui/theme/ui_theme.tres" id="1_73fjc"]
 [ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/background/backgroung.png" id="2_pmeqg"]
 [ext_resource type="Script" path="res://ui/scripts/change_scene_button.gd" id="3_8p7hp"]
 [ext_resource type="Texture2D" uid="uid://bjg0vwowogrls" path="res://ui/pictures/me/wbw.png" id="4_p7u4y"]
@@ -56,7 +56,7 @@ grow_horizontal = 2
 grow_vertical = 0
 shortcut_in_tooltip = false
 shortcut = SubResource("4")
-text = "Back"
+text = "返回"
 flat = true
 script = ExtResource("3_8p7hp")
 scene_path = "res://ui/menu/menu.tscn"
