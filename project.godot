@@ -204,6 +204,14 @@ window/size/viewport_height=1080
 window/size/fullscreen=true
 window/stretch/mode="canvas_items"
 
+[input]
+
+read_card={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"pressed":false,"double_click":false,"script":null)
+]
+}
+
 [rendering]
 
 vulkan/rendering/back_end=1

@@ -5,7 +5,7 @@ class_name CharacterPlace
 #或者使用管理来让map自己更新？
 var master:Player
 var character:Node
-var abilities:Node
+var abilities:Node #可能不必要了……？或者还是存个“变体”？
 var alive:bool
 var collection_count:int
 var max_health:int # 生命值上限
@@ -31,7 +31,8 @@ var hand_cards:Array[CardInHand] = []
 
 
 
-func init(character_file:String):
+func init(character_name:String):
+	var character_file = CardLibrary.CARD_PATH["characters"][character_name]
 	character = load(character_file).instantiate()
 	alive = true
 	collection_count = 0
@@ -39,11 +40,23 @@ func init(character_file:String):
 	health = max_health
 	armor_value = 0
 	abilities = character.abilities #技能节点……初始化？
+	#不是duplicate，因此只是引用……所以整体“技能”数据还是在实例化过的character中
+	#这样写，ability相当于快捷方式吧
+
+
+#var character_select_ui = preload("res://game/main/ui/character_select/character_select_ui.tscn")
+func character_select(choice_count:int = 4):
+	return ""
+
+
 
 func get_texture()->Texture2D:
 	return character.texture
 
 #ps:这里的函数顺序排布模拟游戏进程
+
+
+
 
 func attempt_hurt():#
 	pass

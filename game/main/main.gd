@@ -19,8 +19,13 @@ func update_ui(): #可能可以只更新一部分
 	ui.update(data)
 
 func init(players:Array[Player]):
-	
+	for i in players.size():
+		var new_character_place:CharacterPlace
+		new_character_place.master=players[i]
+		character_places.append(new_character_place)
 	pass
+
+
 
 
 func start_game():
@@ -30,9 +35,7 @@ func start_game():
 	pass
 
 
-func game_over():
-	
-	pass
+
 
 
 	
@@ -40,3 +43,6 @@ func game_over():
 func round_start():
 	pass
 
+func game_over():
+	
+	pass

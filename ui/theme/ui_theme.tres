@@ -1,7 +1,8 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://b74fnelnu1wk1"]
 
-[ext_resource type="FontFile" path="res://ui/theme/fonts/FZYTK.TTF" id="1_nqohr"]
+[ext_resource type="FontFile" uid="uid://c04723mumcp5e" path="res://ui/theme/fonts/FZYTK.TTF" id="1_nqohr"]
 
 [resource]
 default_font = ExtResource("1_nqohr")
-default_font_size = 30
+default_font_size = 16
+Window/font_sizes/title_font_size = 16
