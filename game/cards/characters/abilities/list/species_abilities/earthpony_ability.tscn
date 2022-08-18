@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://sjhoiyvuxaik"]
-
-[ext_resource type="Script" path="res://game/cards/characters/abilities/list/species_abilities/earthpony_ability.gd" id="1_7gxsw"]
-
-[node name="EarthPonyAbility" type="Node"]
-script = ExtResource("1_7gxsw")
-ability_name = "陆马种族技能"

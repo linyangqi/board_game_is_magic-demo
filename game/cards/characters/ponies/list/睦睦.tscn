@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dygwwojo8bm14"]
-
-[ext_resource type="PackedScene" uid="uid://cld5m7mqukoby" path="res://game/cards/characters/ponies/species/other/other_species.tscn" id="1_trbgp"]
-[ext_resource type="Texture2D" uid="uid://c8ec1tl2qg060" path="res://ui/pictures/cards/吉祥物扩展包/IMG_037.png" id="2_duwjt"]
-
-[node name="睦睦" instance=ExtResource("1_trbgp")]
-texture = ExtResource("2_duwjt")
-character_name = "睦睦"

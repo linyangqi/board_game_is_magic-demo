@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/species/character_basic.tscn" id="1_e32hn"]
+[ext_resource type="Script" path="res://game/card_library/characters/ponies/species/pegasus/pegasus.gd" id="2_tq23i"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/abilities/list/species_abilities/pegasus_ability.tscn" id="3_p11t6"]
+
+[node name="Pegasus" instance=ExtResource("1_e32hn")]
+script = ExtResource("2_tq23i")
+character_name = "天马"
+
+[node name="PegasusAbility" parent="Abilities" index="0" instance=ExtResource("3_p11t6")]

@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://n65n3cvqt72n"]
-
-[ext_resource type="PackedScene" path="res://game/cards/characters/ponies/species/character_basic.tscn" id="1_r8ni6"]
-[ext_resource type="PackedScene" path="res://game/cards/characters/abilities/list/species_abilities/earthpony_ability.tscn" id="2_q44f0"]
-
-[node name="EarthPony" instance=ExtResource("1_r8ni6")]
-
-[node name="EarthPonyAbility" parent="Abilities" index="0" instance=ExtResource("2_q44f0")]

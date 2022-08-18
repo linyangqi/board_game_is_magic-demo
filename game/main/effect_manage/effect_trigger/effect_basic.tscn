@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0k61wm11dojd"]
+
+[ext_resource type="Script" path="res://game/main/effect_manage/effect_trigger/effect_basic.gd" id="1_oj0xb"]
+
+[node name="EffectBasic" type="Node"]
+script = ExtResource("1_oj0xb")

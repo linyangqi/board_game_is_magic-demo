@@ -1,0 +1,208 @@
+[gd_scene load_steps=7 format=3 uid="uid://bwlcnvgixoibj"]
+
+[ext_resource type="Script" path="res://game/main/character_places.gd" id="1_o7q0q"]
+[ext_resource type="Script" path="res://game/main/ui/UI.gd" id="1_onxev"]
+[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
+[ext_resource type="PackedScene" path="res://game/main/ui/character_place/character_place_display.tscn" id="3_2tlnm"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="3_4uxp0"]
+[ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="5_ck7ql"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_onxev")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(300, 100)
+offset_right = 328.0
+offset_bottom = 663.0
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="CharacterPlaces" type="VBoxContainer" parent="ScrollContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 100)
+offset_right = 300.0
+offset_bottom = 620.0
+alignment = 1
+script = ExtResource("1_o7q0q")
+
+[node name="CharacterPlace" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 300.0
+offset_bottom = 100.0
+
+[node name="CharacterPlace2" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 104.0
+offset_right = 300.0
+offset_bottom = 204.0
+
+[node name="CharacterPlace3" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 208.0
+offset_right = 300.0
+offset_bottom = 308.0
+
+[node name="CharacterPlace4" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 312.0
+offset_right = 300.0
+offset_bottom = 412.0
+
+[node name="CharacterPlace5" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 416.0
+offset_right = 300.0
+offset_bottom = 516.0
+
+[node name="CharacterPlace6" parent="ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 520.0
+offset_right = 300.0
+offset_bottom = 620.0
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = 766.0
+offset_right = 1920.0
+offset_bottom = 1083.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_1d384")
+
+[node name="狮狮" parent="Panel" instance=ExtResource("3_4uxp0")]
+position = Vector2(153, 152)
+scale = Vector2(0.3, 0.3)
+metadata/_edit_layout_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+offset_left = 276.0
+offset_top = 32.0
+offset_right = 450.0
+offset_bottom = 280.0
+
+[node name="Health" type="Label" parent="Panel/GridContainer"]
+offset_right = 174.0
+offset_bottom = 38.0
+text = "体力：14 / 14"
+
+[node name="Mental" type="Label" parent="Panel/GridContainer"]
+offset_top = 42.0
+offset_right = 174.0
+offset_bottom = 80.0
+text = "心理伤害：1"
+
+[node name="Physical" type="Label" parent="Panel/GridContainer"]
+offset_top = 84.0
+offset_right = 174.0
+offset_bottom = 122.0
+text = "物理伤害：2"
+
+[node name="Magic" type="Label" parent="Panel/GridContainer"]
+offset_top = 126.0
+offset_right = 174.0
+offset_bottom = 164.0
+text = "魔法伤害：1"
+
+[node name="Speed" type="Label" parent="Panel/GridContainer"]
+offset_top = 168.0
+offset_right = 174.0
+offset_bottom = 206.0
+text = "移动：1"
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="Panel"]
+offset_left = 748.0
+offset_top = 34.0
+offset_right = 1866.0
+offset_bottom = 301.0
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/ScrollContainer2"]
+clip_contents = true
+offset_right = 2036.0
+offset_bottom = 259.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="PhysicalAttack" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_right = 200.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack2" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 204.0
+offset_right = 404.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack3" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 408.0
+offset_right = 608.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack4" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 612.0
+offset_right = 812.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack5" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 816.0
+offset_right = 1016.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack6" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1020.0
+offset_right = 1220.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack7" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1224.0
+offset_right = 1424.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack8" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1428.0
+offset_right = 1628.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack10" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1632.0
+offset_right = 1832.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack9" parent="Panel/ScrollContainer2/HBoxContainer" instance=ExtResource("5_ck7ql")]
+custom_minimum_size = Vector2(200, 0)
+offset_left = 1836.0
+offset_right = 2036.0
+offset_bottom = 259.0
+size_flags_horizontal = 3
+size_flags_vertical = 3

@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://77v6lhmf5nbn"]
-
-[ext_resource type="PackedScene" uid="uid://c2bvq1erv56np" path="res://game/cards/playable/actions/action_card.tscn" id="1_urxvl"]
-[ext_resource type="Texture2D" uid="uid://pythevi1i5ds" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_053.png" id="2_k55sr"]
-
-[node name="Steal" instance=ExtResource("1_urxvl")]
-texture = ExtResource("2_k55sr")
-card_name = "偷牌"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://game/card_library/characters/ponies/species/alicorn/alicorn.gd" id="1_7p47d"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/species/character_basic.tscn" id="1_cvfpd"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/abilities/list/species_abilities/alicorn_ability.tscn" id="3_e81ru"]
+
+[node name="Alicorn" instance=ExtResource("1_cvfpd")]
+script = ExtResource("1_7p47d")
+
+[node name="AlicornAbility" parent="Abilities" index="0" instance=ExtResource("3_e81ru")]

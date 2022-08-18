@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxfn1b1bgt4w4"]
-
-[ext_resource type="PackedScene" uid="uid://basxt08fqxc0e" path="res://game/cards/playable/actions/attacks/attack_card.tscn" id="1_rwwbr"]
-[ext_resource type="Texture2D" uid="uid://cr3ft3jh8uj1m" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_051.png" id="2_4bdhj"]
-
-[node name="PhysicalAttack" instance=ExtResource("1_rwwbr")]
-texture = ExtResource("2_4bdhj")
-card_name = "物理攻击"

@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce1xjgn35b3m2"]
+
+[ext_resource type="Script" path="res://game/main/effect_manage/effect_manager.gd" id="1_rajj4"]
+
+[node name="EffectManager" type="Node"]
+script = ExtResource("1_rajj4")
+
+[node name="DrawingCards" type="Node" parent="."]
+
+[node name="StartPlayingCards" type="Node" parent="."]
+
+[node name="Discarding" type="Node" parent="."]
+
+[node name="Attacking" type="Node" parent="."]
+
+[node name="Attacked" type="Node" parent="."]
+
+[node name="Healing" type="Node" parent="."]
+
+[node name="Moving" type="Node" parent="."]
+
+[node name="Dicing" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/card_library/playable/playable_card.tscn" id="1_n4e15"]
+[ext_resource type="Script" path="res://game/card_library/playable/actions/action_card.gd" id="2_30j3x"]
+
+[node name="ActionCard" instance=ExtResource("1_n4e15")]
+script = ExtResource("2_30j3x")
+card_name = "行动牌"

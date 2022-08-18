@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://btetlmu44hba2"]
-
-[ext_resource type="Script" path="res://game/cards/characters/abilities/list/species_abilities/pegasus_ability.gd" id="1_3ovec"]
-
-[node name="PegasusAbility" type="Node"]
-script = ExtResource("1_3ovec")
-ability_name = "天马种族技能"

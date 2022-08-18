@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/card_library/playable/actions/action_card.tscn" id="1_5fw2t"]
+[ext_resource type="Script" path="res://game/card_library/playable/actions/attacks/attack_card.gd" id="2_nj3ye"]
+
+[node name="AttackCard" instance=ExtResource("1_5fw2t")]
+script = ExtResource("2_nj3ye")

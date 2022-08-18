@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://chljf28m1u2ce"]
-
-[ext_resource type="PackedScene" uid="uid://bmqyapamiuhqr" path="res://game/cards/playable/tools/types/tool_card.tscn" id="1_g8p3q"]
-[ext_resource type="Script" path="res://game/cards/playable/tools/types/element/element_card.gd" id="2_jiqpd"]
-
-[node name="ElementCard" instance=ExtResource("1_g8p3q")]
-script = ExtResource("2_jiqpd")
-card_name = "元素牌"

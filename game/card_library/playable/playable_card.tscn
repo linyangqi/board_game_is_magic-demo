@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv2pmsclpvxk3"]
+
+[ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_008.png" id="1_88w48"]
+[ext_resource type="Script" path="res://game/card_library/playable/playable_card.gd" id="2_8essy"]
+
+[node name="PlayableCard" type="TextureRect"]
+offset_right = 595.0
+offset_bottom = 842.0
+texture = ExtResource("1_88w48")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("2_8essy")

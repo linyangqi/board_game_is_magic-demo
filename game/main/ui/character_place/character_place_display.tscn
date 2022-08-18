@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1_7l33c"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="2_q6ica"]
+
+[node name="CharacterPlaceDisplay" type="Panel"]
+custom_minimum_size = Vector2(300, 100)
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1890.0
+offset_bottom = -980.0
+theme = ExtResource("1_7l33c")
+
+[node name="狮狮" parent="." instance=ExtResource("2_q6ica")]
+position = Vector2(46, 47)
+scale = Vector2(0.1, 0.1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 85.0
+offset_top = 5.0
+offset_right = 143.0
+offset_bottom = 96.0
+
+[node name="Health" type="Label" parent="GridContainer"]
+offset_right = 58.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "体力：14 / 14"
+
+[node name="Mental" type="Label" parent="GridContainer"]
+offset_top = 19.0
+offset_right = 58.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 10
+text = "心理伤害：1"
+
+[node name="Physical" type="Label" parent="GridContainer"]
+offset_top = 38.0
+offset_right = 58.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 10
+text = "物理伤害：2"
+
+[node name="Magic" type="Label" parent="GridContainer"]
+offset_top = 57.0
+offset_right = 58.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 10
+text = "魔法伤害：1"
+
+[node name="Speed" type="Label" parent="GridContainer"]
+offset_top = 76.0
+offset_right = 58.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 10
+text = "移动：1"

@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://ce1ull3ynw0ht"]
-
-[ext_resource type="PackedScene" uid="uid://bfi5yvd42k0kc" path="res://game/cards/characters/ponies/species/pegasus/pegasus.tscn" id="1_0iixd"]
-[ext_resource type="Texture2D" uid="uid://dm0ibmp7pfyxt" path="res://ui/pictures/cards/吉祥物扩展包/IMG_034.png" id="2_0aema"]
-
-[node name="小梅" instance=ExtResource("1_0iixd")]
-texture = ExtResource("2_0aema")
-character_name = "小梅"

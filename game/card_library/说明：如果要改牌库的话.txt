@@ -1,0 +1,2 @@
+改牌库就在这里改，并且更新card_library与deck_plan
+改牌面的话在前面ui/pictures/cards里面改，或者传新图然后在godot场景里面换texture

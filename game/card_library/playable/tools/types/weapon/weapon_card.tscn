@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/card_library/playable/tools/types/tool_card.tscn" id="1_f7qbr"]
+[ext_resource type="Script" path="res://game/card_library/playable/tools/types/weapon/weapon_card.gd" id="2_iai1r"]
+
+[node name="WeaponCard" instance=ExtResource("1_f7qbr")]
+script = ExtResource("2_iai1r")
+card_name = "武器牌"

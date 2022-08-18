@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://gk4kmqycjd6a"]
-
-[ext_resource type="PackedScene" uid="uid://bmqyapamiuhqr" path="res://game/cards/playable/tools/types/tool_card.tscn" id="1_g8p3q"]
-[ext_resource type="Script" path="res://game/cards/playable/tools/types/armor/armor_card.gd" id="2_exec7"]
-
-[node name="ArmorCard" instance=ExtResource("1_g8p3q")]
-script = ExtResource("2_exec7")
-card_name = "防具牌"

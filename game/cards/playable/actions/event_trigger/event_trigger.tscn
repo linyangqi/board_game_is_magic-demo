@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cve6dy8ma4kru"]
-
-[ext_resource type="PackedScene" uid="uid://c2bvq1erv56np" path="res://game/cards/playable/actions/action_card.tscn" id="1_81mkj"]
-[ext_resource type="Texture2D" uid="uid://cd2ss00hsypxf" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_054.png" id="2_vfv0d"]
-
-[node name="EventTrigger" instance=ExtResource("1_81mkj")]
-texture = ExtResource("2_vfv0d")
-card_name = "触发事件"

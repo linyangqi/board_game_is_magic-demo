@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://del7edfy7cs78"]
-
-[ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_008.png" id="1_88w48"]
-[ext_resource type="Script" path="res://game/cards/playable/playable_card.gd" id="2_8essy"]
-
-[node name="PlayableCard" type="Sprite2D"]
-texture = ExtResource("1_88w48")
-script = ExtResource("2_8essy")
