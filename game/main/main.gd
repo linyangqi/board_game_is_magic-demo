@@ -20,8 +20,8 @@ func update_ui(): #可能可以只更新一部分
 
 func init(players:Array[Player]):
 	for i in players.size():
-		var new_character_place:CharacterPlace
-		new_character_place.master=players[i]
+		var new_character_place := CharacterPlace.new()
+		new_character_place.master = players[i]
 		character_places.append(new_character_place)
 	pass
 

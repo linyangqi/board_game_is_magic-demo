@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bu5dpgkl2hful"]
+[gd_scene load_steps=8 format=3 uid="uid://c7b4s3k7c22xg"]
 
-[ext_resource type="PackedScene" uid="uid://lxdiichraf6t" path="res://game/main/world_map/world_map.tscn" id="1_dlfit"]
+[ext_resource type="PackedScene" uid="uid://cxp2hbvsdvlut" path="res://game/main/world_map/world_map.tscn" id="1_dlfit"]
 [ext_resource type="Script" path="res://game/main/main.gd" id="1_ng00m"]
-[ext_resource type="PackedScene" uid="uid://bwlcnvgixoibj" path="res://game/main/ui/UI.tscn" id="3_kgpll"]
+[ext_resource type="PackedScene" path="res://game/game_ui/UI.tscn" id="3_kgpll"]
 [ext_resource type="PackedScene" uid="uid://ce1xjgn35b3m2" path="res://game/main/effect_manage/effect_manager.tscn" id="3_tf1em"]
 [ext_resource type="PackedScene" path="res://ui/audio/music/change_music.tscn" id="6_81axp"]
 [ext_resource type="Script" path="res://ui/audio/music/change_music.gd" id="7_tb086"]

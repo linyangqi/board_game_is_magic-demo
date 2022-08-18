@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://lxdiichraf6t"]
+[gd_scene load_steps=4 format=3 uid="uid://cxp2hbvsdvlut"]
 
 [ext_resource type="Script" path="res://game/main/world_map/world_map.gd" id="1_rvtek"]
-[ext_resource type="PackedScene" uid="uid://ccbu7ixhyfa6i" path="res://game/map/maps/map2.tscn" id="1_yh8cm"]
+[ext_resource type="PackedScene" uid="uid://ccbu7ixhyfa6i" path="res://game/map/maps/map2.tscn" id="2_3xxyf"]
 [ext_resource type="Script" path="res://game/main/world_map/map_camera.gd" id="2_6ardm"]
 
 [node name="WorldMap" type="Node2D"]
 scale = Vector2(1, 0.8)
 script = ExtResource("1_rvtek")
 
-[node name="Map" parent="." instance=ExtResource("1_yh8cm")]
+[node name="Map" parent="." instance=ExtResource("2_3xxyf")]
 layer_1/tile_data = PackedInt32Array(196610, 131073, 0, 65538, 65537, 1)
 layer_2/modulate = Color(1, 1, 1, 1)
 layer_2/tile_data = PackedInt32Array(196610, 2, 0, 65538, 65538, 0)
@@ -17,5 +17,3 @@ layer_2/tile_data = PackedInt32Array(196610, 2, 0, 65538, 65538, 0)
 position = Vector2(442, 451)
 current = true
 script = ExtResource("2_6ardm")
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
