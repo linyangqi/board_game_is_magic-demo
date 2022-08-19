@@ -33,7 +33,7 @@ func character_select(player:Player,option_count:int = 4)->String: # 但是必�
 	return "灵樨"#测试用，标准要调用ui的
 
 func start_game():
-	
+	print("开始游戏")
 	#所有玩家选完后，使用游戏开始就触发的角色技能
 	#并且抽牌
 	pass

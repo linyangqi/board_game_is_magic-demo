@@ -14,6 +14,9 @@ func attach_characters():
 
 #幻形灵大军一个玩家控制多个角色……什么神奇操作（）
 func init(players:Array[Player]):
+	#init的部分同样需要联合其他东西（如角色牌、地图位置吧）
+	#不过可以在CharacterPlace类下面处理，所以这里看起来就没有和其他东西关联了吧
+	#定顺序
 	for i in players.size():
 		var new_character := CharacterPlace.new()
 		new_character.name = "Character"+str(i+1) #从1计数
@@ -25,3 +28,10 @@ func init(players:Array[Player]):
 	for character in characters: #这个其实应该【并行处理】，但是怎么搞呢……
 		character.select_character()
 	await waiting == 0
+	#后面的操作便无须并行，而是自动处理了
+	#地图位置（避水，在map里面处理）
+	for character in characters: 
+		character.prepare()
+
+
+

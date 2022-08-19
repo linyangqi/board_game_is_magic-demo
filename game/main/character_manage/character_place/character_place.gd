@@ -3,14 +3,15 @@ class_name CharacterPlace
 # 数组中的id 与 chessman_id 一一对应……应该也不会改吧？
 #具体的根据位置判断条件……可能要main来连接吧……？
 #或者使用管理来让map自己更新？
-@onready var manager = get_parent()#实际上是不可行的吧
-@onready var game_main = manager.get_parent()
-#Object大概用于数据存储结构比较好，动态处理还是交给manage吧
+@onready var manager = get_parent()
+@onready var game_main = manager.get_parent() 
+#需要UI或map的都找main处理，返回值直接传到这里
 
 var master:Player #这个类放在ui/lobby下了
-var character:Node
+var character:Node #获取牌库文件夹里的节点，但是不挂在树上
 var abilities:Node #可能不必要了……？或者还是存个“变体”？
 var alive:bool
+var coordinate:Vector2i #地图位置
 var collection_count:int
 var max_health:int # 生命值上限
 var health:int # 生命值
@@ -46,7 +47,8 @@ func select_character(option_count:int = 4):
 	manager.waiting -= 1 #局部变量没问题吗
 
 
-func prepare(character_name:String):#选好角色以后进行操作
+func prepare():#【选好角色以后】进行操作
+	#属性、地图位置，以及天赋技能
 	alive = true
 	collection_count = 0
 	max_health = character.max_health
@@ -55,6 +57,12 @@ func prepare(character_name:String):#选好角色以后进行操作
 	abilities = character.abilities #技能节点……初始化？
 	#不是duplicate，因此只是引用……所以整体“技能”数据还是在实例化过的character中
 	#这样写，ability相当于快捷方式吧
+	
+	#发动技能？或者在start_game以后？
+	
+	#地图位置
+	coordinate = Vector2i(6,6)
+	print("todo：随机化位置")
 
 
 
