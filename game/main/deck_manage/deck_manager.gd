@@ -1,12 +1,12 @@
 extends Node
 #DeckManager往下的交互单位都是String，往外返回后，各位自己去library找path
 
-var character_deck:Deck
-var resource_deck:Deck
-var bonus_deck:Deck
-var discard_deck:Deck
-var event_deck:Deck
-var event_discard_deck:Deck
+var character_deck := Deck.new()
+var resource_deck := Deck.new()
+var bonus_deck := Deck.new()
+var discard_deck := Deck.new()
+var event_deck := Deck.new()
+var event_discard_deck := Deck.new()
 
 signal resource_run_out
 

@@ -1,0 +1,12 @@
+
+————————————————————————————————————
+main中
+
+func character_select(option_count:int = 4)->String: # 但是必须有对象目标……
+	#在角色牌库里抽牌（string）
+	#调用选角色专用的UI（“请选择一个卡牌/角色”——提示语应该可以换
+	#但是多人与单人怎么办呢……或者“选角色”是一个指定CharacterPlace的操作，而同时有效？
+	return "灵樨"#测试用，标准要调用ui的
+
+func draw_cards(count:int = 2)->Array[String]:
+	return []

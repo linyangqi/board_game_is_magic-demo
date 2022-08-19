@@ -1,9 +1,13 @@
-extends Object
+extends Node
 class_name CharacterPlace
 # 数组中的id 与 chessman_id 一一对应……应该也不会改吧？
 #具体的根据位置判断条件……可能要main来连接吧……？
 #或者使用管理来让map自己更新？
-var master:Player
+@onready var manager = get_parent()#实际上是不可行的吧
+@onready var game_main = manager.get_parent()
+#Object大概用于数据存储结构比较好，动态处理还是交给manage吧
+
+var master:Player #这个类放在ui/lobby下了
 var character:Node
 var abilities:Node #可能不必要了……？或者还是存个“变体”？
 var alive:bool
@@ -31,9 +35,18 @@ var hand_cards:Array[CardInHand] = []
 
 
 
-func init(character_name:String):
+
+#var character_select_ui = preload("res://game/main/ui/character_select/character_select_ui.tscn")
+func select_character(option_count:int = 4):
+	####【应当并行处理！！！！！！！！！！！！】
+	#ps:幻形灵的技能不是这个……幻形灵另外用一个copy_ability吧（或许在ability列表？/节点？）
+	var character_name = await game_main.character_select(master,option_count)
 	var character_file = CardLibrary.CARD_PATH["characters"][character_name]
 	character = load(character_file).instantiate()
+	manager.waiting -= 1 #局部变量没问题吗
+
+
+func prepare(character_name:String):#选好角色以后进行操作
 	alive = true
 	collection_count = 0
 	max_health = character.max_health
@@ -43,10 +56,6 @@ func init(character_name:String):
 	#不是duplicate，因此只是引用……所以整体“技能”数据还是在实例化过的character中
 	#这样写，ability相当于快捷方式吧
 
-
-#var character_select_ui = preload("res://game/main/ui/character_select/character_select_ui.tscn")
-func character_select(choice_count:int = 4):
-	return ""
 
 
 

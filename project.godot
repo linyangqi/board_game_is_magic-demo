@@ -42,7 +42,7 @@ _global_script_classes=[{
 "base": "Object",
 "class": &"CardInHand",
 "language": &"GDScript",
-"path": "res://game/main/character_manage/card_in_hand.gd"
+"path": "res://game/main/character_manage/character_place/card_in_hand.gd"
 }, {
 "base": "Object",
 "class": &"CardLibrary",
@@ -54,7 +54,7 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/characters/ponies/species/character_basic.gd"
 }, {
-"base": "Object",
+"base": "Node",
 "class": &"CharacterPlace",
 "language": &"GDScript",
 "path": "res://game/main/character_manage/character_place/character_place.gd"
@@ -132,7 +132,7 @@ _global_script_classes=[{
 "base": "Object",
 "class": &"Player",
 "language": &"GDScript",
-"path": "res://game/main/character_manage/player.gd"
+"path": "res://ui/lobby/player/player.gd"
 }, {
 "base": "Node",
 "class": &"PlayerRound",
