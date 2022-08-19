@@ -5,10 +5,8 @@
 [ext_resource type="Script" path="res://game/game_ui/single_card/checkable_card/checkable_card.gd" id="3_y0yf2"]
 
 [node name="CheckableCard" type="TextureButton"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -1325.0
-offset_bottom = -238.0
+offset_right = 595.0
+offset_bottom = 842.0
 mouse_default_cursor_shape = 2
 theme = ExtResource("1_fbcgj")
 toggle_mode = true

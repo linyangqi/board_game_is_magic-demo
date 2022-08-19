@@ -1,4 +1,4 @@
-extends Camera2D
+extends TextureRect
 
 #方便操作：鼠标滚轮缩放，中键或右键拖动地图
 #若有手机版……加触屏按钮吧？或者touch screen
@@ -9,43 +9,45 @@ extends Camera2D
 #直接侦测鼠标事件……但是“焦点”……？？怎么获取呢
 #还有一个“按键后拖动”的效果……？？
 
-var zoom_plan = zoom
-var zoom_acceleration:float = 10
-const MIN_ZOOM = Vector2(0.5,0.5) 
-const MAX_ZOOM = Vector2(4,4) 
+var scale_plan = scale
+var scale_acceleration:float = 10
+const MIN_SCALE = Vector2(0.2,0.2) 
+const MAX_SCALE = Vector2(2,2) 
 
 var position_plan = position
 var grabing := false
-var x_sensitivity = 2
-var y_sensitivity = 2
+var x_sensitivity = 1
+var y_sensitivity = 1
 var x_acceleration = 5
 var y_acceleration = 5
 
-func _unhandled_input(event):
-	
-	if event.is_action_pressed("map_grab"):
+func _gui_input(event):
+	accept_event()
+	if event.is_action("detail_clear"):
+		free()
+		
+	if event.is_action_pressed("detail_grab"):
 		grabing = true
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_released("map_grab"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	elif event.is_action_released("detail_grab"):
 		grabing = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
-	elif event.is_action("zoom_reset"):
-		zoom_plan = Vector2(1,1)
+	if event.is_action("zoom_reset") and event.double_click:
+		scale_plan = Vector2(1,1)
 	elif event.is_action("zoom_in"):
-		zoom_plan *= 1.1
+		scale_plan *= 1.1
 	elif event.is_action("zoom_out"):
-		zoom_plan *= 0.9
-	zoom_plan = clamp(zoom_plan, MIN_ZOOM, MAX_ZOOM)
+		scale_plan *= 0.9
+	scale_plan = clamp(scale_plan, MIN_SCALE, MAX_SCALE)
 	
-func _input(event):
 	if grabing and event is InputEventMouseMotion:
-		position_plan.x += -event.relative.x  * x_sensitivity / zoom.x
-		position_plan.y += -event.relative.y  * y_sensitivity / zoom.y
+		position_plan.x += event.relative.x  * x_sensitivity * scale.x
+		position_plan.y += event.relative.y  * y_sensitivity * scale.y
 	
 		
 func _physics_process(delta):
-	zoom = lerp(zoom, zoom_plan, delta * zoom_acceleration)
+	scale = lerp(scale, scale_plan, delta * scale_acceleration)
 	position.x = lerp(position.x, position_plan.x, delta * x_acceleration)
 	position.y = lerp(position.y, position_plan.y, delta * y_acceleration)
 	

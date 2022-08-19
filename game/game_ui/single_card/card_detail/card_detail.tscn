@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://wvwtt7tgsnjw"]
+
+[ext_resource type="Texture2D" uid="uid://b8dndfbq7hwrv" path="res://ui/pictures/cards/吉祥物扩展包/IMG_031.png" id="2_6r6vn"]
+[ext_resource type="Script" path="res://game/game_ui/single_card/card_detail/movable_texture.gd" id="3_pyym3"]
+
+[node name="CardDetail" type="TextureRect"]
+offset_left = 635.0
+offset_top = 102.0
+offset_right = 1230.0
+offset_bottom = 944.0
+pivot_offset = Vector2(299, 412)
+mouse_default_cursor_shape = 2
+texture = ExtResource("2_6r6vn")
+script = ExtResource("3_pyym3")
+
+[node name="Describe" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
