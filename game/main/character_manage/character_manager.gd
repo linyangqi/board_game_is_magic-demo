@@ -3,6 +3,7 @@ extends Node
 
 var alive_count:int #角色存活计数……角色死后可能还要占位吧（事件时间计算……）
 var characters:Array[CharacterPlace] #可以挂节点的
+var character_place_scene = preload("res://game/main/character_manage/character_place/character_place.tscn")
 var waiting:int
 
 func attach_characters(): 
@@ -18,8 +19,8 @@ func init(players:Array[Player]):
 	#不过可以在CharacterPlace类下面处理，所以这里看起来就没有和其他东西关联了吧
 	#定顺序
 	for i in players.size():
-		var new_character := CharacterPlace.new()
-		new_character.name = "Character"+str(i+1) #从1计数
+		var new_character := character_place_scene.instantiate()
+		new_character.name = "CharacterPlace"+str(i+1) #从1计数
 		new_character.master = players[i]
 		characters.append(new_character)
 		attach_characters()

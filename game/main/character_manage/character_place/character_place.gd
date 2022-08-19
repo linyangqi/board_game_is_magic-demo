@@ -13,46 +13,21 @@ class_name CharacterPlace
 #不需要ui的，还是直接自立更生地交流了吧
 #或者其实UI也能自行交流吧……？真不用main这个中介吗
 
+@onready var buff = $Buff
+@onready var equipment = $Equipment
+#@onready var hand_cards = $HandCards
+
 
 var master:Player #这个类放在ui/lobby下了
 var character:Node#获取牌库文件夹里的节点，并且要挂在树上
+#现在角色的主要信息都在实例化的这个character上了
+#目前的方式，相当于把“角色内部属性”与“外部工具”区分开了
 
-#复制过来的属性，这样便不用倒回去看了
-var avatar:Texture2D
-var character_name:String
-var collection_requirement:= []
-var max_health:int
-var mental_damage:int
-var physic_damage:int
-var magic_damage:int
-var move_speed:int
-var abilities:Node
-
-
-var alive:bool
 var coordinate:Vector2i #地图位置
-var collection_count:int
-var health:int # 生命值
-var armor_value:int # 护甲值
 #狮狮两个防具栏……不过目前还是先做大部分通用的方式吧？
-var properties :={
-	
-}
 
-var equipment_limits := {
-	element =1,
-	weapon =1,
-	armor =1,
-	backup =1, #这个是最后那个只能放收集品的栏
-}
-
-var equipment := { #一般情况下只能装一个……
-	element = [],
-	weapon = [],
-	armor = [],
-	backup = [],
-	# 可能有其他类型的“装备”……？
-}
+enum EquipmentIndex{element,weapon,armor,backup}
+#var equipment :Array[Array]=[[],[],[],[]] #目前不支持嵌套类型……这里装Node吧？
 
 #目前的逻辑是，游戏内部逻辑使用牌的名称来计算逻辑
 #（如抽到“触发事件”，不是牌自身用这个功能，而是我们在这里写一个约定性的函数了）
@@ -70,28 +45,14 @@ func select_character(option_count:int = 4):
 	var character_file = CardLibrary.CARD_PATH["characters"][character_index]
 	character = load(character_file).instantiate()
 	manager.waiting -= 1 #局部变量没问题吗
-
-func copy_information():
-	character.hide()
-	add_child(character)
-	avatar = character.texture
-	character_name = character.character_name
-	collection_requirement= character.collection_requirement
-	max_health = character.max_health
-	mental_damage = character.mental_damage
-	physic_damage = character.physic_damage
-	magic_damage = character.magic_damage
-	move_speed = character.move_speed
-	abilities = character.abilities #技能节点……初始化？
-	#######
+	
 
 func prepare():#【选好角色以后】进行操作
 	#属性、地图位置，以及天赋技能
-	copy_information()
-	alive = true
-	collection_count = 0
-	health = max_health
-	armor_value = 0
+	character.hide()
+	character.name="Character"
+	add_child(character)
+	
 	#不是duplicate，因此只是引用……所以整体“技能”数据还是在实例化过的character中
 	#这样写，ability相当于快捷方式吧
 	
@@ -121,15 +82,15 @@ func attempt_heal():#
 	
 	
 func final_hurt(damage:int): #真正造成伤害以后
-	health -= damage
-	if health<=0 :
+	character.health -= damage
+	if character.health<=0 :
 		# 没有“濒死”机制
 		faint()
 
 func final_heal(healing_point:int): #真正的回血
-	health += healing_point
-	if health > max_health:
-		health = max_health
+	character.health += healing_point
+	if character.health > character.max_health:
+		character.health = character.max_health
 
 
 func draw_card(count:int = 2):
@@ -148,18 +109,18 @@ func drop_handcard(count:int = 1, type:String = "self"):
 
 func drop_collection():
 	print("自行选择弃一个收集品——需要await")
-	collection_count -= 1
+	character.collection_count -= 1
 
 
 func faint(): # 晕厥
-	if collection_count<=0:
+	if character.collection_count<=0:
 		knocked_out()
 	else:
 		print("晕厥操作：弃一个收集品，弃手牌重摸4张，回半血，免疫一回合")
 	
 
 func knocked_out():
-	alive = false
+	character.alive = false
 
 
 
