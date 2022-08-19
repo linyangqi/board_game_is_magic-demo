@@ -8,4 +8,4 @@ script = ExtResource("2")
 
 [node name="1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_njwxs")
-volume_db = -10.0
+volume_db = -30.0

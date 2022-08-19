@@ -3,9 +3,15 @@ class_name CharacterPlace
 # 数组中的id 与 chessman_id 一一对应……应该也不会改吧？
 #具体的根据位置判断条件……可能要main来连接吧……？
 #或者使用管理来让map自己更新？
-@onready var manager = get_parent()
-@onready var game_main = manager.get_parent() 
+@onready var manager:Node = get_parent()
+@onready var game_main:Node = manager.get_parent() 
+@onready var ui:Node = game_main.get_node("UI")
+@onready var decks:Node = game_main.get_node("DeckManager")
+@onready var map:Node = game_main.get_node("WorldMap")
 #需要UI或map的都找main处理，返回值直接传到这里
+#不需要ui的，还是直接自立更生地交流了吧
+#或者其实UI也能自行交流吧……？真不用main这个中介吗
+
 
 var master:Player #这个类放在ui/lobby下了
 var character:Node #获取牌库文件夹里的节点，但是不挂在树上
@@ -32,7 +38,9 @@ var equipment := { #一般情况下只能装一个……
 	# 可能有其他类型的“装备”……？
 }
 
-var hand_cards:Array[CardInHand] = []
+#目前的逻辑是，游戏内部逻辑使用牌的名称来计算逻辑
+#（如抽到“触发事件”，不是牌自身用这个功能，而是我们在这里写一个约定性的函数了）
+var hand_cards:Array[String] = []
 
 
 
@@ -63,6 +71,9 @@ func prepare():#【选好角色以后】进行操作
 	#地图位置
 	coordinate = Vector2i(6,6)
 	print("todo：随机化位置")
+	
+	#初始抽牌
+	hand_cards.append_array(decks.take_resource(4))
 
 
 

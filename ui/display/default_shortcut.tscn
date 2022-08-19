@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp376m2erbuki"]
+
+[ext_resource type="Script" path="res://ui/display/default_shortcut.gd" id="1_frrnk"]
+
+[node name="ShortCuts" type="Node"]
+script = ExtResource("1_frrnk")

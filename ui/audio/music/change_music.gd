@@ -8,5 +8,6 @@ extends Node
 func _ready():
 #	emit_signal("music_change")
 #	connect("music_change",$"/root/MusicDj","_on_music_change",[music_id])
+	
 	dj._on_music_change(music_id)
 

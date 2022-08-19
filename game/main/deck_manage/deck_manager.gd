@@ -1,6 +1,10 @@
 extends Node
 #DeckManager往下的交互单位都是String，往外返回后，各位自己去library找path
 
+@onready var main = $".."
+@onready var ui = $"../UI" #自行交流解决牌库显示问题
+
+
 var character_deck := Deck.new()
 var resource_deck := Deck.new()
 var bonus_deck := Deck.new()

@@ -40,11 +40,6 @@ _global_script_classes=[{
 "path": "res://game/main/deck_manage/card_types/card_in_deck.gd"
 }, {
 "base": "Object",
-"class": &"CardInHand",
-"language": &"GDScript",
-"path": "res://game/main/character_manage/character_place/card_in_hand.gd"
-}, {
-"base": "Object",
 "class": &"CardLibrary",
 "language": &"GDScript",
 "path": "res://game/card_library/card_library.gd"
@@ -161,7 +156,6 @@ _global_script_class_icons={
 "ArmorCard": "",
 "AttackCard": "",
 "CardInDeck": "",
-"CardInHand": "",
 "CardLibrary": "",
 "CharacterBasic": "",
 "CharacterPlace": "",
@@ -196,6 +190,7 @@ config/icon="res://icon.png"
 [autoload]
 
 MusicDj="*res://ui/audio/music/music_dj.tscn"
+DefaultShortcut="*res://ui/display/default_shortcut.tscn"
 
 [display]
 
@@ -209,6 +204,11 @@ window/stretch/mode="canvas_items"
 read_card={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"pressed":false,"double_click":false,"script":null)
+]
+}
+fullscreen={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":16777254,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
 ]
 }
 

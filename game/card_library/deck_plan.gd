@@ -18,6 +18,7 @@ const CARD_AMOUNTS:Dictionary = {
 		"物理攻击":5,
 		"法术攻击":5,
 		"偷牌":5,
+		"触发事件":5,
 		
 	},
 	"bonus":{

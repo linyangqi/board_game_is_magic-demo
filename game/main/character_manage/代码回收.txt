@@ -10,3 +10,16 @@ func character_select(option_count:int = 4)->String: # 但是必须有对象目�
 
 func draw_cards(count:int = 2)->Array[String]:
 	return []
+
+
+func draw_cards(from_deck:String, count:int = 1)->Array[String]:
+	match from_deck:
+		"characters":
+			pass
+		"event":
+			pass
+		"resource":
+			pass
+		"bonus":
+			pass
+	return []
