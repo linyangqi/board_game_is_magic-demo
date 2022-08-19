@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bou6e0mchueut"]
+
+[ext_resource type="Shader" path="res://ui/materials/light_mask_shader.gdshader" id="1_1elvo"]
+
+[resource]
+shader = ExtResource("1_1elvo")

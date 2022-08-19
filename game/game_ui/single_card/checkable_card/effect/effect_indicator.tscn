@@ -1,5 +1,30 @@
-[gd_scene format=3 uid="uid://dqck527vt5qe2"]
+[gd_scene load_steps=6 format=3 uid="uid://dqck527vt5qe2"]
+
+[ext_resource type="PackedScene" uid="uid://cwi4tl2y0c4ue" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="1_4tvb1"]
+[ext_resource type="Texture2D" uid="uid://kbg6qrxpwn7o" path="res://icon.png" id="3_a67p0"]
+[ext_resource type="Material" uid="uid://bou6e0mchueut" path="res://ui/materials/light_mask_shader.tres" id="3_orxhv"]
+[ext_resource type="Texture2D" uid="uid://dj882l4wtvjww" path="res://ui/pictures/map/chessman/chessmen.png" id="4_2ya88"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_p2cxj"]
+light_mode = 2
 
 [node name="EffectIndicator" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="CheckableCard" parent="." instance=ExtResource("1_4tvb1")]
+scale = Vector2(0.5, 0.5)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("CanvasItemMaterial_p2cxj")
+offset_left = 322.0
+offset_top = 142.0
+offset_right = 822.0
+offset_bottom = 642.0
+texture = ExtResource("3_a67p0")
+
+[node name="PointLight2D" type="Sprite2D" parent="TextureRect"]
+material = ExtResource("3_orxhv")
+position = Vector2(45, -70)
+scale = Vector2(10.0833, 10.0833)
+texture = ExtResource("4_2ya88")
