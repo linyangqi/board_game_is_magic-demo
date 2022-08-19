@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7b4s3k7c22xg"]
+[gd_scene load_steps=11 format=3 uid="uid://c7b4s3k7c22xg"]
 
 [ext_resource type="PackedScene" uid="uid://cxp2hbvsdvlut" path="res://game/main/world_map/world_map.tscn" id="1_dlfit"]
 [ext_resource type="Script" path="res://game/main/main.gd" id="1_ng00m"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cn10g8nf1kj0c" path="res://game/main/character_manage/character_manager.tscn" id="8_eahv4"]
 [ext_resource type="PackedScene" uid="uid://1jcjfed8uf0m" path="res://game/main/deck_manage/DeckManager.tscn" id="9_b7in7"]
 [ext_resource type="Script" path="res://game/main/character_manage/character_manager.gd" id="9_rs7t3"]
+[ext_resource type="Script" path="res://game/main/character_manage/character_place/character_place.gd" id="10_udpdb"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ng00m")
@@ -27,3 +28,6 @@ music_id = 1
 
 [node name="CharacterManager" parent="." instance=ExtResource("8_eahv4")]
 script = ExtResource("9_rs7t3")
+
+[node name="Test" type="Node" parent="CharacterManager"]
+script = ExtResource("10_udpdb")

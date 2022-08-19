@@ -1,4 +1,5 @@
 extends Node
+#直接继承这堆属性了，一个角色位只有一个角色，总是能用上的吧
 class_name CharacterPlace
 # 数组中的id 与 chessman_id 一一对应……应该也不会改吧？
 #具体的根据位置判断条件……可能要main来连接吧……？
@@ -14,15 +15,30 @@ class_name CharacterPlace
 
 
 var master:Player #这个类放在ui/lobby下了
-var character:Node #获取牌库文件夹里的节点，但是不挂在树上
-var abilities:Node #可能不必要了……？或者还是存个“变体”？
+var character:Node#获取牌库文件夹里的节点，并且要挂在树上
+
+#复制过来的属性，这样便不用倒回去看了
+var avatar:Texture2D
+var character_name:String
+var collection_requirement:= []
+var max_health:int
+var mental_damage:int
+var physic_damage:int
+var magic_damage:int
+var move_speed:int
+var abilities:Node
+
+
 var alive:bool
 var coordinate:Vector2i #地图位置
 var collection_count:int
-var max_health:int # 生命值上限
 var health:int # 生命值
 var armor_value:int # 护甲值
 #狮狮两个防具栏……不过目前还是先做大部分通用的方式吧？
+var properties :={
+	
+}
+
 var equipment_limits := {
 	element =1,
 	weapon =1,
@@ -49,20 +65,33 @@ var hand_cards:Array[String] = []
 func select_character(option_count:int = 4):
 	####【应当并行处理！！！！！！！！！！！！】
 	#ps:幻形灵的技能不是这个……幻形灵另外用一个copy_ability吧（或许在ability列表？/节点？）
-	var character_name = await game_main.character_select(master,option_count)
-	var character_file = CardLibrary.CARD_PATH["characters"][character_name]
+	var character_index = await game_main.character_select(master,option_count)
+	#不过实际上这个index用的基本上就是名字……不过还是按用处区分一下吧，比如同名重制角色
+	var character_file = CardLibrary.CARD_PATH["characters"][character_index]
 	character = load(character_file).instantiate()
 	manager.waiting -= 1 #局部变量没问题吗
 
+func copy_information():
+	character.hide()
+	add_child(character)
+	avatar = character.texture
+	character_name = character.character_name
+	collection_requirement= character.collection_requirement
+	max_health = character.max_health
+	mental_damage = character.mental_damage
+	physic_damage = character.physic_damage
+	magic_damage = character.magic_damage
+	move_speed = character.move_speed
+	abilities = character.abilities #技能节点……初始化？
+	#######
 
 func prepare():#【选好角色以后】进行操作
 	#属性、地图位置，以及天赋技能
+	copy_information()
 	alive = true
 	collection_count = 0
-	max_health = character.max_health
 	health = max_health
 	armor_value = 0
-	abilities = character.abilities #技能节点……初始化？
 	#不是duplicate，因此只是引用……所以整体“技能”数据还是在实例化过的character中
 	#这样写，ability相当于快捷方式吧
 	
@@ -75,11 +104,6 @@ func prepare():#【选好角色以后】进行操作
 	#初始抽牌
 	hand_cards.append_array(decks.take_resource(4))
 
-
-
-
-func get_texture()->Texture2D:
-	return character.texture
 
 #ps:这里的函数顺序排布模拟游戏进程
 

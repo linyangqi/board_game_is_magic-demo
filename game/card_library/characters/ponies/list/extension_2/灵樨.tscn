@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://calep6rfmby4b"]
 
 [ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/species/other/other_species.tscn" id="1_63ood"]
 [ext_resource type="Texture2D" uid="uid://dgguvp16g3p34" path="res://ui/pictures/cards/吉祥物扩展包/IMG_032.png" id="2_dpqjr"]
@@ -6,3 +6,5 @@
 [node name="灵樨" instance=ExtResource("1_63ood")]
 texture = ExtResource("2_dpqjr")
 character_name = "灵樨"
+max_health = 13
+magic_damage = 2

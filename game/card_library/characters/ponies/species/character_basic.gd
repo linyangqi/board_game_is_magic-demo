@@ -1,10 +1,11 @@
-extends Node2D
+extends Node
 class_name CharacterBasic
-#仅作信息库功能，不作动态操作（动态操作在main的CharacterPlaces中管理）
+#仅作信息库功能，不作动态操作（动态操作在继承此类的CharacterPlace类中）
+#但是……如果不挂载的话，又怎么知道技能呢
 #因为幻形灵会抄技能
 
 @export var character_name := ""
-@export var collections :Array[String]
+@export var collection_requirement :Array[String]
 
 @export var max_health := 14
 @export var mental_damage := 1
