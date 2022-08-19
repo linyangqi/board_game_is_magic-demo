@@ -1,4 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d21se8eu3tm0t"]
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" uid="uid://b8eiybbn6mmpg" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="1_0pa8c"]
+[ext_resource type="Texture2D" uid="uid://c4ju6ohajqp4v" path="res://ui/pictures/cards/正式版角色牌/IMG_018.png" id="2_py1uk"]
 
 [sub_resource type="GDScript" id="GDScript_jh1ru"]
 script/source = "extends Node
@@ -17,3 +20,11 @@ func _process(delta):
 
 [node name="Node" type="Node"]
 script = SubResource("GDScript_jh1ru")
+
+[node name="CardInUI" parent="." instance=ExtResource("1_0pa8c")]
+offset_left = 155.0
+offset_top = 225.0
+offset_right = -1170.0
+offset_bottom = -13.0
+scale = Vector2(0.411683, 0.411683)
+texture_normal = ExtResource("2_py1uk")

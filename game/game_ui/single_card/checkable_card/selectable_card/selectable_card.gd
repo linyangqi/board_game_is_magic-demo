@@ -19,3 +19,8 @@ func _input(event):
 #	if event is InputEventMouseButton and event.is_action("read_card") :
 	if rect.has_point(event.position):
 		print(233)
+		
+func _on_card_in_ui_toggled(button_pressed):
+	var detail = detail_view.instantiate()
+	get_tree().root.add_child(detail)
+	detail.get_node("Texture").texture = texture_normal

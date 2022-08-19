@@ -1,0 +1,4 @@
+基本类是checkable_card
+
+
+card_detail则是不可直接点击，或称点一下就消失的

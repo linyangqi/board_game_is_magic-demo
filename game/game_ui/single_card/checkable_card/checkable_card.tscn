@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwi4tl2y0c4ue"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_fbcgj"]
+[ext_resource type="Texture2D" uid="uid://dogbc6ail6wyq" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_014.png" id="2_vc216"]
+[ext_resource type="Script" path="res://game/game_ui/single_card/checkable_card/checkable_card.gd" id="3_y0yf2"]
+
+[node name="CheckableCard" type="TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1325.0
+offset_bottom = -238.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_fbcgj")
+toggle_mode = true
+action_mode = 0
+button_mask = 2
+texture_normal = ExtResource("2_vc216")
+stretch_mode = 5
+script = ExtResource("3_y0yf2")
+
+[connection signal="toggled" from="." to="." method="_on_card_in_ui_toggled"]

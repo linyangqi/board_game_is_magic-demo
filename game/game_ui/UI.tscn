@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://dcrryjlgre8r1"]
 
 [ext_resource type="Script" path="res://game/game_ui/UI.gd" id="1_onxev"]
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
-[ext_resource type="PackedScene" path="res://game/game_ui/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
+[ext_resource type="PackedScene" uid="uid://bmvxflw2n672u" path="res://game/game_ui/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
 [ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="3_4uxp0"]
 [ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="5_ck7ql"]
 
@@ -84,32 +84,32 @@ offset_right = 450.0
 offset_bottom = 280.0
 
 [node name="Health" type="Label" parent="Panel/GridContainer"]
-offset_right = 174.0
-offset_bottom = 38.0
+offset_right = 93.0
+offset_bottom = 22.0
 text = "体力：14 / 14"
 
 [node name="Mental" type="Label" parent="Panel/GridContainer"]
-offset_top = 42.0
-offset_right = 174.0
-offset_bottom = 80.0
+offset_top = 26.0
+offset_right = 93.0
+offset_bottom = 48.0
 text = "心理伤害：1"
 
 [node name="Physical" type="Label" parent="Panel/GridContainer"]
-offset_top = 84.0
-offset_right = 174.0
-offset_bottom = 122.0
+offset_top = 52.0
+offset_right = 93.0
+offset_bottom = 74.0
 text = "物理伤害：2"
 
 [node name="Magic" type="Label" parent="Panel/GridContainer"]
-offset_top = 126.0
-offset_right = 174.0
-offset_bottom = 164.0
+offset_top = 78.0
+offset_right = 93.0
+offset_bottom = 100.0
 text = "魔法伤害：1"
 
 [node name="Speed" type="Label" parent="Panel/GridContainer"]
-offset_top = 168.0
-offset_right = 174.0
-offset_bottom = 206.0
+offset_top = 104.0
+offset_right = 93.0
+offset_bottom = 126.0
 text = "移动：1"
 
 [node name="ScrollContainer2" type="ScrollContainer" parent="Panel"]
