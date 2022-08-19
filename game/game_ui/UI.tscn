@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://game/game_ui/UI.gd" id="1_onxev"]
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
-[ext_resource type="PackedScene" path="res://game/game_ui/character_place/character_place_display.tscn" id="3_2tlnm"]
+[ext_resource type="PackedScene" path="res://game/game_ui/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
 [ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="3_4uxp0"]
 [ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="5_ck7ql"]
 

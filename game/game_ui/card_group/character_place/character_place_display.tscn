@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://bmvxflw2n672u"]
 
-[ext_resource type="Theme" uid="uid://e0ylgmuiwx5c" path="res://ui/theme/ui_theme.tres" id="1_7l33c"]
-[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="2_q6ica"]
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_5jgid"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="2_tw03l"]
 
 [node name="CharacterPlaceDisplay" type="Panel"]
 custom_minimum_size = Vector2(300, 100)
@@ -9,9 +9,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1890.0
 offset_bottom = -980.0
-theme = ExtResource("1_7l33c")
+theme = ExtResource("1_5jgid")
 
-[node name="狮狮" parent="." instance=ExtResource("2_q6ica")]
+[node name="狮狮" parent="." instance=ExtResource("2_tw03l")]
 position = Vector2(46, 47)
 scale = Vector2(0.1, 0.1)
 
