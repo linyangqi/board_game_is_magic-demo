@@ -1,11 +1,7 @@
 extends TextureButton
+const detail_view = preload("res://game/game_ui/single_card/card_details/card_detail.tscn")
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_card_in_ui_toggled(button_pressed):
+	var detail = detail_view.instantiate()
+	get_tree().root.add_child(detail)
+	detail.get_node("Texture").texture = texture_normal

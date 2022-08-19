@@ -1,17 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0bd6o5uihohk"]
+[gd_scene load_steps=3 format=3 uid="uid://b0bd6o5uihohk"]
 
 [ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_008.png" id="1_8hs86"]
+[ext_resource type="Script" path="res://game/game_ui/single_card/card_details/card_detail.gd" id="1_kojij"]
 
 [node name="CardDetail" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource("1_kojij")
 
 [node name="Texture" type="TextureRect" parent="."]
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 182.0
+offset_left = -297.5
 offset_top = -421.0
-offset_right = 777.0
+offset_right = 297.5
 offset_bottom = 421.0
 grow_vertical = 2
 texture = ExtResource("1_8hs86")
