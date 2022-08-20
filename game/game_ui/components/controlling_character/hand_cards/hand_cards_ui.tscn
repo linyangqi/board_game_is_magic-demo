@@ -9,6 +9,7 @@ offset_bottom = 850.0
 scale = Vector2(0.3, 0.3)
 vertical_scroll_mode = 0
 script = ExtResource("1_deyp2")
+scroll_direction = 1
 
 [node name="Container" type="HBoxContainer" parent="."]
 clip_contents = true

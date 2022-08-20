@@ -40,6 +40,7 @@ func _gui_input(event):
 	elif event.is_action("zoom_out"):
 		scale_plan *= 0.9
 	scale_plan = clamp(scale_plan, MIN_SCALE, MAX_SCALE)
+	#scale = scale_plan
 	
 	if grabing and event is InputEventMouseMotion:
 #		position_plan.x += event.relative.x  * x_sensitivity * scale.x
@@ -48,8 +49,8 @@ func _gui_input(event):
 		position.y += event.relative.y  * y_sensitivity * scale.y
 	
 #不使用平滑的话，便没有物理帧控制的必要了，只用在事件发生时使用代码
-#func _physics_process(delta):
-#	scale = lerp(scale, scale_plan, delta * scale_acceleration)
+func _physics_process(delta):
+	scale = lerp(scale, scale_plan, delta * scale_acceleration)
 ##	position.x = lerp(position.x, position_plan.x, delta * x_acceleration)
 ##	position.y = lerp(position.y, position_plan.y, delta * y_acceleration)
 

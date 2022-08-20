@@ -1,0 +1,59 @@
+下面这个是可滚动区域，本来想做一下“平滑”功能，但是滚动的限制范围实在不明白，便算了
+目前的bug是，滚动这个区域，地图会跟着缩放
+——大概地图相机处理event时检查一下有没有被用过吧？
+
+
+
+extends ScrollContainer
+class_name GrabableScroll
+#但是不应该阻止原本的滚轮滚动
+#ps：目前存在一个bug：右键召唤细节后仍然可以拖动，而如果改成scroll_grab的话中键也拖不动了……？？？
+#好吧原来是打错字了（“grap”）
+
+enum ScrollDirection{VERTICAL=0, HORIZONTAL=1}
+@export var scroll_direction:ScrollDirection = 0
+var wheel_sensitivity = 100
+
+
+#var scroll_plan := Vector2(scroll_horizontal, scroll_vertical)
+#var scroll_agency := scroll_plan
+var grabing := false
+var x_sensitivity = 1
+var y_sensitivity = 1
+#var x_acceleration = 5
+#var y_acceleration = 5
+
+func _gui_input(event):
+	#与之前的TextureRect不同，这里存在一个“默认功能”，即滚轮控制
+	#如果不管是什么事件就accept_event()的话，滚轮控制就失效了
+	if event.is_action_pressed("scroll_grab"):
+		accept_event()
+		grabing = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	elif event.is_action_released("scroll_grab"):
+		accept_event()
+		grabing = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	#如果不全elif连上的话，好像就不能边缩放边拖动……？？
+#	elif event.is_action("scroll_up"):
+#		accept_event()
+#		scroll_plan.x += -wheel_sensitivity
+#	elif event.is_action("scroll_down"):
+#		accept_event()
+#		scroll_plan.x += wheel_sensitivity
+	
+	if grabing and event is InputEventMouseMotion:
+#		scroll_plan.x += -event.relative.x  * x_sensitivity
+#		scroll_plan.y += -event.relative.y  * y_sensitivity
+		scroll_horizontal += -event.relative.x  * x_sensitivity
+		scroll_vertical += -event.relative.y  * y_sensitivity
+	
+#	scroll_plan = clamp(scroll_plan,Vector2.ZERO, size)
+#
+#func _physics_process(delta): 
+#	#lerp不支持int类型
+#	scroll_agency.x = lerp(scroll_agency.x, scroll_plan.x, delta * x_acceleration)
+#	scroll_agency.y = lerp(scroll_agency.y, scroll_plan.y, delta * y_acceleration)
+#	scroll_horizontal = scroll_agency.x
+#	scroll_vertical = scroll_agency.y
+	
