@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqck527vt5qe2"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="PackedScene" uid="uid://cwi4tl2y0c4ue" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="1_4tvb1"]
-[ext_resource type="Texture2D" uid="uid://kbg6qrxpwn7o" path="res://icon.png" id="3_a67p0"]
+[ext_resource type="PackedScene" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_4tvb1"]
+[ext_resource type="Texture2D" uid="uid://kbg6qrxpwn7o" path="res://ui/pictures/icon.png" id="3_a67p0"]
 [ext_resource type="Material" uid="uid://bou6e0mchueut" path="res://ui/materials/light_mask_shader.tres" id="3_orxhv"]
 [ext_resource type="Texture2D" uid="uid://dj882l4wtvjww" path="res://ui/pictures/map/chessman/chessmen.png" id="4_2ya88"]
 

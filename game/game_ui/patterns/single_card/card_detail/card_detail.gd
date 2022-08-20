@@ -18,12 +18,12 @@ var position_plan = position
 var grabing := false
 var x_sensitivity = 1
 var y_sensitivity = 1
-var x_acceleration = 5
-var y_acceleration = 5
+#var x_acceleration = 5
+#var y_acceleration = 5
 
 func _gui_input(event):
 	accept_event()
-	if event.is_action("detail_clear"):
+	if event.is_action_pressed("detail_clear"):
 		free()
 		
 	if event.is_action_pressed("detail_grab"):
@@ -48,6 +48,8 @@ func _gui_input(event):
 		
 func _physics_process(delta):
 	scale = lerp(scale, scale_plan, delta * scale_acceleration)
-	position.x = lerp(position.x, position_plan.x, delta * x_acceleration)
-	position.y = lerp(position.y, position_plan.y, delta * y_acceleration)
+#	position.x = lerp(position.x, position_plan.x, delta * x_acceleration)
+#	position.y = lerp(position.y, position_plan.y, delta * y_acceleration)
+	position.x = position_plan.x
+	position.y = position_plan.y
 	

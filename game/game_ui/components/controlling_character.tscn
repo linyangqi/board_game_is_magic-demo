@@ -1,0 +1,127 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0bsqf2sd1ci"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_n7p06"]
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character.gd" id="2_11e0r"]
+[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="2_33fe7"]
+[ext_resource type="Texture2D" uid="uid://pw03b3wt8qq2" path="res://ui/pictures/cards/正式版角色牌/IMG_001.png" id="4_ffinu"]
+[ext_resource type="PackedScene" uid="uid://cnjnoru5rl3gk" path="res://game/game_ui/patterns/properties/properties.tscn" id="5_474e8"]
+[ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="6_mwr1q"]
+
+[node name="ControllingCharacter" type="Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -379.0
+theme = ExtResource("1_n7p06")
+script = ExtResource("2_11e0r")
+
+[node name="Avatar" parent="." instance=ExtResource("2_33fe7")]
+offset_left = 64.0
+offset_top = 29.0
+offset_right = 821.0
+offset_bottom = 1100.0
+scale = Vector2(0.282764, 0.282764)
+texture = ExtResource("4_ffinu")
+
+[node name="Properties" parent="." instance=ExtResource("5_474e8")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 312.0
+offset_top = 36.0
+offset_right = 530.0
+offset_bottom = 335.0
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="HandCards" type="ScrollContainer" parent="."]
+offset_left = 748.0
+offset_top = 34.0
+offset_right = 1866.0
+offset_bottom = 301.0
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HandCards"]
+clip_contents = true
+offset_right = 2036.0
+offset_bottom = 259.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="PhysicalAttack" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_right = 200.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack2" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 204.0
+offset_right = 404.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack3" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 408.0
+offset_right = 608.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack4" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 612.0
+offset_right = 812.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack5" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 816.0
+offset_right = 1016.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack6" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1020.0
+offset_right = 1220.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack7" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1224.0
+offset_right = 1424.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack8" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1428.0
+offset_right = 1628.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack10" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+offset_left = 1632.0
+offset_right = 1832.0
+offset_bottom = 259.0
+
+[node name="PhysicalAttack9" parent="HandCards/HBoxContainer" instance=ExtResource("6_mwr1q")]
+custom_minimum_size = Vector2(200, 0)
+offset_left = 1836.0
+offset_right = 2036.0
+offset_bottom = 259.0
+size_flags_horizontal = 3
+size_flags_vertical = 3

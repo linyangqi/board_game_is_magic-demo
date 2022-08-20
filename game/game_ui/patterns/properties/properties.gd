@@ -13,14 +13,14 @@ var origin:Node # 初始角色属性
 #或者还是不依赖外部吧……
 
 ###########################
-##这部分测试用
-@onready var the_character = get_child(0)
-
-func _ready():
-	#ready()
-	link_character(the_character)
-	update_properties() #update这个函数名被父类占用了
-	print(Color(3,3,3,3).to_html())
+###这部分测试用
+#@onready var the_character = get_child(0)
+#
+#func _ready():
+#	#ready()
+#	link_character(the_character)
+#	update_properties() #update这个函数名被父类占用了
+#	print(Color(3,3,3,3).to_html())
 
 #func _on_timer_timeout():
 #	the_character.max_health = ( the_character.max_health + 1) % 30
@@ -28,7 +28,7 @@ func _ready():
 
 #############################
 
-func link_character(linking_character:Node):
+func init(linking_character:Node):
 	#原理：Node在没有new()时是传递引用
 	#实质上也可以直接外面用porperties.characte = character吧……
 	#不过写个函数名还是能提示一下功能以及用法
@@ -75,7 +75,7 @@ func range_discribe(property_name:String)->String:
 	else:
 		return "ERROR"
 
-func update_properties():
+func _update(): #update()被父类用了
 	#text = origin_text % ["狮狮", 233, colored_int("max_health",10)]
 	#代码换行用“\”结尾，但是这行后面连空格也别加了，也没有注释可言
 	#另一种方法是“+=”法，这样每行后面还能有注释，而且也便于调整

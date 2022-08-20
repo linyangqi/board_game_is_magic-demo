@@ -23,10 +23,13 @@ var character:Node#获取牌库文件夹里的节点，并且要挂在树上
 #现在角色的主要信息都在实例化的这个character上了
 #目前的方式，相当于把“角色内部属性”与“外部工具”区分开了
 
+#另外考虑“队伍”？……在manager中吧？
+var team_id:int
+
 var coordinate:Vector2i #地图位置
 #狮狮两个防具栏……不过目前还是先做大部分通用的方式吧？
 
-enum EquipmentIndex{element,weapon,armor,backup}
+#enum EquipmentIndex{element,weapon,armor,backup}
 #var equipment :Array[Array]=[[],[],[],[]] #目前不支持嵌套类型……这里装Node吧？
 
 #目前的逻辑是，游戏内部逻辑使用牌的名称来计算逻辑
