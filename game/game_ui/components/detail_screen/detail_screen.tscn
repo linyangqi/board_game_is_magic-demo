@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://3x08ep2faqiy"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_1b7mc"]
+[ext_resource type="Script" path="res://game/game_ui/detail_screen.gd" id="2_u5iah"]
+
+[node name="DetailScreen" type="Control"]
+theme = ExtResource("1_1b7mc")
+script = ExtResource("2_u5iah")

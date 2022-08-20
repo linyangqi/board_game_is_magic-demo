@@ -50,3 +50,9 @@ Object大概用于数据存储结构比较好，动态处理还是交给manage�
 发现一个坑，event.is_action()，会同时把pressed和released算入
 而正常情况下一般都是is_action_pressed()比较好，包括滚动区域的滚动默认也是检测pressed
 所以还是写完吧，往往有很多unhandled的released事件……
+
+————————————————————————————————
+另外注意一下唯一名的写法
+相对路径是$"xxxx"这样的
+但是唯一名是%xxxx
+相当于把$换成%了

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://doewuu4yym0hf"]
+
+[ext_resource type="Script" path="res://game/game_ui/components/detail_screen/detail_view_agent.gd" id="1_v1itj"]
+
+[node name="DetailViewAgent" type="Node"]
+script = ExtResource("1_v1itj")

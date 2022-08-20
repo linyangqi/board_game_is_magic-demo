@@ -7,11 +7,7 @@ var selected := false
 func _gui_input(event):
 	#函数复写会直接清空父类吗……
 	if event.is_action_pressed("check_detail"):
-		find_screen()
-		var detail = detail_view.instantiate()
-		detail_screen.add_child(detail)
-#		get_tree().root.add_child(detail)
-		detail.texture = texture
+		add_detail_view()
 	elif event.is_action_pressed("select_card"):
 		selected = !selected
 	

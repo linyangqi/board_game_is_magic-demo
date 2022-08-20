@@ -2,6 +2,7 @@ extends Panel
 
 @onready var avatar = $Avatar
 @onready var properties = $Properties
+@onready var hand_cards = $HandCards
 
 
 var master:Player #客户端玩家身份，在客户端保持不变
@@ -16,12 +17,8 @@ var active = false #是否在自己回合
 #############这部分测试用############
 
 func _ready():
-	master = Player.new()
-	character_place = CharacterPlace.new()
-	character_place.character = load(
-		"res://game/card_library/characters/list/extension_2/小梅.tscn"
-		).instantiate()
-	_update()
+	#要测试牌的话，就得在main层级测试了吧
+	pass
 	
 
 ####################################
@@ -29,23 +26,31 @@ func _ready():
 
 
 
-func init():
-	pass
-
-
-
-func change_character_place():
-	pass
-
+func init(linking_character_place:CharacterPlace):
+	
+	character_place = linking_character_place
+	master = character_place.master
+	#avatar本身没有更下一级，结构过于简单，没有自身设计的init()函数
+	avatar.texture = character_place.character.texture
+	properties.init(character_place.character)
+	hand_cards.init(character_place.hand_cards)
+	_update()
 
 
 func _update():
-	avatar.texture = character_place.character.texture
-	properties.init(character_place.character)
 	properties._update()
-	# Replace with function body.
-	#	#ready()
-#	link_character(the_character)
-#	update_properties() #update这个函数名被父类占用了
-#	print(Color(3,3,3,3).to_html())
+	hand_cards._update()
+
+
+func change_character_place(new_character_place:CharacterPlace):
+	#先换角色
+	#ps：这里假定Player并不更换……不过还是换一下吧……比如一台电脑多个Player?（“单机”）
+	character_place = new_character_place
+	#再更新ui
+	init(character_place)
+
+
+
+
+
 

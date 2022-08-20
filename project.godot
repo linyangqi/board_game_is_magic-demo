@@ -197,6 +197,7 @@ config/icon="res://ui/pictures/icon.png"
 
 MusicDj="*res://ui/audio/music/music_dj.tscn"
 DefaultShortcut="*res://ui/display/default_shortcut.tscn"
+DetailViewAgent="*res://game/game_ui/components/detail_screen/detail_view_agent.tscn"
 
 [display]
 

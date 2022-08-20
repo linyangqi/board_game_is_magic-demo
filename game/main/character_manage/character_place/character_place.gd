@@ -97,7 +97,8 @@ func final_heal(healing_point:int): #真正的回血
 
 
 func draw_card(count:int = 2):
-	pass
+	#但是注意可能有特殊效果干扰
+	hand_cards.append_array(decks.take_resource(count))
 
 
 func drop_handcard(count:int = 1, type:String = "self"):
