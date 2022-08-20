@@ -1,8 +1,14 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://crqkktet2i5ow"]
 
-[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/species/other/other_species.tscn" id="1_trbgp"]
+[ext_resource type="PackedScene" uid="uid://bwbvibiojws2u" path="res://game/card_library/characters/ponies/species/other/other_species.tscn" id="1_trbgp"]
 [ext_resource type="Texture2D" uid="uid://c8ec1tl2qg060" path="res://ui/pictures/cards/吉祥物扩展包/IMG_037.png" id="2_duwjt"]
 
 [node name="睦睦" instance=ExtResource("1_trbgp")]
 texture = ExtResource("2_duwjt")
 character_name = "睦睦"
+max_health = 12
+mental_attack = 1
+physical_attack = 2
+magic_attack = 2
+move_speed = 1
+metadata/_edit_pinned_properties_ = [&"max_health", &"mental_attack", &"physical_attack", &"magic_attack", &"move_speed"]

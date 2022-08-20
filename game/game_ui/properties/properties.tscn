@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhrn68ftgel0v"]
+[gd_scene load_steps=4 format=3 uid="uid://bhrn68ftgel0v"]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_5r3nh"]
 [ext_resource type="Script" path="res://game/game_ui/properties/properties.gd" id="2_q18nf"]
+[ext_resource type="PackedScene" uid="uid://b2mwm0qxho0cs" path="res://game/card_library/characters/ponies/list/extension_2/小梅.tscn" id="3_fqeas"]
 
 [node name="Properties" type="RichTextLabel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -604.0
-offset_bottom = -341.0
+offset_right = -254.0
+offset_bottom = 11.0
 theme = ExtResource("1_5r3nh")
 theme_override_font_sizes/normal_font_size = 24
 theme_override_font_sizes/bold_font_size = 32
@@ -15,6 +16,13 @@ theme_override_font_sizes/italics_font_size = 24
 theme_override_font_sizes/bold_italics_font_size = 24
 theme_override_font_sizes/mono_font_size = 24
 bbcode_enabled = true
-text = "[font_size=40]%s[/font_size]
-体力: %s / %s"
+text = "[font_size=40]角色名[/font_size]
+体力值
+心攻
+物攻
+法攻
+移速"
 script = ExtResource("2_q18nf")
+
+[node name="小梅" parent="." instance=ExtResource("3_fqeas")]
+position = Vector2(642, 491)

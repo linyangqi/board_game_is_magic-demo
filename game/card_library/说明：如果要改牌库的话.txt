@@ -1,2 +1,5 @@
 改牌库就在这里改，并且更新card_library与deck_plan
 改牌面的话在前面ui/pictures/cards里面改，或者传新图然后在godot场景里面换texture
+
+
+另外ps：改了父类的代码以后如果场景检查器列出的属性没更新，别着急，关闭场景重开应该就更新了
