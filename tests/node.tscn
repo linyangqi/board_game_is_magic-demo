@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://clvwr27o1qb83"]
 
-[ext_resource type="PackedScene" uid="uid://b8eiybbn6mmpg" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="1_0pa8c"]
+[ext_resource type="PackedScene" uid="uid://cwi4tl2y0c4ue" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="1_0pa8c"]
 [ext_resource type="Texture2D" uid="uid://c4ju6ohajqp4v" path="res://ui/pictures/cards/正式版角色牌/IMG_018.png" id="2_py1uk"]
+[ext_resource type="PackedScene" uid="uid://bhrn68ftgel0v" path="res://game/game_ui/properties/properties.tscn" id="3_upuoq"]
 
 [sub_resource type="GDScript" id="GDScript_jh1ru"]
 script/source = "extends Node
@@ -28,3 +29,12 @@ offset_right = -1170.0
 offset_bottom = -13.0
 scale = Vector2(0.411683, 0.411683)
 texture_normal = ExtResource("2_py1uk")
+
+[node name="Properties" parent="CardInUI" instance=ExtResource("3_upuoq")]
+offset_left = 869.601
+offset_top = 111.736
+offset_right = 869.601
+offset_bottom = 111.736
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_layout_mode = 1
