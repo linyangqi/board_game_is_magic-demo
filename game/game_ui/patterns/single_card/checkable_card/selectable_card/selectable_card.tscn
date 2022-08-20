@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://7vbactgf5llc"]
+
+[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_exuf0"]
+[ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_008.png" id="2_5ggr0"]
+[ext_resource type="Script" path="res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.gd" id="2_nx7af"]
+
+[node name="SelectableCard" instance=ExtResource("1_exuf0")]
+texture = ExtResource("2_5ggr0")
+script = ExtResource("2_nx7af")

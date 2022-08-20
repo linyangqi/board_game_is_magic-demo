@@ -1,26 +1,21 @@
-extends TextureButton
+extends CheckableCard
+#仅作显示用，甚至不带卡牌名称，不过可以返回编号之类
 
-@export var card_name:String = ""
-
-
-func _ready():
-	pass
-
-var rect := Rect2(Vector2.ZERO,size)
+var selected := false
 
 
-func _on_card_in_ui_toggled(button_pressed):
-	if button_pressed:
+func _gui_input(event):
+	#函数复写会直接清空父类吗……
+	if event.is_action_pressed("check_detail"):
+		find_screen()
+		var detail = detail_view.instantiate()
+		detail_screen.add_child(detail)
+#		get_tree().root.add_child(detail)
+		detail.texture = texture
+	elif event.is_action_pressed("select_card"):
+		selected = !selected
+	
+	if selected:
 		modulate = Color.YELLOW
 	else:
 		modulate = Color.WHITE
-		
-func _input(event):
-#	if event is InputEventMouseButton and event.is_action("read_card") :
-	if rect.has_point(event.position):
-		print(233)
-		
-func _on_card_in_ui_toggled(button_pressed):
-	var detail = detail_view.instantiate()
-	get_tree().root.add_child(detail)
-	detail.get_node("Texture").texture = texture_normal

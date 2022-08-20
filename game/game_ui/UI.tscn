@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfrlsnryb1x6s"]
+[gd_scene load_steps=5 format=3 uid="uid://bkejkvxhwi4r3"]
 
 [ext_resource type="Script" path="res://game/game_ui/UI.gd" id="1_onxev"]
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
 [ext_resource type="PackedScene" path="res://game/game_ui/patterns/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
-[ext_resource type="PackedScene" uid="uid://d0bsqf2sd1ci" path="res://game/game_ui/components/controlling_character.tscn" id="4_rfx68"]
+[ext_resource type="PackedScene" uid="uid://b77ajaqnvptrt" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_onxev")

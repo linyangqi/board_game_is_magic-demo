@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://b77ajaqnvptrt"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_7wr2i"]
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/controlling_character.gd" id="2_xdfkr"]
+[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="3_fi0ee"]
+[ext_resource type="Texture2D" uid="uid://pw03b3wt8qq2" path="res://ui/pictures/cards/正式版角色牌/IMG_001.png" id="4_vnwso"]
+[ext_resource type="PackedScene" uid="uid://cnjnoru5rl3gk" path="res://game/game_ui/patterns/properties/properties.tscn" id="5_yfyjy"]
+[ext_resource type="PackedScene" uid="uid://dm5htxqdpc2lu" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.tscn" id="6_dwlgt"]
+
+[node name="ControllingCharacter" type="Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -379.0
+theme = ExtResource("1_7wr2i")
+script = ExtResource("2_xdfkr")
+
+[node name="Avatar" parent="." instance=ExtResource("3_fi0ee")]
+offset_left = 52.0
+offset_top = 25.0
+offset_right = 647.0
+offset_bottom = 867.0
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("4_vnwso")
+
+[node name="Properties" parent="." instance=ExtResource("5_yfyjy")]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 312.0
+offset_top = 36.0
+offset_right = 530.0
+offset_bottom = 335.0
+metadata/_edit_layout_mode = 1
+metadata/_edit_use_custom_anchors = true
+
+[node name="HandCards" parent="." instance=ExtResource("6_dwlgt")]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1170.0
+offset_top = -131.5
+offset_right = 2343.0
+offset_bottom = 718.5
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_layout_mode = 1

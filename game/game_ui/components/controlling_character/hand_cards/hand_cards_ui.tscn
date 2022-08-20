@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm5htxqdpc2lu"]
+
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.gd" id="1_deyp2"]
+[ext_resource type="PackedScene" uid="uid://7vbactgf5llc" path="res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.tscn" id="2_4gd04"]
+
+[node name="HandCards" type="ScrollContainer"]
+offset_right = 3513.0
+offset_bottom = 850.0
+scale = Vector2(0.3, 0.3)
+vertical_scroll_mode = 0
+script = ExtResource("1_deyp2")
+
+[node name="Container" type="HBoxContainer" parent="."]
+clip_contents = true
+offset_right = 7184.0
+offset_bottom = 842.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="SelectableCard" parent="Container" instance=ExtResource("2_4gd04")]
+
+[node name="SelectableCard2" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 599.0
+offset_right = 1194.0
+
+[node name="SelectableCard3" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 1198.0
+offset_right = 1793.0
+
+[node name="SelectableCard4" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 1797.0
+offset_right = 2392.0
+
+[node name="SelectableCard5" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 2396.0
+offset_right = 2991.0
+
+[node name="SelectableCard6" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 2995.0
+offset_right = 3590.0
+
+[node name="SelectableCard7" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 3594.0
+offset_right = 4189.0
+
+[node name="SelectableCard8" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 4193.0
+offset_right = 4788.0
+
+[node name="SelectableCard9" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 4792.0
+offset_right = 5387.0
+
+[node name="SelectableCard10" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 5391.0
+offset_right = 5986.0
+
+[node name="SelectableCard11" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 5990.0
+offset_right = 6585.0
+
+[node name="SelectableCard12" parent="Container" instance=ExtResource("2_4gd04")]
+offset_left = 6589.0
+offset_right = 7184.0

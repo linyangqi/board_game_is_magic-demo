@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7ogc86jk2l5x"]
+
+[sub_resource type="GDScript" id="GDScript_a4tr7"]
+script/source = "extends Node
+
+#方便操作：鼠标滚轮缩放，中键或右键拖动地图
+#若有手机版……加触屏按钮吧？或者touch screen
+
+#如果要方便大地图又不至于被UI挡住，还是一定要有这一条的
+#另外，tilemap动态操作来表示玩家，应该还是很有必要吧
+
+#直接侦测鼠标事件……但是“焦点”……？？怎么获取呢
+#还有一个“按键后拖动”的效果……？？
+@onready var parent:Node = get_parent()
+
+@onready var scroll_plan_h:int = parent.scroll_horizontal
+@onready var scroll_plan_v:int = parent.scroll_vertical
+var grabing := false
+var h_sensitivity := 1
+var v_sensitivity := 1
+var h_acceleration := 5
+var v_acceleration := 5
+
+func _input(event):
+	if event.is_action_pressed(\"scroll_grab\"):
+		grabing = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	elif event.is_action_released(\"scroll_grab\"):
+		grabing = false
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	if grabing and event is InputEventMouseMotion:
+		scroll_plan_h += event.relative.x  * h_sensitivity
+		scroll_plan_v += event.relative.y  * v_sensitivity
+	
+		
+func _physics_process(delta):
+#	parent.scroll_horizontal = lerp(parent.scroll_horizontal, scroll_plan_h, delta * h_acceleration)
+#	parent.scroll_vertical = lerp(parent.scroll_vertical, scroll_plan_v, delta * v_acceleration)
+	parent.scroll_horizontal = scroll_plan_h
+	parent.scroll_vertical = scroll_plan_v
+	
+"
+
+[node name="ScrollIsMovable" type="Node"]
+script = SubResource("GDScript_a4tr7")
