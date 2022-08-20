@@ -2,7 +2,8 @@ extends Object
 class_name CardLibrary
 
 const ROOT_PATH = "res://game/card_library/"
-const CHARACTER_PATH = ROOT_PATH + "characters/ponies/list/"
+const CHARACTER_PATH = ROOT_PATH + "characters/list/" 
+#新架构下角色路径就在常量这里删了个ponies，不用在下面一个个改了√
 const EVENT_PATH = ROOT_PATH + "events/list/"
 const PLAYABLE_PATH = ROOT_PATH + "playable/"
 const ACTION_PATH = PLAYABLE_PATH + "actions/"
@@ -12,8 +13,9 @@ const TOOL_PATH = PLAYABLE_PATH + "tools/list/"
 #后面Deck会建立卡牌名的列表Array，在实例化操作时会在这里调用
 #所以“奖励牌”与“摸牌堆”的区分也是在deck层面的
 
-#扁平化，还是不分子类了……不过要注意不同种类的牌的index也要不重复
+
 const CARD_PATH :Dictionary = {
+	#扁平化，不分子类了……不过要注意不同种类的牌的index也要不重复
 	#角色牌，注意这里index应与节点中character_name属性相同
 		#因为”寻源“是利用character_name的
 		#比如 CardLibrary.load_card(character.character_name)

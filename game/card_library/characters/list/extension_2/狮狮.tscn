@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://e3ekbner0nld"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_vnp2o"]
+[ext_resource type="Texture2D" uid="uid://b4viasauwnxbh" path="res://ui/pictures/cards/吉祥物扩展包/IMG_033.png" id="2_m4jti"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/extension_2/狮狮.gd" id="3_yj2js"]
+
+[node name="狮狮" instance=ExtResource("1_vnp2o")]
+texture = ExtResource("2_m4jti")
+script = ExtResource("3_yj2js")
+character_name = "狮狮"
+max_health = 14
+mental_attack = 1
+physical_attack = 2
+magic_attack = 1
+metadata/_edit_pinned_properties_ = [&"max_health", &"mental_attack", &"physical_attack", &"magic_attack"]

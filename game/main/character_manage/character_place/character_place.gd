@@ -42,7 +42,7 @@ func select_character(option_count:int = 4):
 	#ps:幻形灵的技能不是这个……幻形灵另外用一个copy_ability吧（或许在ability列表？/节点？）
 	var character_index = await game_main.character_select(master,option_count)
 	#不过实际上这个index用的基本上就是名字……不过还是按用处区分一下吧，比如同名重制角色
-	var character_file = CardLibrary.CARD_PATH["characters"][character_index]
+	var character_file = CardLibrary.CARD_PATH[character_index]
 	character = load(character_file).instantiate()
 	manager.waiting -= 1 #局部变量没问题吗
 	

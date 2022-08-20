@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhrn68ftgel0v"]
+[gd_scene load_steps=4 format=3 uid="uid://cghyyxcv5ad66"]
 
-[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_5r3nh"]
+[ext_resource type="Theme" path="res://ui/theme/ui_theme.tres" id="1_5r3nh"]
 [ext_resource type="Script" path="res://game/game_ui/properties/properties.gd" id="2_q18nf"]
-[ext_resource type="PackedScene" uid="uid://b2mwm0qxho0cs" path="res://game/card_library/characters/ponies/list/extension_2/小梅.tscn" id="3_fqeas"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/list/extension_2/小梅.tscn" id="3_fqeas"]
 
 [node name="Properties" type="RichTextLabel"]
 anchor_right = 1.0

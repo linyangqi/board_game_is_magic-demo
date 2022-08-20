@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx7xc56ocxpu1"]
+
+[ext_resource type="PackedScene" uid="uid://8aabfv3o2d65" path="res://game/card_library/characters/species/character_basic.tscn" id="1_r8ni6"]
+[ext_resource type="Script" path="res://game/card_library/characters/species/earth_pony/earth_pony.gd" id="2_hf4sr"]
+
+[node name="EarthPony" instance=ExtResource("1_r8ni6")]
+script = ExtResource("2_hf4sr")

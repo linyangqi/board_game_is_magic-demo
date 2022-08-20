@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1wemqsq7ylqv"]
+
+[ext_resource type="PackedScene" uid="uid://dtnvu4sql4a4e" path="res://game/card_library/characters/species/pegasus/pegasus.tscn" id="1_0iixd"]
+[ext_resource type="Texture2D" uid="uid://dm0ibmp7pfyxt" path="res://ui/pictures/cards/吉祥物扩展包/IMG_034.png" id="2_0aema"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/extension_2/小梅.gd" id="3_vxkfy"]
+
+[node name="小梅" instance=ExtResource("1_0iixd")]
+texture = ExtResource("2_0aema")
+script = ExtResource("3_vxkfy")
+character_name = "小梅"
+max_health = 13
+mental_attack = 2
+physical_attack = 1
+magic_attack = 1
+metadata/_edit_pinned_properties_ = [&"max_health", &"mental_attack", &"physical_attack", &"magic_attack"]

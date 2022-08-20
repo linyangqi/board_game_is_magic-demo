@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="Script" path="res://game/card_library/characters/abilities/list/species_abilities/unicorn_ability.gd" id="1_dudeg"]
-
-[node name="UnicornAbility" type="Node"]
-script = ExtResource("1_dudeg")
-ability_name = "独角种族技能"

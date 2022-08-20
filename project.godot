@@ -9,11 +9,6 @@
 config_version=5
 
 _global_script_classes=[{
-"base": "Node",
-"class": &"AbilityBasic",
-"language": &"GDScript",
-"path": "res://game/card_library/characters/abilities/ability_basic.gd"
-}, {
 "base": "PlayableCard",
 "class": &"ActionCard",
 "language": &"GDScript",
@@ -22,7 +17,7 @@ _global_script_classes=[{
 "base": "CharacterBasic",
 "class": &"Alicorn",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/alicorn/alicorn.gd"
+"path": "res://game/card_library/characters/species/alicorn/alicorn.gd"
 }, {
 "base": "ToolCard",
 "class": &"ArmorCard",
@@ -47,7 +42,7 @@ _global_script_classes=[{
 "base": "Node",
 "class": &"CharacterBasic",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/character_basic.gd"
+"path": "res://game/card_library/characters/species/character_basic.gd"
 }, {
 "base": "Node",
 "class": &"CharacterPlace",
@@ -77,7 +72,7 @@ _global_script_classes=[{
 "base": "CharacterBasic",
 "class": &"EarthPony",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/earth_pony/earth_pony.gd"
+"path": "res://game/card_library/characters/species/earth_pony/earth_pony.gd"
 }, {
 "base": "Node",
 "class": &"Effect",
@@ -112,17 +107,17 @@ _global_script_classes=[{
 "base": "CharacterBasic",
 "class": &"MultiCharacter",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/multi/multi_character.gd"
+"path": "res://game/card_library/characters/species/multi/multi_character.gd"
 }, {
 "base": "CharacterBasic",
 "class": &"OtherSpecies",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/other/other_species.gd"
+"path": "res://game/card_library/characters/species/other/other_species.gd"
 }, {
 "base": "CharacterBasic",
 "class": &"Pegasus",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/pegasus/pegasus.gd"
+"path": "res://game/card_library/characters/species/pegasus/pegasus.gd"
 }, {
 "base": "Node",
 "class": &"PlayableCard",
@@ -147,7 +142,7 @@ _global_script_classes=[{
 "base": "CharacterBasic",
 "class": &"Unicorn",
 "language": &"GDScript",
-"path": "res://game/card_library/characters/ponies/species/unicorn/unicorn.gd"
+"path": "res://game/card_library/characters/species/unicorn/unicorn.gd"
 }, {
 "base": "ToolCard",
 "class": &"WeaponCard",
@@ -155,7 +150,6 @@ _global_script_classes=[{
 "path": "res://game/card_library/playable/tools/types/weapon/weapon_card.gd"
 }]
 _global_script_class_icons={
-"AbilityBasic": "",
 "ActionCard": "",
 "Alicorn": "",
 "ArmorCard": "",

@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="Script" path="res://game/card_library/characters/abilities/list/species_abilities/alicorn_ability.gd" id="1_rcfer"]
-
-[node name="AlicornAbility" type="Node"]
-script = ExtResource("1_rcfer")
-ability_name = "天角种族技能"

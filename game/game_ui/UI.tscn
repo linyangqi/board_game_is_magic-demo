@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcrryjlgre8r1"]
+[gd_scene load_steps=8 format=3 uid="uid://dddej0s1f8faj"]
 
 [ext_resource type="Script" path="res://game/game_ui/UI.gd" id="1_onxev"]
-[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
-[ext_resource type="PackedScene" uid="uid://bmvxflw2n672u" path="res://game/game_ui/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
-[ext_resource type="PackedScene" uid="uid://sf2ixqkbhmm2" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="3_4uxp0"]
-[ext_resource type="PackedScene" uid="uid://cwi4tl2y0c4ue" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="4_0a1ko"]
-[ext_resource type="Texture2D" uid="uid://c8ec1tl2qg060" path="res://ui/pictures/cards/吉祥物扩展包/IMG_037.png" id="5_4lig7"]
+[ext_resource type="Theme" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
+[ext_resource type="PackedScene" path="res://game/game_ui/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/list/extension_2/狮狮.tscn" id="3_4uxp0"]
+[ext_resource type="PackedScene" path="res://game/game_ui/single_card/checkable_card/checkable_card.tscn" id="4_0a1ko"]
+[ext_resource type="Texture2D" path="res://ui/pictures/cards/吉祥物扩展包/IMG_037.png" id="5_4lig7"]
 [ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/physical/physical_attack.tscn" id="5_ck7ql"]
 
 [node name="UI" type="CanvasLayer"]

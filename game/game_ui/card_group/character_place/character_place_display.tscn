@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmvxflw2n672u"]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_5jgid"]
-[ext_resource type="PackedScene" path="res://game/card_library/characters/ponies/list/extension_2/狮狮.tscn" id="2_tw03l"]
+[ext_resource type="PackedScene" path="res://game/card_library/characters/list/extension_2/狮狮.tscn" id="2_tw03l"]
 
 [node name="CharacterPlaceDisplay" type="Panel"]
 custom_minimum_size = Vector2(300, 100)
