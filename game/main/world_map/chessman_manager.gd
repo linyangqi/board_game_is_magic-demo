@@ -17,7 +17,6 @@ func _ready():
 	#建立引用，不过真正实操时，就不是从节点到数组，而是从数组挂节点了
 	for chessman in get_children():
 		all_chessmen.append(chessman) 
-	chess_offset_adjust(Vector2i(0,0))
 
 ##################
 

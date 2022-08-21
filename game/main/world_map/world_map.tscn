@@ -25,28 +25,31 @@ script = ExtResource("2_6ardm")
 script = ExtResource("4_8b3l3")
 
 [node name="Chessman" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman2" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman3" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman4" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman5" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman6" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman7" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(141, 90)
 
 [node name="Chessman8" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(97, 166)
 
 [node name="Chessman9" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(47, 21)
+position = Vector2(64, 171)
+
+[node name="Chessman10" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(253, 53)
