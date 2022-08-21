@@ -114,6 +114,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/heal/healing_card.gd"
 }, {
+"base": "Object",
+"class": &"MapLibrary",
+"language": &"GDScript",
+"path": "res://game/map/map_library.gd"
+}, {
 "base": "CharacterBasic",
 "class": &"MultiCharacter",
 "language": &"GDScript",
@@ -181,6 +186,7 @@ _global_script_class_icons={
 "EventCard": "",
 "GrabableScroll": "",
 "HealingCard": "",
+"MapLibrary": "",
 "MultiCharacter": "",
 "OtherSpecies": "",
 "Pegasus": "",

@@ -20,7 +20,6 @@ func _ready():
 
 ##################
 
-
 func chess_offset_adjust(coordinate:Vector2i):
 	var target_chessmen:Array[Chessman] = []
 	for chessman in all_chessmen: #获取同格棋子
@@ -54,3 +53,7 @@ func chess_offset_adjust(coordinate:Vector2i):
 					start_point.y + offset_tile_size.y * RECT_SIZE.y
 				) 
 			)
+
+
+
+
