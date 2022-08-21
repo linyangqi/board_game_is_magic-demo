@@ -1,0 +1,33 @@
+这个代码原本是打算用图块表示棋子，但是这样不能显示棋子同格
+新的方案是用Sprite表示棋子，并且利用map_to_world之类的函数确定显示位置
+棋子的管理也交给了ChessmanManager
+不过地形的改变，大概还能交给worldmap自身吧（比如雪地事件）
+
+
+extends Node
+#ps:相机在CanasLayer好像就不管用了……所以并不能放在“UI”下
+
+
+@onready var map = $Map
+
+const CHESSMAN_ATLAS=[
+	Vector2(0,0), Vector2(1,0), Vector2(2,0),
+	Vector2(0,1), Vector2(1,1), Vector2(2,1),
+	Vector2(0,2), Vector2(1,2),
+]
+
+var chess_coordinates:Array[Vector2i]
+#但是这样有一个问题：同格（Tiles在一层只支持同一张图……可能还是外部调用吧？
+
+
+func update_chessmen(new_chess_coordinates:Array[Vector2i]):
+	for i in chess_coordinates.size():
+		map.set_cell(1,chess_coordinates[i],1)
+	for i in new_chess_coordinates.size():
+		map.set_cell(1,new_chess_coordinates[i],1,CHESSMAN_ATLAS[i])
+	chess_coordinates = new_chess_coordinates
+
+
+func _ready():
+	for i in range(10):
+		map.set_cell(1,Vector2(i,-1),1,CHESSMAN_ATLAS[0])

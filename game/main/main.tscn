@@ -12,11 +12,12 @@
 [node name="Main" type="Node"]
 script = ExtResource("1_ng00m")
 
+[node name="WorldMap" parent="." instance=ExtResource("1_dlfit")]
+position = Vector2(1004.71, 432.828)
+
 [node name="UI" parent="." instance=ExtResource("3_kgpll")]
 
 [node name="EffectManager" parent="." instance=ExtResource("3_tf1em")]
-
-[node name="WorldMap" parent="." instance=ExtResource("1_dlfit")]
 
 [node name="DeckManager" parent="." instance=ExtResource("9_b7in7")]
 

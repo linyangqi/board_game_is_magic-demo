@@ -26,10 +26,10 @@ texture = ExtResource("4_vnwso")
 [node name="Properties" parent="." instance=ExtResource("5_yfyjy")]
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 312.0
-offset_top = 36.0
-offset_right = 530.0
-offset_bottom = 335.0
+offset_left = 302.0
+offset_top = 20.0
+offset_right = 520.0
+offset_bottom = 319.0
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 

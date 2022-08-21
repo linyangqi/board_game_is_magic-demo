@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://game/game_ui/components/detail_screen/card_detail/is_movable.gd" id="1_mx1mh"]
+
+[node name="IsMovable" type="Node"]
+script = ExtResource("1_mx1mh")

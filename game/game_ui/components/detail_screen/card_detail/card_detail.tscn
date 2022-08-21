@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5nk0q8jntilb"]
+[gd_scene load_steps=3 format=3 uid="uid://b3ti58swh5yod"]
 
-[ext_resource type="Texture2D" uid="uid://b8dndfbq7hwrv" path="res://ui/pictures/cards/吉祥物扩展包/IMG_031.png" id="1_1oh1p"]
-[ext_resource type="Script" path="res://game/game_ui/patterns/single_card/card_detail/card_detail.gd" id="2_eysxo"]
+[ext_resource type="Texture2D" uid="uid://b8dndfbq7hwrv" path="res://ui/pictures/cards/吉祥物扩展包/IMG_031.png" id="1_43avq"]
+[ext_resource type="Script" path="res://game/game_ui/components/detail_screen/card_detail/card_detail.gd" id="2_4sgb5"]
 
 [node name="CardDetail" type="TextureRect"]
 offset_left = 635.0
@@ -10,8 +10,8 @@ offset_right = 1230.0
 offset_bottom = 944.0
 pivot_offset = Vector2(299, 412)
 mouse_default_cursor_shape = 2
-texture = ExtResource("1_1oh1p")
-script = ExtResource("2_eysxo")
+texture = ExtResource("1_43avq")
+script = ExtResource("2_4sgb5")
 
 [node name="Describe" type="Control" parent="."]
 anchor_left = 0.5

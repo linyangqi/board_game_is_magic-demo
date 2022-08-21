@@ -23,19 +23,20 @@ var y_acceleration = 5
 
 func _unhandled_input(event):
 	
-	if event.is_action_pressed("map_grab"):
+	if event.is_action_pressed("zoom_reset") and event.double_click:
+		zoom_plan = Vector2(1,1)
+	elif event.is_action_pressed("zoom_in"):
+		zoom_plan *= 1.1
+	elif event.is_action_pressed("zoom_out"):
+		zoom_plan *= 0.9
+	
+	elif event.is_action_pressed("map_grab"):
 		grabing = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	elif event.is_action_released("map_grab"):
 		grabing = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
-	elif event.is_action_pressed("zoom_reset"):
-		zoom_plan = Vector2(1,1)
-	elif event.is_action_pressed("zoom_in"):
-		zoom_plan *= 1.1
-	elif event.is_action_pressed("zoom_out"):
-		zoom_plan *= 0.9
 	zoom_plan = clamp(zoom_plan, MIN_ZOOM, MAX_ZOOM)
 	
 func _input(event):

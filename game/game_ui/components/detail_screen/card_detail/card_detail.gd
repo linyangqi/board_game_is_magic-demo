@@ -23,7 +23,14 @@ var y_sensitivity = 1
 
 func _gui_input(event):
 	accept_event()
-	if event.is_action_pressed("detail_clear"):
+	if event.is_action_pressed("zoom_reset") and event.double_click:
+		scale_plan = Vector2(1,1)
+	elif event.is_action_pressed("zoom_in"):
+		scale_plan *= 1.1
+	elif event.is_action_pressed("zoom_out"):
+		scale_plan *= 0.9
+		
+	elif event.is_action_pressed("detail_clear"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) #如果拖动时关闭，要把鼠标还回来
 		free()
 	elif event.is_action_pressed("detail_grab"):
@@ -33,12 +40,7 @@ func _gui_input(event):
 		grabing = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	#如果不全elif连上的话，好像就不能边缩放边拖动……？？
-	elif event.is_action("zoom_reset") and event.double_click:
-		scale_plan = Vector2(1,1)
-	elif event.is_action("zoom_in"):
-		scale_plan *= 1.1
-	elif event.is_action("zoom_out"):
-		scale_plan *= 0.9
+	
 	scale_plan = clamp(scale_plan, MIN_SCALE, MAX_SCALE)
 	#scale = scale_plan
 	

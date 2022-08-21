@@ -4,7 +4,7 @@ extends Control
 #后面是用信号以及一个全局节点中介来处理（成功了）
 
 const detail_view = preload(
-	"res://game/game_ui/patterns/single_card/card_detail/card_detail.tscn")
+	"res://game/game_ui/components/detail_screen/card_detail/card_detail.tscn")
 
 @onready var agent := $"/root/DetailViewAgent"
 

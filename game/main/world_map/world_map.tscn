@@ -1,19 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://dnpbuiuvqy6li"]
+[gd_scene load_steps=6 format=3 uid="uid://dnpbuiuvqy6li"]
 
 [ext_resource type="Script" path="res://game/main/world_map/world_map.gd" id="1_rvtek"]
 [ext_resource type="PackedScene" uid="uid://ccbu7ixhyfa6i" path="res://game/map/maps/map2.tscn" id="2_3xxyf"]
 [ext_resource type="Script" path="res://game/main/world_map/map_camera.gd" id="2_6ardm"]
+[ext_resource type="Script" path="res://game/main/world_map/chessman_manager.gd" id="4_8b3l3"]
+[ext_resource type="PackedScene" uid="uid://b3m26y2k70xpr" path="res://game/main/world_map/chessman/chessman.tscn" id="5_r57i3"]
 
 [node name="WorldMap" type="Node2D"]
-scale = Vector2(1, 0.8)
+texture_filter = 1
 script = ExtResource("1_rvtek")
 
 [node name="Map" parent="." instance=ExtResource("2_3xxyf")]
-layer_1/tile_data = PackedInt32Array(196610, 131073, 0, 65538, 65537, 1)
-layer_2/modulate = Color(1, 1, 1, 1)
-layer_2/tile_data = PackedInt32Array(196610, 2, 0, 65538, 65538, 0)
+texture_filter = 1
+layer_1/name = "indicator"
+layer_1/z_index = 1
+layer_1/tile_data = PackedInt32Array(196610, 2, 0, 65538, 65538, 0)
 
 [node name="MapCamera" type="Camera2D" parent="."]
 position = Vector2(364, 367.5)
 current = true
 script = ExtResource("2_6ardm")
+
+[node name="ChessmanManager" type="Node2D" parent="."]
+script = ExtResource("4_8b3l3")
+
+[node name="Chessman" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman2" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman3" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman4" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman5" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman6" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman7" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman8" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
+
+[node name="Chessman9" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(47, 21)
