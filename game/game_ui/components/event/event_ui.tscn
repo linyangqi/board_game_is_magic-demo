@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbxmot8yxj4tx"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_4ugre"]
+[ext_resource type="Texture2D" uid="uid://xx5wgjiqn6m" path="res://ui/pictures/cards/正式版事件牌/IMG_001.png" id="2_euq1v"]
+[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="2_l2juy"]
+
+[node name="Event" type="PanelContainer"]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_bottom = 356.0
+theme = ExtResource("1_4ugre")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 240.0
+offset_bottom = 356.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 220.0
+offset_bottom = 346.0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+offset_right = 200.0
+offset_bottom = 32.0
+theme_override_font_sizes/font_size = 25
+text = "事件"
+horizontal_alignment = 1
+
+[node name="CheckableCard" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_l2juy")]
+custom_minimum_size = Vector2(200, 300)
+offset_top = 36.0
+offset_right = 200.0
+offset_bottom = 336.0
+texture = ExtResource("2_euq1v")
+ignore_texture_size = true

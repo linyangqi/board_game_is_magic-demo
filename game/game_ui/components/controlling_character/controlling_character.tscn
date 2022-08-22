@@ -1,47 +1,87 @@
-[gd_scene load_steps=7 format=3 uid="uid://b77ajaqnvptrt"]
+[gd_scene load_steps=9 format=3 uid="uid://ccy6twjmel563"]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_7wr2i"]
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/controlling_character.gd" id="2_xdfkr"]
 [ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="3_fi0ee"]
-[ext_resource type="Texture2D" uid="uid://pw03b3wt8qq2" path="res://ui/pictures/cards/正式版角色牌/IMG_001.png" id="4_vnwso"]
+[ext_resource type="PackedScene" uid="uid://p70t6bdtdij0" path="res://game/game_ui/components/controlling_character/equipment/equepment_ui.tscn" id="5_78h06"]
+[ext_resource type="PackedScene" uid="uid://cmdfupsn41y0r" path="res://game/game_ui/components/controlling_character/effect/effects_ui.tscn" id="5_cavno"]
+[ext_resource type="PackedScene" uid="uid://b26p3rps4jrte" path="res://game/game_ui/components/controlling_character/actions/Actions.tscn" id="5_g72i2"]
 [ext_resource type="PackedScene" uid="uid://cnjnoru5rl3gk" path="res://game/game_ui/patterns/properties/properties.tscn" id="5_yfyjy"]
 [ext_resource type="PackedScene" uid="uid://dm5htxqdpc2lu" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.tscn" id="6_dwlgt"]
 
-[node name="ControllingCharacter" type="Panel"]
+[node name="ControllingCharacter" type="PanelContainer"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -379.0
+offset_top = -338.0
 theme = ExtResource("1_7wr2i")
 script = ExtResource("2_xdfkr")
 
-[node name="Avatar" parent="." instance=ExtResource("3_fi0ee")]
-offset_left = 52.0
-offset_top = 25.0
-offset_right = 647.0
-offset_bottom = 867.0
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("4_vnwso")
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 338.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
 
-[node name="Properties" parent="." instance=ExtResource("5_yfyjy")]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+offset_left = 30.0
+offset_top = 10.0
+offset_right = 1890.0
+offset_bottom = 318.0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Avatar" parent="MarginContainer/HBoxContainer" instance=ExtResource("3_fi0ee")]
+unique_name_in_owner = true
+offset_left = 50.0
+offset_right = 270.0
+size_flags_vertical = 0
+
+[node name="Properties" parent="MarginContainer/HBoxContainer" instance=ExtResource("5_yfyjy")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 300)
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 302.0
-offset_top = 20.0
-offset_right = 520.0
-offset_bottom = 319.0
+offset_left = 300.0
+offset_right = 480.0
+offset_bottom = 308.0
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
 
-[node name="HandCards" parent="." instance=ExtResource("6_dwlgt")]
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -1170.0
-offset_top = -131.5
-offset_right = 2343.0
-offset_bottom = 718.5
+[node name="Addition" type="VSplitContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(320, 0)
+offset_left = 510.0
+offset_right = 842.0
+offset_bottom = 308.0
+split_offset = 200
+dragger_visibility = 2
+
+[node name="Effects" parent="MarginContainer/HBoxContainer/Addition" instance=ExtResource("5_cavno")]
+unique_name_in_owner = true
+offset_right = 332.0
+offset_bottom = 190.0
+
+[node name="Equepment" parent="MarginContainer/HBoxContainer/Addition" instance=ExtResource("5_78h06")]
+unique_name_in_owner = true
+offset_top = 190.0
+offset_right = 332.0
+offset_bottom = 308.0
+
+[node name="Actions" parent="MarginContainer/HBoxContainer" instance=ExtResource("5_g72i2")]
+unique_name_in_owner = true
+offset_left = 872.0
+offset_top = 0.0
+offset_right = 980.0
+offset_bottom = 308.0
+
+[node name="HandCards" parent="MarginContainer/HBoxContainer" instance=ExtResource("6_dwlgt")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(800, 0)
+offset_left = 1010.0
+offset_right = 1810.0
+offset_bottom = 308.0
 grow_horizontal = 0
 grow_vertical = 2
 metadata/_edit_layout_mode = 1

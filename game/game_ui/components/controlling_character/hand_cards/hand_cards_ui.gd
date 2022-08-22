@@ -2,7 +2,7 @@ extends GrabableScroll
 
 
 var card_unit:Resource = load(
-	"res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.tscn"
+	"res://game/game_ui/components/controlling_character/hand_cards/hand_card_ui.tscn"
 	)
 @onready var container = $Container
 

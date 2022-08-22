@@ -16,7 +16,7 @@ const MAX_ZOOM = Vector2(4,4)
 
 var position_plan = position
 var grabing := false
-var x_sensitivity = 2
+var x_sensitivity = 2 #虽然非1值的话移动与鼠标位置不会完全对应，但是移动地图方面，2还是感觉舒服一点
 var y_sensitivity = 2
 var x_acceleration = 5
 var y_acceleration = 5
@@ -32,7 +32,7 @@ func _unhandled_input(event):
 	
 	elif event.is_action_pressed("map_grab"):
 		grabing = true
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	elif event.is_action_released("map_grab"):
 		grabing = false
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

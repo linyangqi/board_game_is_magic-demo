@@ -5,10 +5,12 @@
 [ext_resource type="Script" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.gd" id="3_y0yf2"]
 
 [node name="CheckableCard" type="TextureRect"]
-offset_right = 595.0
-offset_bottom = 842.0
+custom_minimum_size = Vector2(220, 300)
+offset_right = 200.0
+offset_bottom = 300.0
 mouse_default_cursor_shape = 2
 theme = ExtResource("1_fbcgj")
 texture = ExtResource("2_vc216")
+ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("3_y0yf2")

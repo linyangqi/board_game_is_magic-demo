@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://b26p3rps4jrte"]
+
+[ext_resource type="PackedScene" uid="uid://dfnp3hf7b8m2r" path="res://game/game_ui/components/controlling_character/actions/action_button/action_button.tscn" id="1_bfo78"]
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_fb6pn"]
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_top = 282.0
+offset_right = 88.0
+offset_bottom = 282.0
+theme_override_constants/margin_right = 20
+
+[node name="Actions" type="VBoxContainer" parent="."]
+offset_right = 88.0
+offset_bottom = 246.0
+theme = ExtResource("1_fb6pn")
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="PlayCard" parent="Actions" instance=ExtResource("1_bfo78")]
+offset_right = 88.0
+offset_bottom = 54.0
+
+[node name="Move" parent="Actions" instance=ExtResource("1_bfo78")]
+offset_top = 64.0
+offset_right = 88.0
+offset_bottom = 118.0
+text = "移动"
+
+[node name="Ability" parent="Actions" instance=ExtResource("1_bfo78")]
+offset_top = 128.0
+offset_right = 88.0
+offset_bottom = 182.0
+text = "技能"
+
+[node name="Done" parent="Actions" instance=ExtResource("1_bfo78")]
+offset_top = 192.0
+offset_right = 88.0
+offset_bottom = 246.0
+text = "结束"

@@ -1,0 +1,128 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmdfupsn41y0r"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_5i82o"]
+[ext_resource type="PackedScene" uid="uid://di4jhhumqkt1p" path="res://game/game_ui/components/controlling_character/effect/effect_unit.tscn" id="1_dvk1y"]
+
+[node name="Effects" type="HBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+theme = ExtResource("1_5i82o")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(20, 0)
+offset_right = 20.0
+offset_bottom = 100.0
+size_flags_vertical = 1
+text = "状
+态
+效
+果"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+offset_left = 24.0
+offset_right = 332.0
+offset_bottom = 100.0
+
+[node name="Effects" type="ScrollContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 308.0
+offset_bottom = 100.0
+horizontal_scroll_mode = 0
+
+[node name="Effects" type="HFlowContainer" parent="MarginContainer/Effects"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 212.0
+
+[node name="EffectUnit" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+
+[node name="EffectUnit2" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 54.0
+offset_right = 104.0
+
+[node name="EffectUnit3" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 108.0
+offset_right = 158.0
+
+[node name="EffectUnit4" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 162.0
+offset_right = 212.0
+
+[node name="EffectUnit5" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 216.0
+offset_right = 266.0
+
+[node name="EffectUnit6" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_top = 54.0
+offset_bottom = 104.0
+
+[node name="EffectUnit7" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 54.0
+offset_top = 54.0
+offset_right = 104.0
+offset_bottom = 104.0
+
+[node name="EffectUnit8" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 108.0
+offset_top = 54.0
+offset_right = 158.0
+offset_bottom = 104.0
+
+[node name="EffectUnit9" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 162.0
+offset_top = 54.0
+offset_right = 212.0
+offset_bottom = 104.0
+
+[node name="EffectUnit10" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 216.0
+offset_top = 54.0
+offset_right = 266.0
+offset_bottom = 104.0
+
+[node name="EffectUnit11" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_top = 108.0
+offset_bottom = 158.0
+
+[node name="EffectUnit12" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 54.0
+offset_top = 108.0
+offset_right = 104.0
+offset_bottom = 158.0
+
+[node name="EffectUnit13" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 108.0
+offset_top = 108.0
+offset_right = 158.0
+offset_bottom = 158.0
+
+[node name="EffectUnit14" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 162.0
+offset_top = 108.0
+offset_right = 212.0
+offset_bottom = 158.0
+
+[node name="EffectUnit15" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 216.0
+offset_top = 108.0
+offset_right = 266.0
+offset_bottom = 158.0
+
+[node name="EffectUnit16" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_top = 162.0
+offset_bottom = 212.0
+
+[node name="EffectUnit17" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 54.0
+offset_top = 162.0
+offset_right = 104.0
+offset_bottom = 212.0
+
+[node name="EffectUnit18" parent="MarginContainer/Effects/Effects" instance=ExtResource("1_dvk1y")]
+offset_left = 108.0
+offset_top = 162.0
+offset_right = 158.0
+offset_bottom = 212.0

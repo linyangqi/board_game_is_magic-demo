@@ -1,8 +1,8 @@
-extends Panel
+extends PanelContainer
 
-@onready var avatar = $Avatar
-@onready var properties = $Properties
-@onready var hand_cards = $HandCards
+@onready var avatar = %Avatar
+@onready var properties = %Properties
+@onready var hand_cards = %HandCards
 
 
 var master:Player #客户端玩家身份，在客户端保持不变

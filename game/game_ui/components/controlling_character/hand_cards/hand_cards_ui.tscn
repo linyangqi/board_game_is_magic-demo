@@ -3,14 +3,14 @@
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.gd" id="1_deyp2"]
 
 [node name="HandCards" type="ScrollContainer"]
-offset_right = 3513.0
-offset_bottom = 850.0
-scale = Vector2(0.3, 0.3)
+custom_minimum_size = Vector2(1000, 0)
+offset_right = 900.0
+offset_bottom = 258.0
 vertical_scroll_mode = 0
 script = ExtResource("1_deyp2")
 
 [node name="Container" type="HBoxContainer" parent="."]
 clip_contents = true
-offset_bottom = 850.0
+offset_bottom = 258.0
 size_flags_horizontal = 0
 size_flags_vertical = 3

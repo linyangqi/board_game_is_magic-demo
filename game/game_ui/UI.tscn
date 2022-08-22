@@ -1,30 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://bkejkvxhwi4r3"]
+[gd_scene load_steps=8 format=3 uid="uid://b6vugec2fdcep"]
 
 [ext_resource type="Script" path="res://game/game_ui/UI.gd" id="1_onxev"]
+[ext_resource type="PackedScene" uid="uid://dh40xkaw0qno1" path="res://game/game_ui/components/decks/decks_ui.tscn" id="2_e1n50"]
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
 [ext_resource type="PackedScene" path="res://game/game_ui/patterns/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
-[ext_resource type="PackedScene" uid="uid://b77ajaqnvptrt" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
+[ext_resource type="PackedScene" uid="uid://cbxmot8yxj4tx" path="res://game/game_ui/components/event/event_ui.tscn" id="3_fh8u4"]
+[ext_resource type="PackedScene" uid="uid://ccy6twjmel563" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
 [ext_resource type="PackedScene" uid="uid://3x08ep2faqiy" path="res://game/game_ui/components/detail_screen/detail_screen.tscn" id="5_icvkt"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_onxev")
 
-[node name="Decks" type="Control" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -205.0
-offset_right = 205.0
-offset_bottom = 128.0
-theme = ExtResource("3_1d384")
-metadata/_edit_group_ = true
+[node name="Decks" parent="." instance=ExtResource("2_e1n50")]
 
-[node name="Event" type="Control" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
-theme = ExtResource("3_1d384")
-metadata/_edit_group_ = true
+[node name="Event" parent="." instance=ExtResource("3_fh8u4")]
 
 [node name="CharacterList" type="Control" parent="."]
 offset_right = 312.0

@@ -1,6 +1,10 @@
 extends Object
 class_name CardLibrary
 
+
+const CARD_RECT := Vector2i(595,842) #牌面像素大小
+
+
 const ROOT_PATH = "res://game/card_library/"
 const CHARACTER_PATH = ROOT_PATH + "characters/list/" 
 #新架构下角色路径就在常量这里删了个ponies，不用在下面一个个改了√
@@ -12,7 +16,6 @@ const TOOL_PATH = PLAYABLE_PATH + "tools/list/"
 #用来服务Deck，便于“查阅”，因此并非在这里进行随机抽取
 #后面Deck会建立卡牌名的列表Array，在实例化操作时会在这里调用
 #所以“奖励牌”与“摸牌堆”的区分也是在deck层面的
-
 
 const CARD_PATH :Dictionary = {
 	#扁平化，不分子类了……不过要注意不同种类的牌的index也要不重复

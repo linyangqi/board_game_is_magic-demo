@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh40xkaw0qno1"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_vy7q8"]
+[ext_resource type="PackedScene" uid="uid://dirvspc67pl3p" path="res://game/game_ui/components/decks/deck_ui.tscn" id="2_qyxg1"]
+[ext_resource type="Texture2D" uid="uid://dlpul2jw7luul" path="res://ui/pictures/cards/BOSS扩展包/IMG_033.png" id="3_kakw2"]
+[ext_resource type="Texture2D" uid="uid://cwm4on0hs4ltb" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_009.png" id="4_15mno"]
+
+[node name="Decks" type="PanelContainer"]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -137.5
+offset_right = 137.5
+offset_bottom = 158.0
+theme = ExtResource("1_vy7q8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 275.0
+offset_bottom = 158.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 255.0
+offset_bottom = 148.0
+theme_override_constants/separation = 20
+
+[node name="DrawingDeck" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_qyxg1")]
+offset_right = 65.0
+offset_bottom = 138.0
+
+[node name="Label" parent="MarginContainer/HBoxContainer/DrawingDeck" index="1"]
+offset_bottom = 138.0
+
+[node name="BonusDeck" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_qyxg1")]
+offset_left = 85.0
+offset_right = 150.0
+offset_bottom = 138.0
+
+[node name="TextureRect" parent="MarginContainer/HBoxContainer/BonusDeck" index="0"]
+texture = ExtResource("3_kakw2")
+
+[node name="Label" parent="MarginContainer/HBoxContainer/BonusDeck" index="1"]
+offset_bottom = 138.0
+text = "奖励牌堆
+20"
+
+[node name="EventDeck" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_qyxg1")]
+offset_left = 170.0
+offset_right = 235.0
+offset_bottom = 138.0
+
+[node name="TextureRect" parent="MarginContainer/HBoxContainer/EventDeck" index="0"]
+texture = ExtResource("4_15mno")
+
+[node name="Label" parent="MarginContainer/HBoxContainer/EventDeck" index="1"]
+offset_bottom = 138.0
+text = "事件牌堆
+50"
+
+[editable path="MarginContainer/HBoxContainer/DrawingDeck"]
+[editable path="MarginContainer/HBoxContainer/BonusDeck"]
+[editable path="MarginContainer/HBoxContainer/EventDeck"]
