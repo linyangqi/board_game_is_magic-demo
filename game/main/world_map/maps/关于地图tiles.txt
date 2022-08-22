@@ -1,0 +1,55 @@
+似乎可以用来定位之类的……
+玩家棋子的话，可能出现重叠……排布方式应该会需要变一下（偏移？）
+或者棋子直接不在中……而是一个sprite吧？
+
+显示攻击范围也会需要技巧
+先放一下吧
+
+————————————————————————————
+名字里带Tile的godot自带类有很多，这里区分一下:
+	TileMap:
+		图块式地图，是节点，可以挂在树上
+		需要引用TileSet的图块集资源才能绘制地图
+		存储的数据相当于mc那样的方块id加位置吧……（实际：每个单元格都有TileData）
+		——但是方块id与什么具体方块对应，以及方块的数据/作用，都在TileSet下吧
+		（ps：这里的“id”也可能是方块在TileSet中的排布坐标）
+		（另：Tile_data_runtime_update应该是引用的资源的“重载”之类？）
+	TileSet:
+		存储一个图块库，也包括一些特别的数据，比如地形、个性化数据
+		其中“图像”部分的数据引用TileSetSource
+	TileSetSource:
+		仅仅是存储图块图片设置
+	TileData:
+		“每一个单元格的数据”，比如是否镜像、图块格的”调制颜色“等……
+		
+理论上来说，TileSet下应该还有个类似TileData之于TileMap的“TileDataInTileSet”吧……？
+
+——————————————————————————————————
+自定义数据的获取：
+”自定义数据“应该是存在TileSet中的（TileMap只是”拿砖盖房“，不知道”砖“的成分）
+atlas……？
+”自定义数据层“则可以custom_data_layer_# （#表示数字，0起）直接获取
+但问题是……每一个块的具体custom_data是多少，怎么获取呢……
+（实在不行的话，便只有在程序里规范一下按位置排布地形数据了）
+
+目前找到个不知什么用的“proxy”……翻译过来是“代理”……应该也不是
+Reddit上的问答:
+	https://www.reddit.com/r/godot/comments/sd4sbc/how_to_use_custom_data_in_godot_4_tilemap/
+	
+	var source_id := $TileMap.get_cell_source_id(layer, cell)
+	var atlas_coord := $TileMap.get_cell_atlas_coords(layer, cell)
+	var tile_data := $TileMap.tile_set.get_source(source_id).get_tile_data(atlas_coord)
+	var custom_data = tile_data.get_custom_data("terrain_tag")
+	
+	不过后面有了新方案（但实际上是关于TileData的，而TileData目前与custom_data实际并无关系的样子……）：
+	https://github.com/godotengine/godot/pull/54549
+	https://github.com/godotengine/godot/pull/54549/commits/7305390fdcdfc3fa4c6e628fc1d5bb15160c7b94
+	而且还在开发（“6天前”）
+	
+	所以暂时还是先就用前面麻烦的方法，后面更新之后再来简化吧……？
+	
+——————————————————————————————————————
+我弄错了
+TileData有个方法叫get_custom_data
+
+

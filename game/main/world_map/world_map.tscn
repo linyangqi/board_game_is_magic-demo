@@ -1,11 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://cix1y7nyohd0f"]
+[gd_scene load_steps=10 format=3 uid="uid://cix1y7nyohd0f"]
 
 [ext_resource type="Script" path="res://game/main/world_map/world_map.gd" id="1_rvtek"]
 [ext_resource type="PackedScene" uid="uid://bfdckkaig32l4" path="res://game/main/world_map/maps/list/map_equestria.tscn" id="2_0lj5e"]
 [ext_resource type="Script" path="res://game/main/world_map/map_camera.gd" id="2_6ardm"]
-[ext_resource type="PackedScene" uid="uid://ryfmr66bx2ul" path="res://game/main/world_map/indicator_layer/indicator_layer.tscn" id="3_vuce8"]
+[ext_resource type="Texture2D" uid="uid://b3i2do5wxmwr3" path="res://ui/pictures/map/indicator/indicator.png" id="3_pr3la"]
+[ext_resource type="Script" path="res://game/main/world_map/indicator_layer/indicator_layer.gd" id="3_vssxc"]
 [ext_resource type="Script" path="res://game/main/world_map/chessman_manager.gd" id="4_8b3l3"]
 [ext_resource type="PackedScene" uid="uid://b3m26y2k70xpr" path="res://game/main/world_map/chessman/chessman.tscn" id="5_r57i3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lraop"]
+texture = ExtResource("3_pr3la")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mr1gw"]
+tile_size = Vector2i(128, 111)
+sources/1 = SubResource("TileSetAtlasSource_lraop")
 
 [node name="WorldMap" type="Node2D"]
 texture_filter = 1
@@ -13,7 +25,18 @@ script = ExtResource("1_rvtek")
 
 [node name="Map" parent="." instance=ExtResource("2_0lj5e")]
 
-[node name="IndicatorLayer" parent="." instance=ExtResource("3_vuce8")]
+[node name="IndicatorLayer" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_mr1gw")
+format = 2
+layer_0/name = "options"
+layer_1/name = "selection"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array()
+script = ExtResource("3_vssxc")
 
 [node name="MapCamera" type="Camera2D" parent="."]
 position = Vector2(364, 367.5)
@@ -25,40 +48,132 @@ script = ExtResource("4_8b3l3")
 
 [node name="Chessman" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman2" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman3" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman4" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman5" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman6" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman7" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
 position = Vector2(141, 90)
-chesss_id = null
 
 [node name="Chessman8" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(97, 166)
-chesss_id = null
+position = Vector2(141, 90)
 
 [node name="Chessman9" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(64, 171)
-chesss_id = null
+position = Vector2(141, 90)
 
 [node name="Chessman10" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
-position = Vector2(253, 53)
-chesss_id = null
+position = Vector2(141, 90)
+
+[node name="Chessman11" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman12" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman13" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman14" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman15" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman16" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman17" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman18" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman19" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman20" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman21" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman22" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman23" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman24" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman25" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman26" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman27" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman28" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman29" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman30" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman31" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman32" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman33" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman34" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman35" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman36" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman37" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman38" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman39" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman40" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman41" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman42" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman43" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
+
+[node name="Chessman44" parent="ChessmanManager" instance=ExtResource("5_r57i3")]
+position = Vector2(141, 90)
