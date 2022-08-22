@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://dfnp3hf7b8m2r"]
+[gd_scene load_steps=2 format=3 uid="uid://dfnp3hf7b8m2r"]
+
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/actions/action_button/action_button.gd" id="1_k3xl5"]
 
 [node name="ActionButton" type="Button"]
 offset_right = 40.0
 offset_bottom = 31.0
 theme_override_font_sizes/font_size = 40
 text = "出牌"
+script = ExtResource("1_k3xl5")

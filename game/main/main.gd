@@ -9,6 +9,16 @@ extends Node
 @onready var deck_manager = $DeckManager
 @onready var character_manager = $CharacterManager
 
+@onready var agent = $"/root/SignalAgent"
+func _ready():
+	#连信号
+	agent.connect("character_action_play_cards_signal",character_action_play_cards)
+	agent.connect("character_action_move_signal",character_action_move)
+	agent.connect("character_action_switch_signal",character_action_switch)
+	agent.connect("character_action_ability_signal",character_action_ability)
+	agent.connect("character_action_done_signal",character_action_done)
+
+
 
 #数组与字典一般总是引用，因此大概一般仅一个；如果是”实例化“，请使用”类“
 var data:Dictionary={
@@ -47,4 +57,41 @@ func round_start():
 
 func game_over():
 	
+	pass
+
+#####################
+#角色操作（初始）
+#逻辑直接在main这里实现了，包括存在效果时的情况
+
+func character_action_play_cards(character_place:CharacterPlace, card_id_array:Array[int]):#出牌
+	#emit_signal("character_action_play_cards_signal",character_place, card_id_array)
+	#可能会需要细化……
+	#不过这里传的Array，实际操作就是从左到右依次生效吧（”快速出牌“）
+	#当然，正常操作应该是一张一张出的
+	
+	#另外为什么传id不传名字呢，因为从id可以找到牌的名字，牌生效后还要把牌从中删除
+	#（这就几乎非数字id不可了，传名字就要迭代找）
+	print("出牌："+str(card_id_array))
+	pass
+	
+func character_action_move(character_place:CharacterPlace):#移动
+	#emit_signal("character_action_move_signal",character_place)
+	print("移动")
+	pass
+	
+func character_action_switch(character_place:CharacterPlace): #换牌（仅在有队友时）
+	#emit_signal("character_action_switch_signal",character_place)
+	print("换牌")
+	pass
+	
+func character_action_ability(character_place:CharacterPlace): #主动技能
+	#emit_signal("character_action_ability_signal",character_place)
+	#首先要确定没有”技能失效“
+	print("技能")
+	pass
+	
+	
+func character_action_done(character_place:CharacterPlace): #结束
+	#emit_signal("character_action_done_signal",character_place)
+	print("结束")
 	pass

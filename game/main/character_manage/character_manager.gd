@@ -1,6 +1,9 @@
 extends Node
 #在CharacterManager中的代码，可以省去“character_”前缀吧
-
+#角色分配以及数据存储任务，单角色行动就别放这里了吧……？
+#因为角色的行动可能会使用特殊UI
+#不过好像单角色自身会有动态函数……？去里面看看吧
+#那么这么说来，也可以说是“分配行动”用……？
 
 @onready var ui = $"../UI" #唯一名的话，不是 $"../UI" 而是 %UI
 
@@ -10,7 +13,7 @@ var alive_count:int #角色存活计数……角色死后可能还要占位吧�
 var character_places:Array[CharacterPlace] #可以挂节点的
 var character_place_scene = preload("res://game/main/character_manage/character_place/character_place.tscn")
 var team_allocation:Array[int]
-var waiting:int
+
 
 func attach_characters(): 
 	#挂节点，但是数组或许还能保持对节点的引用……？

@@ -109,6 +109,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/game_ui/patterns/card_group/scroll/grabable_scroll.gd"
 }, {
+"base": "SelectableCard",
+"class": &"HandCardInUI",
+"language": &"GDScript",
+"path": "res://game/game_ui/components/controlling_character/hand_cards/hand_card_ui.gd"
+}, {
 "base": "ToolCard",
 "class": &"HealingCard",
 "language": &"GDScript",
@@ -149,6 +154,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/main/process_manage/player_round.gd"
 }, {
+"base": "CheckableCard",
+"class": &"SelectableCard",
+"language": &"GDScript",
+"path": "res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.gd"
+}, {
 "base": "PlayableCard",
 "class": &"ToolCard",
 "language": &"GDScript",
@@ -185,6 +195,7 @@ _global_script_class_icons={
 "ElementCard": "",
 "EventCard": "",
 "GrabableScroll": "",
+"HandCardInUI": "",
 "HealingCard": "",
 "MapLibrary": "",
 "MultiCharacter": "",
@@ -193,6 +204,7 @@ _global_script_class_icons={
 "PlayableCard": "",
 "Player": "",
 "PlayerRound": "",
+"SelectableCard": "",
 "ToolCard": "",
 "Unicorn": "",
 "WeaponCard": ""

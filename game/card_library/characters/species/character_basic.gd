@@ -52,8 +52,6 @@ enum EquipmentIndex{element,weapon,armor,backup}
 var equipment_limits:Array[int] = [1,1,1,1] #这样设计至少能保证狮狮，星璇的话当成buff吧
 
 
-var alive:bool = true
-
 var armor_value:int = 0 # 护甲值
 var collection_count:int = 0
 

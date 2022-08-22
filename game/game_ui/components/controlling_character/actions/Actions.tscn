@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dfnp3hf7b8m2r" path="res://game/game_ui/components/controlling_character/actions/action_button/action_button.tscn" id="1_bfo78"]
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_fb6pn"]
 
-[node name="MarginContainer" type="MarginContainer"]
+[node name="Actions" type="MarginContainer"]
 offset_top = 282.0
 offset_right = 88.0
 offset_bottom = 282.0
@@ -25,6 +25,14 @@ offset_top = 64.0
 offset_right = 88.0
 offset_bottom = 118.0
 text = "移动"
+
+[node name="Switch" parent="Actions" instance=ExtResource("1_bfo78")]
+editor_description = "多人，有队友时才有的操作"
+visible = false
+offset_top = 128.0
+offset_right = 88.0
+offset_bottom = 182.0
+text = "换牌"
 
 [node name="Ability" parent="Actions" instance=ExtResource("1_bfo78")]
 offset_top = 128.0

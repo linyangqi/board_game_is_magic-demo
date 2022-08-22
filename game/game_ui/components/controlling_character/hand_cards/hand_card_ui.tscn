@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://blpl0avl7k8ta"]
+[gd_scene load_steps=3 format=3 uid="uid://blpl0avl7k8ta"]
 
 [ext_resource type="PackedScene" uid="uid://7vbactgf5llc" path="res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.tscn" id="1_5upya"]
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/hand_cards/hand_card_ui.gd" id="2_drcto"]
 
-[node name="SelectableCard" instance=ExtResource("1_5upya")]
+[node name="HandCard" instance=ExtResource("1_5upya")]
 custom_minimum_size = Vector2(180, 250)
 offset_right = 180.0
 offset_bottom = 250.0
+script = ExtResource("2_drcto")

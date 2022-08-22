@@ -24,9 +24,11 @@ text = "1"
 horizontal_alignment = 1
 
 [node name="ChessmanButton" type="TextureRect" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 60)
 offset_top = 57.0
 offset_right = 100.0
-offset_bottom = 82.0
+offset_bottom = 117.0
 mouse_default_cursor_shape = 2
 texture = ExtResource("2_tl3an")
 stretch_mode = 5

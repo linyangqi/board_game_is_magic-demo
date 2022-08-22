@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://1jcjfed8uf0m"]
-
-[ext_resource type="Script" path="res://game/main/deck_manage/deck_manager.gd" id="1_g0svp"]
-
-[node name="DeckManager" type="Node"]
-script = ExtResource("1_g0svp")

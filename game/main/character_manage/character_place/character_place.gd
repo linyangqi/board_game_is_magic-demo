@@ -13,13 +13,15 @@ class_name CharacterPlace
 #不需要ui的，还是直接自立更生地交流了吧
 #或者其实UI也能自行交流吧……？真不用main这个中介吗
 
-@onready var buff = $Buff
-@onready var equipment = $Equipment
+@onready var buff := $Buff
+@onready var equipment := $Equipment
 #@onready var hand_cards = $HandCards
 
+var alive:bool = true #这个应该是拿来判断是否跳过“角色位”回合用的吧……以及“显示效果”
+#——在这里检测一层就够，不用放到character内部
 
 var master:Player #这个类放在ui/lobby下了
-var character:Node#获取牌库文件夹里的节点，并且要挂在树上
+var character:CharacterBasic#获取牌库文件夹里的节点，并且要挂在树上
 #现在角色的主要信息都在实例化的这个character上了
 #目前的方式，相当于把“角色内部属性”与“外部工具”区分开了
 
@@ -49,7 +51,9 @@ func select_character(option_count:int = 4):
 	#不过实际上这个index用的基本上就是名字……不过还是按用处区分一下吧，比如同名重制角色
 	var character_file = CardLibrary.CARD_PATH[character_index]
 	character = load(character_file).instantiate()
-	manager.waiting -= 1 #局部变量没问题吗
+	#manager.waiting -= 1 #局部变量没问题吗
+	#——这个后面看看能不能用信号代替吧（选好一个后那边加一个，并检查，人齐了再开
+	#不过话说character_select还没真正实现呐好吧（需要ui）
 	
 
 func prepare():#【选好角色以后】进行操作

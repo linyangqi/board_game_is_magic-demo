@@ -1,4 +1,5 @@
 extends CheckableCard
+class_name SelectableCard
 #仅作显示用，甚至不带卡牌名称，不过可以返回编号之类
 
 var selected := false
