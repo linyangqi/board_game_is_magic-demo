@@ -209,7 +209,7 @@ config/icon="res://ui/pictures/icon.png"
 
 MusicDj="*res://ui/audio/music/music_dj.tscn"
 DefaultShortcut="*res://ui/display/default_shortcut.tscn"
-DetailViewAgent="*res://game/game_ui/components/detail_screen/detail_view_agent.tscn"
+SignalAgent="*res://game/helper/signal_agent/signal_agent.tscn"
 
 [display]
 
@@ -291,6 +291,11 @@ scroll_up={
 scroll_down={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":16,"position":Vector2(127, 100),"global_position":Vector2(127, 100),"factor":4.0,"button_index":5,"pressed":true,"double_click":false,"script":null)
+]
+}
+click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
 ]
 }
 

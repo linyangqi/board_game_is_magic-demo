@@ -29,7 +29,7 @@ func _ready():
 	#######################################
 	
 	for chessman_id in all_chessmen.size():
-		all_chessmen[chessman_id].chesssman_id = chessman_id #0起……习惯一下吧
+		all_chessmen[chessman_id].chessman_id = chessman_id #0起……习惯一下吧
 
 ##################
 

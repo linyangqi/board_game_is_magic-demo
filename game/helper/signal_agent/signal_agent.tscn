@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://hh4i7gyphpbc"]
+
+[ext_resource type="Script" path="res://game/helper/signal_agent/signal_agent.gd" id="1_bmpsa"]
+
+[node name="SignalAgent" type="Node"]
+script = ExtResource("1_bmpsa")

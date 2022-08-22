@@ -6,7 +6,7 @@ extends Control
 const detail_view = preload(
 	"res://game/game_ui/components/detail_screen/card_detail/card_detail.tscn")
 
-@onready var agent := $"/root/DetailViewAgent"
+@onready var agent := $"/root/SignalAgent"
 
 func _ready():
 	agent.connect("add_detail_view_signal", add_detail_view)

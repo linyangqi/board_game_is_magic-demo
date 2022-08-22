@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://di0pkpf41vtut"]
+
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/character_information/chessman/chessman_link.gd" id="1_n24pj"]
+[ext_resource type="Texture2D" uid="uid://dl8sv0vni6b17" path="res://ui/pictures/map/chessman/chessman.png" id="2_tl3an"]
+[ext_resource type="Script" path="res://game/game_ui/components/controlling_character/character_information/chessman/ChessmanButton.gd" id="3_fj2uu"]
+
+[node name="Chessman" type="VBoxContainer"]
+unique_name_in_owner = true
+offset_right = 100.0
+offset_bottom = 200.0
+script = ExtResource("1_n24pj")
+
+[node name="Title" type="Label" parent="."]
+offset_right = 100.0
+offset_bottom = 23.0
+text = "对应棋子"
+horizontal_alignment = 1
+
+[node name="IDLabel" type="Label" parent="."]
+offset_top = 27.0
+offset_right = 100.0
+offset_bottom = 53.0
+text = "1"
+horizontal_alignment = 1
+
+[node name="ChessmanButton" type="TextureRect" parent="."]
+offset_top = 57.0
+offset_right = 100.0
+offset_bottom = 82.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("2_tl3an")
+stretch_mode = 5
+script = ExtResource("3_fj2uu")

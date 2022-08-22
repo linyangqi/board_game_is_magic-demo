@@ -1,7 +1,9 @@
 extends Control
 
-@onready var character_information = %CharacterInformation
-@onready var hand_cards = %HandCards
+@onready var avatar = %Avatar
+@onready var properties = %Properties
+@onready var hand_card_count = %HandCardCount
+@onready var chessman = %Chessman
 
 
 var master:Player #客户端玩家身份，在客户端保持不变
@@ -30,14 +32,15 @@ func init(linking_character_place:CharacterPlace):
 	character_place = linking_character_place
 	master = character_place.master
 	#avatar本身没有更下一级，结构过于简单，没有自身设计的init()函数
-	character_information.init(linking_character_place)
-	hand_cards.init(character_place.hand_cards)
+	avatar.texture = character_place.character.texture
+	properties.init(character_place.character)
 	_update()
 
 
 func _update():
-	character_information._update()
-	hand_cards._update()
+	properties._update()
+	hand_card_count._update(character_place.hand_cards.size())
+	chessman._update(character_place.chessman_id)
 
 
 func change_character_place(new_character_place:CharacterPlace):

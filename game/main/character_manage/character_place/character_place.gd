@@ -23,6 +23,8 @@ var character:Node#获取牌库文件夹里的节点，并且要挂在树上
 #现在角色的主要信息都在实例化的这个character上了
 #目前的方式，相当于把“角色内部属性”与“外部工具”区分开了
 
+var chessman_id:int #棋子编号，但实际也是“角色位编号”
+
 #另外考虑“队伍”？……在manager中吧？
 var team_id:int
 

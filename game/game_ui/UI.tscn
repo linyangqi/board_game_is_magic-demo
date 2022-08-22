@@ -5,7 +5,7 @@
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="3_1d384"]
 [ext_resource type="PackedScene" path="res://game/game_ui/patterns/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
 [ext_resource type="PackedScene" uid="uid://cbxmot8yxj4tx" path="res://game/game_ui/components/event/event_ui.tscn" id="3_fh8u4"]
-[ext_resource type="PackedScene" uid="uid://ccy6twjmel563" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
+[ext_resource type="PackedScene" uid="uid://waxxa4cwvr0o" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
 [ext_resource type="PackedScene" uid="uid://3x08ep2faqiy" path="res://game/game_ui/components/detail_screen/detail_screen.tscn" id="5_icvkt"]
 
 [node name="UI" type="CanvasLayer"]

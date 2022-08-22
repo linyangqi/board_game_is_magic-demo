@@ -30,6 +30,7 @@ func init(players:Array[Player]):
 		var new_character_place := character_place_scene.instantiate()
 		new_character_place.name = "CharacterPlace"+str(i+1) #从1计数
 		new_character_place.master = players[i]
+		new_character_place.chessman_id = i #棋子编号
 		new_character_place.team_id = team_allocation[i] #目前的分组总是单人混战
 		character_places.append(new_character_place)
 		attach_characters()

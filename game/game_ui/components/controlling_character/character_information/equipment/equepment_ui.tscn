@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://by6k4x0qcdmq0"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_cih1q"]
+[ext_resource type="PackedScene" uid="uid://bknyry83qrlds" path="res://game/game_ui/components/controlling_character/character_information/equipment/equepment_unit.tscn" id="2_557ll"]
+
+[node name="HBoxContainer2" type="HBoxContainer"]
+offset_right = 257.0
+offset_bottom = 108.0
+theme = ExtResource("1_cih1q")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(20, 0)
+offset_right = 20.0
+offset_bottom = 118.0
+size_flags_vertical = 1
+text = "防
+
+具"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+offset_left = 24.0
+offset_right = 324.0
+offset_bottom = 118.0
+theme_override_constants/margin_top = 10
+
+[node name="Equipment" type="ScrollContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(300, 0)
+offset_top = 10.0
+offset_right = 300.0
+offset_bottom = 118.0
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Equipment"]
+offset_right = 70.0
+offset_bottom = 100.0
+
+[node name="CheckableCard" parent="MarginContainer/Equipment/HBoxContainer" instance=ExtResource("2_557ll")]

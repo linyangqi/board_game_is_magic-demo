@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://wi1ojll6b1qr"]
+
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_tyjs8"]
+[ext_resource type="PackedScene" path="res://game/game_ui/components/controlling_character/character_information/effect/effect_unit.tscn" id="2_nu2mo"]
+
+[node name="Effects" type="HBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+theme = ExtResource("1_tyjs8")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(20, 0)
+offset_right = 20.0
+offset_bottom = 100.0
+size_flags_vertical = 1
+text = "状
+态
+效
+果"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(300, 0)
+offset_left = 24.0
+offset_right = 332.0
+offset_bottom = 100.0
+
+[node name="Effects" type="ScrollContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 308.0
+offset_bottom = 100.0
+horizontal_scroll_mode = 0
+
+[node name="Effects" type="HFlowContainer" parent="MarginContainer/Effects"]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 50.0
+
+[node name="EffectUnit" parent="MarginContainer/Effects/Effects" instance=ExtResource("2_nu2mo")]
+
+[node name="EffectUnit2" parent="MarginContainer/Effects/Effects" instance=ExtResource("2_nu2mo")]
+offset_left = 54.0
+offset_right = 104.0

@@ -15,14 +15,18 @@ const CHESSMAN_COLORS:Array[Color] = [
 	Color.WHITE,
 	Color.GRAY,
 ]
+static func color_by_id(chessman_id:int)->Color:
+	return CHESSMAN_COLORS[chessman_id % CHESSMAN_COLORS.size()]
+
+
 const LABEL_OFFSET := Vector2i(-5,-7)
 
 
-@export var chesssman_id:int = 0:
-	set(new_chesssman_id):
-		chesssman_id = new_chesssman_id
-		id_label.text = str(chesssman_id)
-		modulate = CHESSMAN_COLORS[chesssman_id % CHESSMAN_COLORS.size()]
+@export var chessman_id:int = 0:
+	set(new_chessman_id):
+		chessman_id = new_chessman_id
+		id_label.text = str(chessman_id)
+		modulate = color_by_id(chessman_id)
 
 var id_label := Label.new()
 #设置了set，这样在设置位置坐标时，便自动更新视图了

@@ -49,4 +49,16 @@ func _physics_process(delta):
 	zoom = lerp(zoom, zoom_plan, delta * zoom_acceleration)
 	position.x = lerp(position.x, position_plan.x, delta * x_acceleration)
 	position.y = lerp(position.y, position_plan.y, delta * y_acceleration)
+
+#####################
+#下面是“聚焦”功能
+
+@onready var agent := $"/root/SignalAgent"
+@onready var chessman_manager = $"../ChessmanManager"
+
+func _ready():
+	agent.connect("focus_on_chessman_by_id_singal", focus_on_chessman_by_id)
+
+func focus_on_chessman_by_id(chessman_id:int):
+	position_plan = chessman_manager.all_chessmen[chessman_id].position
 	
