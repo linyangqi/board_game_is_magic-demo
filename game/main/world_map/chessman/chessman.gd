@@ -26,7 +26,8 @@ var coordinate:Vector2i:
 	set(new_coordinate): 
 		var old_coordinate = coordinate
 		coordinate = new_coordinate
-		apply_corrdinate()
+		position = map.map_to_world(coordinate) #原本是apply_coordinate，后来发现只用在这里
+		
 		manager.chess_offset_adjust(old_coordinate)
 		manager.chess_offset_adjust(new_coordinate)
 
@@ -43,17 +44,14 @@ func _ready(): #测试用……不过好像也可以直接用了（挂节点上�
 	
 	coordinate = map.world_to_map(position)
 	modulate = CHESSMAN_COLORS[chesss_id]
-	
-	
-
-
-
-func apply_corrdinate():
-	position = map.map_to_world(coordinate)
 
 
 func change_offset(new_offset:Vector2i): #用这个，文字才能跟着变
 	offset = new_offset
 	id_label.position = new_offset + LABEL_OFFSET
+
+
+func randomize_coordinate(avoid_water:bool = true):
+	
 	
 	

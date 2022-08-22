@@ -54,11 +54,6 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/game_ui/patterns/single_card/checkable_card/checkable_card.gd"
 }, {
-"base": "Sprite2D",
-"class": &"Chessman",
-"language": &"GDScript",
-"path": "res://game/main/world_map/chessman/chessman.gd"
-}, {
 "base": "Node",
 "class": &"Condition",
 "language": &"GDScript",
@@ -117,7 +112,7 @@ _global_script_classes=[{
 "base": "Object",
 "class": &"MapLibrary",
 "language": &"GDScript",
-"path": "res://game/map/map_library.gd"
+"path": "res://game/main/world_map/maps/map_library.gd"
 }, {
 "base": "CharacterBasic",
 "class": &"MultiCharacter",
@@ -174,7 +169,6 @@ _global_script_class_icons={
 "CharacterBasic": "",
 "CharacterPlace": "",
 "CheckableCard": "",
-"Chessman": "",
 "Condition": "",
 "Deck": "",
 "DeckPlan": "",

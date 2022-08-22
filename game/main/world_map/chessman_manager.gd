@@ -54,6 +54,7 @@ func chess_offset_adjust(coordinate:Vector2i):
 				) 
 			)
 
-
+func randomize_chess_location():
+	pass
 
 

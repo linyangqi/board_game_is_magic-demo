@@ -1,10 +1,10 @@
 extends Object
 class_name MapLibrary
 
-
-const MAP_ROOT := "res://game/map/maps/"
-const MAP_PATH:Dictionary ={
-	"Map2":MAP_ROOT+"map2.tscn"
+#存图块集资源，而不是像卡片那样存场景了
+const MAP_TILE_SET_ROOT := "res://game/main/world_map/map_tile_sets/"
+const MAP_TILE_SET_PATH:Dictionary ={
+	"Map2":MAP_TILE_SET_ROOT+"map2.tres"
 }
 
 
