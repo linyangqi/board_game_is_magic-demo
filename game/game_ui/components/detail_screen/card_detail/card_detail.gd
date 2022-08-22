@@ -33,6 +33,7 @@ func _gui_input(event):
 	elif event.is_action_pressed("detail_clear"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) #如果拖动时关闭，要把鼠标还回来
 		free()
+		return #防止后面InputEventMouseMotion之类的来找麻烦吧
 	elif event.is_action_pressed("detail_grab"):
 		grabing = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
