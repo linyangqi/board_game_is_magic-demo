@@ -80,15 +80,15 @@ func prepare():#【选好角色以后】进行操作
 
 
 
-func attempt_hurt():#
-	pass
-	#要说明的是，有些防具并非用来抵挡伤害，比如面具是防止偷牌
-	#因此防具、元素、武器的效果还是设置为在effect manager上设置一个关联的“效果”吧
-	
-	
-func attempt_heal():#
-	pass
-	
+#func attempt_hurt():#
+#	pass
+#	#要说明的是，有些防具并非用来抵挡伤害，比如面具是防止偷牌
+#	#因此防具、元素、武器的效果还是设置为在effect manager上设置一个关联的“效果”吧
+#
+#
+#func attempt_heal():#
+#	pass
+#
 	
 func final_hurt(damage:int): #真正造成伤害以后
 	character.health -= damage

@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://bdn6j2q8n8tjw"]
 
-[ext_resource type="PackedScene" path="res://game/card_library/playable/tools/types/tool_card.tscn" id="1_f7qbr"]
+[ext_resource type="PackedScene" uid="uid://74go3s0ur8kp" path="res://game/card_library/playable/tools/types/tool_card.tscn" id="1_f7qbr"]
 [ext_resource type="Script" path="res://game/card_library/playable/tools/types/heal/healing_card.gd" id="2_vyoyk"]
 
 [node name="HealingCard" instance=ExtResource("1_f7qbr")]

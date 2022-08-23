@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" path="res://game/game_ui/patterns/card_group/character_place/character_place_display.tscn" id="3_2tlnm"]
 [ext_resource type="PackedScene" uid="uid://cbxmot8yxj4tx" path="res://game/game_ui/components/event/event_ui.tscn" id="3_fh8u4"]
 [ext_resource type="PackedScene" uid="uid://waxxa4cwvr0o" path="res://game/game_ui/components/controlling_character/controlling_character.tscn" id="4_rfx68"]
-[ext_resource type="PackedScene" uid="uid://3x08ep2faqiy" path="res://game/game_ui/components/detail_screen/detail_screen.tscn" id="5_icvkt"]
+[ext_resource type="Script" path="res://game/game_ui/detail_screen.gd" id="7_lbkwv"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_onxev")
@@ -86,5 +86,7 @@ offset_right = 960.0
 theme = ExtResource("3_1d384")
 metadata/_edit_group_ = true
 
-[node name="DetailScreen" parent="." instance=ExtResource("5_icvkt")]
+[node name="DetailScreen" type="Control" parent="."]
 unique_name_in_owner = true
+theme = ExtResource("3_1d384")
+script = ExtResource("7_lbkwv")

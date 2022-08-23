@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://di48laqj3kcn8"]
 
-[ext_resource type="PackedScene" path="res://game/card_library/playable/tools/types/tool_card.tscn" id="1_g8p3q"]
+[ext_resource type="PackedScene" uid="uid://74go3s0ur8kp" path="res://game/card_library/playable/tools/types/tool_card.tscn" id="1_g8p3q"]
 [ext_resource type="Script" path="res://game/card_library/playable/tools/types/effect/effect_card.gd" id="2_rnokl"]
 
 [node name="EffectCard" instance=ExtResource("1_g8p3q")]

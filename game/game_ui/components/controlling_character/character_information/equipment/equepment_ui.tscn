@@ -13,9 +13,9 @@ custom_minimum_size = Vector2(20, 0)
 offset_right = 20.0
 offset_bottom = 118.0
 size_flags_vertical = 1
-text = "防
+text = "装
 
-具"
+备"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
