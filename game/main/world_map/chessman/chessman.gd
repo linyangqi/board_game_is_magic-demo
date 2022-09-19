@@ -34,7 +34,7 @@ var coords:Vector2i:
 	set(new_coords): 
 		var old_coords = coords
 		coords = new_coords
-		position = map.map_to_world(coords) #原本是apply_coords，后来发现只用在这里
+		position = map.map_to_local(coords) #原本是apply_coords，后来发现只用在这里
 		
 		manager.chess_offset_adjust(old_coords)
 		manager.chess_offset_adjust(new_coords)
