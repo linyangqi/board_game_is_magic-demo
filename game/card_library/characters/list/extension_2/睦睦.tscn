@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3]
 
 [ext_resource type="PackedScene" uid="uid://c5yq1v0ilonmu" path="res://game/card_library/characters/species/other/other_species.tscn" id="1_trbgp"]
-[ext_resource type="Texture2D" path="res://game/card_library/characters/list/extension_2/IMG_037.png" id="2_duwjt"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/extension_2/睦睦.png" id="2_duwjt"]
 [ext_resource type="Script" path="res://game/card_library/characters/list/extension_2/睦睦.gd" id="3_tdluw"]
 
 [node name="睦睦" instance=ExtResource("1_trbgp")]

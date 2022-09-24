@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3]
 
 [ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_vnp2o"]
-[ext_resource type="Texture2D" path="res://game/card_library/characters/list/extension_2/IMG_033.png" id="2_m4jti"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/extension_2/狮狮.png" id="2_m4jti"]
 [ext_resource type="Script" path="res://game/card_library/characters/list/extension_2/狮狮.gd" id="3_yj2js"]
 
 [node name="狮狮" instance=ExtResource("1_vnp2o")]
