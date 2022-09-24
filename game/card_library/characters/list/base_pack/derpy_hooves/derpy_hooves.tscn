@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://becgmqv00yjj7"]
+
+[ext_resource type="PackedScene" uid="uid://dtnvu4sql4a4e" path="res://game/card_library/characters/species/pegasus/pegasus.tscn" id="1_pmpqh"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/derpy_hooves/derpy_hooves.gd" id="2_74cng"]
+[ext_resource type="Texture2D" uid="uid://d0ecl33343pjb" path="res://game/card_library/characters/list/base_pack/derpy_hooves/derpy_hooves.png" id="2_ltqyv"]
+
+[node name="Derpy Hooves" instance=ExtResource("1_pmpqh")]
+texture = ExtResource("2_ltqyv")
+script = ExtResource("2_74cng")
+character_name = "Derpy Hooves"

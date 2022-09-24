@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://c152sndeglurh"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_pq0q0"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/lyra_heartstring/lyra_heartstring.gd" id="2_oipxr"]
+[ext_resource type="Texture2D" uid="uid://je6od7d843ev" path="res://game/card_library/characters/list/base_pack/lyra_heartstring/lyra_heartstring.png" id="2_w0wjk"]
+
+[node name="Lyra Heartstring" instance=ExtResource("1_pq0q0")]
+texture = ExtResource("2_w0wjk")
+script = ExtResource("2_oipxr")
+character_name = "Lyra Heartstring"

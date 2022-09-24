@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_0pa8c"]
-[ext_resource type="Texture2D" uid="uid://c4ju6ohajqp4v" path="res://ui/pictures/cards/正式版角色牌/IMG_018.png" id="2_py1uk"]
-[ext_resource type="PackedScene" path="res://game/game_ui/patterns/properties/properties.tscn" id="3_upuoq"]
+[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_0pa8c"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/base_pack/IMG_018.png" id="2_py1uk"]
+[ext_resource type="PackedScene" uid="uid://cnjnoru5rl3gk" path="res://game/game_ui/patterns/properties/properties.tscn" id="3_upuoq"]
 
 [sub_resource type="GDScript" id="GDScript_jh1ru"]
 script/source = "extends Node

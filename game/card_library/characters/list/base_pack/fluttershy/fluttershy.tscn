@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://gehs234hub1a"]
+
+[ext_resource type="PackedScene" uid="uid://dtnvu4sql4a4e" path="res://game/card_library/characters/species/pegasus/pegasus.tscn" id="1_080qq"]
+[ext_resource type="Texture2D" uid="uid://b0frjq5sga5jo" path="res://game/card_library/characters/list/base_pack/fluttershy/fluttershy.png" id="2_7o07t"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/fluttershy/fluttershy.gd" id="2_40xqd"]
+
+[node name="Fluttershy" instance=ExtResource("1_080qq")]
+texture = ExtResource("2_7o07t")
+script = ExtResource("2_40xqd")
+character_name = "Fluttershy"

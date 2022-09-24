@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkarb4v4q4ose"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_6n0fo"]
+[ext_resource type="Texture2D" uid="uid://ya2f3mhpar64" path="res://game/card_library/characters/list/base_pack/rarity/rarity.png" id="2_ljxj4"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/rarity/rarity.gd" id="3_u18jv"]
+
+[node name="Rarity" instance=ExtResource("1_6n0fo")]
+texture = ExtResource("2_ljxj4")
+script = ExtResource("3_u18jv")
+character_name = "Rarity"

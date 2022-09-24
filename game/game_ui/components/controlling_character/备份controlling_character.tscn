@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_7wr2i"]
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/controlling_character.gd" id="2_xdfkr"]
 [ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="3_fi0ee"]
-[ext_resource type="Texture2D" uid="uid://pw03b3wt8qq2" path="res://ui/pictures/cards/正式版角色牌/IMG_001.png" id="4_vnwso"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/base_pack/Twilight_Sparkle/Twilight_Sparkle.png" id="4_vnwso"]
 [ext_resource type="PackedScene" uid="uid://cnjnoru5rl3gk" path="res://game/game_ui/patterns/properties/properties.tscn" id="5_yfyjy"]
 [ext_resource type="PackedScene" uid="uid://dm5htxqdpc2lu" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.tscn" id="6_dwlgt"]
 

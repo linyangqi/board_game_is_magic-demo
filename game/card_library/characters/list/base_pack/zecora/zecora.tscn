@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://m1n182bkuydk"]
+
+[ext_resource type="PackedScene" uid="uid://c5yq1v0ilonmu" path="res://game/card_library/characters/species/other/other_species.tscn" id="1_l2ypu"]
+[ext_resource type="Texture2D" uid="uid://1nomktj5eqqf" path="res://game/card_library/characters/list/base_pack/zecora/zecora.png" id="2_7bxt2"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/zecora/zecora.gd" id="2_bti2i"]
+
+[node name="Zecora" instance=ExtResource("1_l2ypu")]
+texture = ExtResource("2_7bxt2")
+script = ExtResource("2_bti2i")
+character_name = "Zecora"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://84bqdeyn4yij"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_yo1s8"]
+[ext_resource type="Texture2D" uid="uid://c4otxyxwtlxjj" path="res://game/card_library/characters/list/base_pack/sunset_shimmer/sunset_shimmer.png" id="2_kba78"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/sunset_shimmer/sunset_shimmer.gd" id="3_konh1"]
+
+[node name="Sunset Shimmer" instance=ExtResource("1_yo1s8")]
+texture = ExtResource("2_kba78")
+script = ExtResource("3_konh1")
+character_name = "Sunset Shimmer"

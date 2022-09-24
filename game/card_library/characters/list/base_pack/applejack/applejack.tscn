@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvnsw0ilg83ip"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_d22vy"]
+[ext_resource type="Texture2D" uid="uid://djmtoadvkgc3" path="res://game/card_library/characters/list/base_pack/applejack/applejack.png" id="2_aenub"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/applejack/applejack.gd" id="3_fifu5"]
+
+[node name="Applejack" instance=ExtResource("1_d22vy")]
+texture = ExtResource("2_aenub")
+script = ExtResource("3_fifu5")
+character_name = "Applejack"

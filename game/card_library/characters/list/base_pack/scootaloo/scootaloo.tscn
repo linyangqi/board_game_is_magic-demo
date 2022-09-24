@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlrxvuetii3t7"]
+
+[ext_resource type="PackedScene" uid="uid://dtnvu4sql4a4e" path="res://game/card_library/characters/species/pegasus/pegasus.tscn" id="1_t10bk"]
+[ext_resource type="Texture2D" uid="uid://64rxekgv71t5" path="res://game/card_library/characters/list/base_pack/scootaloo/scootaloo.png" id="2_kmapi"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/scootaloo/scootaloo.gd" id="3_ogwug"]
+
+[node name="Scootaloo" instance=ExtResource("1_t10bk")]
+texture = ExtResource("2_kmapi")
+script = ExtResource("3_ogwug")
+character_name = "Scootaloo"

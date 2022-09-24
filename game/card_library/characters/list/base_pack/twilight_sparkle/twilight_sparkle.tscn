@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmatf5mt7s132"]
+
+[ext_resource type="PackedScene" uid="uid://cmd17fxo7dfyq" path="res://game/card_library/characters/species/alicorn/alicorn.tscn" id="1_eenv0"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/base_pack/Twilight_Sparkle/Twilight_Sparkle.png" id="2_gxjga"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/Twilight_Sparkle/Twilight_Sparkle.gd" id="3_tfjnh"]
+
+[node name="Twilight Sparkle" instance=ExtResource("1_eenv0")]
+texture = ExtResource("2_gxjga")
+script = ExtResource("3_tfjnh")
+character_name = "Twilight Sparkle"

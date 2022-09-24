@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs63r0txck5du"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_fet5e"]
+[ext_resource type="Texture2D" uid="uid://dh5w03qjf4ijr" path="res://game/card_library/characters/list/base_pack/big_macintosh/big_macintosh.png" id="2_losr2"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/big_macintosh/big_macintosh.gd" id="3_kso27"]
+
+[node name="Big Macintosh" instance=ExtResource("1_fet5e")]
+texture = ExtResource("2_losr2")
+script = ExtResource("3_kso27")
+character_name = "Big Macintosh"

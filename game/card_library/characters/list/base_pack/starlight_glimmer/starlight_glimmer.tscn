@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckqt5hsemtdgs"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_wiavq"]
+[ext_resource type="Texture2D" uid="uid://exnawsah04yb" path="res://game/card_library/characters/list/base_pack/starlight_glimmer/starlight_glimmer.png" id="2_764bi"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/starlight_glimmer/starlight_glimmer.gd" id="2_mpvdn"]
+
+[node name="Starlight Glimmer" instance=ExtResource("1_wiavq")]
+texture = ExtResource("2_764bi")
+script = ExtResource("2_mpvdn")
+character_name = "Starlight Glimmer"

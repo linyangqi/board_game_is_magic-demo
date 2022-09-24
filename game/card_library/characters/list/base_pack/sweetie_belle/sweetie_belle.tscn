@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://wlndot45hx56"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_dumt3"]
+[ext_resource type="Texture2D" uid="uid://bjvoafsvi64bb" path="res://game/card_library/characters/list/base_pack/sweetie_belle/sweetie_belle.png" id="2_7tby8"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/sweetie_belle/sweetie_belle.gd" id="3_owsh3"]
+
+[node name="Sweetie Belle" instance=ExtResource("1_dumt3")]
+texture = ExtResource("2_7tby8")
+script = ExtResource("3_owsh3")
+character_name = "Sweetie Belle"

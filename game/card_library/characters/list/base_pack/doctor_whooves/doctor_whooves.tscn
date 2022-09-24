@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://git1p8qyk4hk"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_d22vy"]
+[ext_resource type="Texture2D" uid="uid://cvfvmfvee21pu" path="res://game/card_library/characters/list/base_pack/doctor_whooves/doctor_whooves.png" id="2_8qqsr"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/doctor_whooves/doctor_whooves.gd" id="3_sdd7n"]
+
+[node name="Doctor Whooves" instance=ExtResource("1_d22vy")]
+texture = ExtResource("2_8qqsr")
+script = ExtResource("3_sdd7n")
+character_name = "Applejack"

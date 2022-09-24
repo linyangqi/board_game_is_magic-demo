@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://clssud2hnwhc4"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_elsx1"]
+[ext_resource type="Texture2D" uid="uid://b617sm8whrno7" path="res://game/card_library/characters/list/base_pack/pinkie_pie/pinkie_pie.png" id="2_t0d3o"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/pinkie_pie/pinkie_pie.gd" id="3_ngidy"]
+
+[node name="Pinkie Pie" instance=ExtResource("1_elsx1")]
+texture = ExtResource("2_t0d3o")
+script = ExtResource("3_ngidy")
+character_name = "Pinkie Pie"

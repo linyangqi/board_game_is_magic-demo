@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwkwldyoq5pwf"]
+
+[ext_resource type="PackedScene" uid="uid://dtnvu4sql4a4e" path="res://game/card_library/characters/species/pegasus/pegasus.tscn" id="1_ca2j0"]
+[ext_resource type="Texture2D" uid="uid://btrfv31rq8k5j" path="res://game/card_library/characters/list/base_pack/rainbow_dash/rainbow_dash.png" id="2_062nq"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/rainbow_dash/rainbow_dash.gd" id="3_iyg6l"]
+
+[node name="Rainbow Dash" instance=ExtResource("1_ca2j0")]
+texture = ExtResource("2_062nq")
+script = ExtResource("3_iyg6l")
+character_name = "Rainbow Dash"

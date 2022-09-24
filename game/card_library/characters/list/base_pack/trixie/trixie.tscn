@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3vktts2u38kx"]
+
+[ext_resource type="PackedScene" uid="uid://dbisjgxp6m0pd" path="res://game/card_library/characters/species/unicorn/unicorn.tscn" id="1_v83r7"]
+[ext_resource type="Texture2D" uid="uid://bgt72qn5yuet1" path="res://game/card_library/characters/list/base_pack/trixie/trixie.png" id="2_sdhkx"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/trixie/trixie.gd" id="3_it7sx"]
+
+[node name="Trixie" instance=ExtResource("1_v83r7")]
+texture = ExtResource("2_sdhkx")
+script = ExtResource("3_it7sx")
+character_name = "Trixie"

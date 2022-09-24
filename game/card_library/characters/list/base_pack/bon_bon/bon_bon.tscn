@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvwd7331ihdy0"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_j3wtv"]
+[ext_resource type="Texture2D" uid="uid://okro7glfysje" path="res://game/card_library/characters/list/base_pack/bon_bon/bon_bon.png" id="2_ob2fi"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/bon_bon/bon_bon.gd" id="2_xorid"]
+
+[node name="Bon Bon" instance=ExtResource("1_j3wtv")]
+texture = ExtResource("2_ob2fi")
+script = ExtResource("2_xorid")
+character_name = "Bon Bon"

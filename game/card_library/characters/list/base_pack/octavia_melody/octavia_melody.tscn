@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdu5p7bo2kq2s"]
+
+[ext_resource type="PackedScene" uid="uid://dx7xc56ocxpu1" path="res://game/card_library/characters/species/earth_pony/earth_pony.tscn" id="1_prkix"]
+[ext_resource type="Texture2D" uid="uid://br50o6gi6r60v" path="res://game/card_library/characters/list/base_pack/octavia_melody/octavia_melody.png" id="2_r7yj2"]
+[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/octavia_melody/octavia_melody.gd" id="2_vg2kw"]
+
+[node name="Octavia Melody" instance=ExtResource("1_prkix")]
+texture = ExtResource("2_r7yj2")
+script = ExtResource("2_vg2kw")
+character_name = "Octavia Melody"
