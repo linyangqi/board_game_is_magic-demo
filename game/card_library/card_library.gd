@@ -22,6 +22,7 @@ const CARD_PATH :Dictionary = {
 	#角色牌，注意这里index应与节点中character_name属性相同
 		#因为”寻源“是利用character_name的
 		#比如 CardLibrary.load_card(character.character_name)
+	"Twilight Sparkle":CHARACTER_PATH + "base_pack/Twilight_Sparkle.tscn",
 	"狮狮" : CHARACTER_PATH + "extension_2/狮狮.tscn",
 	"小梅" : CHARACTER_PATH + "extension_2/小梅.tscn",
 	"睦睦" : CHARACTER_PATH + "extension_2/睦睦.tscn",

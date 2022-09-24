@@ -8,7 +8,7 @@ const CARD_AMOUNTS:Dictionary = {
 		"小梅":1,
 		"睦睦":1,
 		"灵樨":1,
-		
+		"Twilight Sparkle":1
 	},
 	"events":{
 		"落叶长跑":3,
