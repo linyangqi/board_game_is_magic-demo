@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_vy7q8"]
 [ext_resource type="PackedScene" path="res://game/game_ui/components/decks/deck_ui.tscn" id="2_qyxg1"]
-[ext_resource type="Texture2D" path="res://game/card_library/playable/tools/list/extension_3/IMG_033.png" id="3_kakw2"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/tools/奖励牌.png" id="3_kakw2"]
 [ext_resource type="Texture2D" uid="uid://cwm4on0hs4ltb" path="res://game/card_library/events/事件牌堆.png" id="4_15mno"]
 
 [node name="Decks" type="PanelContainer"]
