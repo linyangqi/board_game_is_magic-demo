@@ -12,17 +12,22 @@
 script = ExtResource("1_onxev")
 
 [node name="Decks" parent="." instance=ExtResource("2_e1n50")]
+anchors_preset = 5
 
 [node name="Event" parent="." instance=ExtResource("3_fh8u4")]
+anchors_preset = 1
 
 [node name="CharacterList" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 offset_right = 312.0
 offset_bottom = 644.0
 theme = ExtResource("3_1d384")
 metadata/_edit_group_ = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CharacterList"]
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2i(300, 100)
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_vertical = 2
@@ -30,18 +35,20 @@ metadata/_edit_group_ = true
 
 [node name="CharacterPlaces" type="VBoxContainer" parent="CharacterList/ScrollContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2i(300, 100)
 offset_right = 300.0
 offset_bottom = 620.0
 alignment = 1
 
 [node name="CharacterPlace" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_right = 300.0
 offset_bottom = 100.0
 
 [node name="CharacterPlace2" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_top = 104.0
@@ -49,6 +56,7 @@ offset_right = 300.0
 offset_bottom = 204.0
 
 [node name="CharacterPlace3" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_top = 208.0
@@ -56,6 +64,7 @@ offset_right = 300.0
 offset_bottom = 308.0
 
 [node name="CharacterPlace4" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_top = 312.0
@@ -63,6 +72,7 @@ offset_right = 300.0
 offset_bottom = 412.0
 
 [node name="CharacterPlace5" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_top = 416.0
@@ -70,6 +80,7 @@ offset_right = 300.0
 offset_bottom = 516.0
 
 [node name="CharacterPlace6" parent="CharacterList/ScrollContainer/CharacterPlaces" instance=ExtResource("3_2tlnm")]
+custom_minimum_size = Vector2i(300, 100)
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_top = 520.0
@@ -77,16 +88,21 @@ offset_right = 300.0
 offset_bottom = 620.0
 
 [node name="ControllingCharacter" parent="." instance=ExtResource("4_rfx68")]
+anchors_preset = 7
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -960.0
 offset_right = 960.0
 
 [node name="BattleScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 theme = ExtResource("3_1d384")
 metadata/_edit_group_ = true
 
 [node name="DetailScreen" type="Control" parent="."]
 unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
 theme = ExtResource("3_1d384")
 script = ExtResource("7_lbkwv")

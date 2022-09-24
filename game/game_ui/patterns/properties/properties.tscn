@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://game/game_ui/patterns/properties/properties.gd" id="2_q18nf"]
 
 [node name="Properties" type="RichTextLabel"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1722.0

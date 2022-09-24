@@ -7,4 +7,4 @@
 [node name="Doctor Whooves" instance=ExtResource("1_d22vy")]
 texture = ExtResource("2_8qqsr")
 script = ExtResource("3_sdd7n")
-character_name = "Applejack"
+character_name = "Doctor Whooves"

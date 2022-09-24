@@ -81,6 +81,7 @@ func _update(): #update()被父类用了
 	#另一种方法是“+=”法，这样每行后面还能有注释，而且也便于调整
 	#还有一种append_text()……有点麻烦，算了
 	text = "[font_size=40]%s[/font_size]" % character.character_name #角色名
+	#ps：这里的数字不代表”初始值“，而是数字的颜色化显示用的参考值
 	text += "\n体力： %s / %s" % [colored_int("health",10),colored_int("max_health",2)]
 	text += "\n护甲： %s / 4" % colored_int("armor_value",10)
 	text += "\n心理伤害： %s" % colored_int("mental_attack",2)

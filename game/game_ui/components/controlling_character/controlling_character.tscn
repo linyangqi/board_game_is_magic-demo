@@ -7,10 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://dm5htxqdpc2lu" path="res://game/game_ui/components/controlling_character/hand_cards/hand_cards_ui.tscn" id="6_dwlgt"]
 
 [node name="ControllingCharacter" type="PanelContainer"]
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = -338.0
+grow_horizontal = 2
+grow_vertical = 0
 theme = ExtResource("1_7wr2i")
 script = ExtResource("2_xdfkr")
 
@@ -42,7 +45,7 @@ offset_bottom = 308.0
 
 [node name="HandCards" parent="MarginContainer/HBoxContainer" instance=ExtResource("6_dwlgt")]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(800, 0)
+custom_minimum_size = Vector2i(800, 0)
 offset_left = 1060.0
 offset_right = 1860.0
 offset_bottom = 308.0
