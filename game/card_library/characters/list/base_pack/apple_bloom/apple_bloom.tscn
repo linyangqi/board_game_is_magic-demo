@@ -8,3 +8,7 @@
 texture = ExtResource("2_mnjvc")
 script = ExtResource("2_i4j32")
 character_name = "Apple Bloom"
+collection_requirement = ["蝴蝶结", "纸笔", "苹果"]
+max_health = 13
+mental_attack = 2
+magic_attack = 2

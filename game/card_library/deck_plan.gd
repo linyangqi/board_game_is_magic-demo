@@ -6,10 +6,10 @@ class_name DeckPlan
 #由于Deck类的结构基本相同，这里的格式也稍微统一些吧
 const CARD_AMOUNTS:Dictionary = {
 	"characters":{
-		"狮狮":1,
-		"小梅":1,
-		"睦睦":1,
-		"灵樨":1,
+		"狮狮":0,
+		"小梅":0,
+		"睦睦":0,
+		"灵樨":0,
 		"Applejack":1,
 		"Apple Bloom":1,
 		"Big Macintosh":1,

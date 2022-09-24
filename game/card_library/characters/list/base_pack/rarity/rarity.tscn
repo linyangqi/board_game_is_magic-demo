@@ -8,3 +8,7 @@
 texture = ExtResource("2_ljxj4")
 script = ExtResource("3_u18jv")
 character_name = "Rarity"
+collection_requirement = ["镜子", "衣服", "线轴"]
+max_health = 12
+physical_attack = 2
+magic_attack = 2

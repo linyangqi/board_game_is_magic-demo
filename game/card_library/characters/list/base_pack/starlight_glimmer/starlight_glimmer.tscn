@@ -8,3 +8,6 @@
 texture = ExtResource("2_764bi")
 script = ExtResource("2_mpvdn")
 character_name = "Starlight Glimmer"
+collection_requirement = ["法杖", "魔法书", "哨子"]
+max_health = 12
+magic_attack = 2

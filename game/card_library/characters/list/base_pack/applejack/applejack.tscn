@@ -8,3 +8,9 @@
 texture = ExtResource("2_aenub")
 script = ExtResource("3_fifu5")
 character_name = "Applejack"
+collection_requirement = ["绳索", "帽子", "苹果"]
+max_health = 15
+mental_attack = 2
+physical_attack = 2
+magic_attack = 0
+move_range = 2

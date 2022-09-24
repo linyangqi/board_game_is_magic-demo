@@ -8,3 +8,7 @@
 texture = ExtResource("2_7tby8")
 script = ExtResource("3_owsh3")
 character_name = "Sweetie Belle"
+collection_requirement = ["话筒", "乐器", "线轴"]
+max_health = 12
+physical_attack = 2
+magic_attack = 2

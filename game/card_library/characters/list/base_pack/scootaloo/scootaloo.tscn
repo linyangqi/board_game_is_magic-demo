@@ -8,3 +8,7 @@
 texture = ExtResource("2_kmapi")
 script = ExtResource("3_ogwug")
 character_name = "Scootaloo"
+collection_requirement = ["滑板", "帽子", "奖杯"]
+max_health = 13
+physical_attack = 2
+move_range = 2

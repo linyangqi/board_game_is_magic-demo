@@ -8,3 +8,9 @@
 texture = ExtResource("2_ltqyv")
 script = ExtResource("2_74cng")
 character_name = "Derpy Hooves"
+collection_requirement = ["马芬", "纸笔", "雷雨云"]
+max_health = 13
+mental_attack = 3
+physical_attack = 3
+magic_attack = 0
+move_range = 2

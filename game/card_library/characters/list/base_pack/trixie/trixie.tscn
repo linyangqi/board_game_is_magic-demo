@@ -8,3 +8,7 @@
 texture = ExtResource("2_sdhkx")
 script = ExtResource("3_it7sx")
 character_name = "Trixie"
+collection_requirement = ["法杖", "帽子", "护身符"]
+max_health = 13
+mental_attack = 2
+magic_attack = 2

@@ -8,3 +8,7 @@
 texture = ExtResource("2_062nq")
 script = ExtResource("3_iyg6l")
 character_name = "Rainbow Dash"
+collection_requirement = ["雷雨云", "哨子", "奖杯"]
+max_health = 13
+physical_attack = 2
+magic_attack = 2

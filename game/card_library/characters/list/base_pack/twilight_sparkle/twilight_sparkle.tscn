@@ -1,10 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmatf5mt7s132"]
+[gd_scene load_steps=4 format=3 uid="uid://xk4sf11s8b7e"]
 
 [ext_resource type="PackedScene" uid="uid://cmd17fxo7dfyq" path="res://game/card_library/characters/species/alicorn/alicorn.tscn" id="1_eenv0"]
-[ext_resource type="Texture2D" path="res://game/card_library/characters/list/base_pack/Twilight_Sparkle/Twilight_Sparkle.png" id="2_gxjga"]
-[ext_resource type="Script" path="res://game/card_library/characters/list/base_pack/Twilight_Sparkle/Twilight_Sparkle.gd" id="3_tfjnh"]
+[ext_resource type="Texture2D" uid="uid://0nsphqs8o327" path="res://game/card_library/characters/list/base_pack/twilight_sparkle/twilight_sparkle.png" id="2_xhdhe"]
+
+[sub_resource type="GDScript" id="GDScript_f06cj"]
+script/source = "extends Alicorn
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="Twilight Sparkle" instance=ExtResource("1_eenv0")]
-texture = ExtResource("2_gxjga")
-script = ExtResource("3_tfjnh")
+texture = ExtResource("2_xhdhe")
+script = SubResource("GDScript_f06cj")
 character_name = "Twilight Sparkle"
+collection_requirement = ["魔法书", "望远镜", "纸笔"]
+mental_attack = 2
+magic_attack = 2

@@ -8,3 +8,7 @@
 texture = ExtResource("2_w0wjk")
 script = ExtResource("2_oipxr")
 character_name = "Lyra Heartstring"
+collection_requirement = ["乐器", "镜子", "魔法书"]
+max_health = 13
+mental_attack = 2
+magic_attack = 2

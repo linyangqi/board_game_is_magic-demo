@@ -8,3 +8,7 @@
 texture = ExtResource("2_7o07t")
 script = ExtResource("2_40xqd")
 character_name = "Fluttershy"
+collection_requirement = ["宠物", "花束", "乐谱"]
+max_health = 13
+mental_attack = 2
+magic_attack = 2

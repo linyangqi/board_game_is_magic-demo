@@ -8,3 +8,6 @@
 texture = ExtResource("2_ob2fi")
 script = ExtResource("2_xorid")
 character_name = "Bon Bon"
+collection_requirement = ["绳索", "眼镜", "纸笔"]
+physical_attack = 2
+move_range = 2

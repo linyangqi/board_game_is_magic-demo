@@ -8,3 +8,6 @@
 texture = ExtResource("2_kba78")
 script = ExtResource("3_konh1")
 character_name = "Sunset Shimmer"
+collection_requirement = ["魔法书", "镜子", "纸笔"]
+max_health = 13
+magic_attack = 2

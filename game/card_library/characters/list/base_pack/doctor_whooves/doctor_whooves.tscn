@@ -8,3 +8,6 @@
 texture = ExtResource("2_8qqsr")
 script = ExtResource("3_sdd7n")
 character_name = "Doctor Whooves"
+collection_requirement = ["机器", "望远镜", "沙漏"]
+physical_attack = 2
+magic_attack = 2

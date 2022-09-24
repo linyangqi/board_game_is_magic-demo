@@ -8,3 +8,6 @@
 texture = ExtResource("2_r7yj2")
 script = ExtResource("2_vg2kw")
 character_name = "Octavia Melody"
+collection_requirement = ["乐器", "蝴蝶结", "乐谱"]
+max_health = 12
+physical_attack = 2

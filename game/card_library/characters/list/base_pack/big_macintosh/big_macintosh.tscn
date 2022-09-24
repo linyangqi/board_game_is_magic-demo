@@ -8,3 +8,8 @@
 texture = ExtResource("2_losr2")
 script = ExtResource("3_kso27")
 character_name = "Big Macintosh"
+collection_requirement = ["蹄铁", "犁", "苹果"]
+max_health = 15
+mental_attack = 0
+physical_attack = 3
+magic_attack = 0

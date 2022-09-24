@@ -8,3 +8,8 @@
 texture = ExtResource("2_7bxt2")
 script = ExtResource("2_bti2i")
 character_name = "Zecora"
+collection_requirement = ["面具", "药剂", "花束"]
+max_health = 13
+mental_attack = 2
+physical_attack = 0
+magic_attack = 2

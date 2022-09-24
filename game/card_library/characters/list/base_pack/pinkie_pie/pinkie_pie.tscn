@@ -8,3 +8,7 @@
 texture = ExtResource("2_t0d3o")
 script = ExtResource("3_ngidy")
 character_name = "Pinkie Pie"
+collection_requirement = ["派对大炮", "纸杯蛋糕", "蛋糕"]
+max_health = 12
+mental_attack = 2
+move_range = 2

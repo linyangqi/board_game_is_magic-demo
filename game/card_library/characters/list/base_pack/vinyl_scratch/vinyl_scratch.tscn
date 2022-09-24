@@ -8,3 +8,7 @@
 texture = ExtResource("2_aq602")
 script = ExtResource("2_tho4u")
 character_name = "Vinyl Scratch"
+collection_requirement = ["音响", "眼镜", "耳机"]
+max_health = 13
+physical_attack = 2
+magic_attack = 2
