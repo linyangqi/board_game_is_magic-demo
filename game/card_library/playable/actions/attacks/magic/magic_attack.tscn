@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://cnl1ljiks14ej"]
 
-[ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/attack_card.tscn" id="1_n8gt3"]
-[ext_resource type="Texture2D" uid="uid://dbwr7rxatmpju" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_052.png" id="2_2h36g"]
+[ext_resource type="PackedScene" uid="uid://bu3r710x3jkn" path="res://game/card_library/playable/actions/attacks/attack_card.tscn" id="1_n8gt3"]
+[ext_resource type="Texture2D" uid="uid://dbwr7rxatmpju" path="res://game/card_library/playable/actions/attacks/magic/法术攻击.png" id="2_2h36g"]
 
 [node name="MagicAttack" instance=ExtResource("1_n8gt3")]
 texture = ExtResource("2_2h36g")

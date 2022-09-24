@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dh40xkaw0qno1"]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_vy7q8"]
-[ext_resource type="PackedScene" uid="uid://dirvspc67pl3p" path="res://game/game_ui/components/decks/deck_ui.tscn" id="2_qyxg1"]
-[ext_resource type="Texture2D" uid="uid://dlpul2jw7luul" path="res://ui/pictures/cards/BOSS扩展包/IMG_033.png" id="3_kakw2"]
-[ext_resource type="Texture2D" uid="uid://cwm4on0hs4ltb" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_009.png" id="4_15mno"]
+[ext_resource type="PackedScene" path="res://game/game_ui/components/decks/deck_ui.tscn" id="2_qyxg1"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/tools/list/extension_3/IMG_033.png" id="3_kakw2"]
+[ext_resource type="Texture2D" uid="uid://cwm4on0hs4ltb" path="res://game/card_library/events/事件牌堆.png" id="4_15mno"]
 
 [node name="Decks" type="PanelContainer"]
 anchor_left = 0.5

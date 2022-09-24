@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbxmot8yxj4tx"]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_4ugre"]
-[ext_resource type="Texture2D" uid="uid://xx5wgjiqn6m" path="res://ui/pictures/cards/正式版事件牌/IMG_001.png" id="2_euq1v"]
+[ext_resource type="Texture2D" path="res://game/card_library/events/list/base_pack/无序重临.png" id="2_euq1v"]
 [ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="2_l2juy"]
 
 [node name="Event" type="PanelContainer"]

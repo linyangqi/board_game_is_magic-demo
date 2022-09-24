@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3ti58swh5yod"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://b8dndfbq7hwrv" path="res://ui/pictures/cards/吉祥物扩展包/IMG_031.png" id="1_43avq"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/list/extension_2/IMG_031.png" id="1_43avq"]
 [ext_resource type="Script" path="res://game/game_ui/components/detail_screen/card_detail/card_detail.gd" id="2_4sgb5"]
 
 [node name="CardDetail" type="TextureRect"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" path="res://game/card_library/playable/actions/attacks/attack_card.tscn" id="1_n8gt3"]
-[ext_resource type="Texture2D" uid="uid://b0jrfy22dkg55" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_050.png" id="2_kjf1d"]
+[ext_resource type="PackedScene" uid="uid://bu3r710x3jkn" path="res://game/card_library/playable/actions/attacks/attack_card.tscn" id="1_n8gt3"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/actions/attacks/mental/心理攻击.png" id="2_kjf1d"]
 
 [node name="MentalAttack" instance=ExtResource("1_n8gt3")]
 texture = ExtResource("2_kjf1d")

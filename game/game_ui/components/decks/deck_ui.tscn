@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dirvspc67pl3p"]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_008.png" id="1_m01td"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/摸牌堆.png" id="1_m01td"]
 
 [node name="Deck" type="VBoxContainer"]
 offset_right = 55.0

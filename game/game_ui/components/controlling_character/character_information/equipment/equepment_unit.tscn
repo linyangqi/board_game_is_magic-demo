@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bknyry83qrlds"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dpg5hktlom8mn" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_ojowj"]
-[ext_resource type="Texture2D" uid="uid://cbjjk50nmefig" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_020.png" id="2_haovu"]
+[ext_resource type="PackedScene" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.tscn" id="1_ojowj"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/tools/list/base_pack/派对大炮.png" id="2_haovu"]
 
 [node name="EquipmentUnit" instance=ExtResource("1_ojowj")]
 custom_minimum_size = Vector2(70, 100)

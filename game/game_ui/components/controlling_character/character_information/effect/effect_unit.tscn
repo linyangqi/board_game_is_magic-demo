@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_fbcgj"]
-[ext_resource type="Texture2D" uid="uid://cxlleoswaiusy" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_015.png" id="2_r3nd2"]
+[ext_resource type="Texture2D" path="res://game/card_library/playable/tools/list/base_pack/蝴蝶结.png" id="2_r3nd2"]
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/character_information/effect/effect_unit.gd" id="3_3sclt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m2vxi"]

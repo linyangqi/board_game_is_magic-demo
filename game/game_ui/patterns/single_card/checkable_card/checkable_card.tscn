@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpg5hktlom8mn"]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_fbcgj"]
-[ext_resource type="Texture2D" uid="uid://dogbc6ail6wyq" path="res://ui/pictures/cards/正式版道具_行动_杂牌/IMG_014.png" id="2_vc216"]
+[ext_resource type="Texture2D" path="res://game/card_library/characters/species/角色牌.png" id="2_vc216"]
 [ext_resource type="Script" path="res://game/game_ui/patterns/single_card/checkable_card/checkable_card.gd" id="3_y0yf2"]
 
 [node name="CheckableCard" type="TextureRect"]
