@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://635sg20atlko"]
+
+[ext_resource type="Script" path="res://game/effect_library/effect_type/compound_effect/compound_effect.gd" id="1_2t6xo"]
+
+[node name="CompoundEffect" type="Node"]
+script = ExtResource("1_2t6xo")
+tags = ["compound"]

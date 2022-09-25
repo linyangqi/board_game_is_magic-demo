@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://b706hkp66q8dn"]
 
-[ext_resource type="Texture2D" path="res://game/card_library/playable/摸牌堆.png" id="1_88w48"]
+[ext_resource type="Texture2D" uid="uid://c33mrk7ukdobc" path="res://game/card_library/playable/摸牌堆.png" id="1_88w48"]
 [ext_resource type="Script" path="res://game/card_library/playable/playable_card.gd" id="2_8essy"]
 
 [node name="PlayableCard" type="TextureRect"]
@@ -10,3 +10,5 @@ texture = ExtResource("1_88w48")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("2_8essy")
+
+[node name="CardEffect" type="Node" parent="."]

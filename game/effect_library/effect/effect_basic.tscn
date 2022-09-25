@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6rw2x1hjhhm6"]
-
-[ext_resource type="Script" path="res://game/effect_library/effect/effect_basic.gd" id="1_hvx8j"]
-[ext_resource type="PackedScene" path="res://game/effect_library/conditions/condition_manager.tscn" id="2_pss5f"]
-
-[node name="Effect" type="Node"]
-script = ExtResource("1_hvx8j")
-
-[node name="ConditionManager" parent="." instance=ExtResource("2_pss5f")]

@@ -1,0 +1,33 @@
+instant 立刻生效，不过可能不会需要“挂载”在表上？
+disabled 挂载但不生效，面对“榨干魔法”事件用
+
+from_character:(id) 效果发动者，-1表示由事件引起或者其他未知来源
+——不过未知来源的话可以省去这个吧？或者from_destiny ：“是不公的命指示我来的！”<-(划掉)
+to_character:(id) 效果接受者，-1表示全体有效（在manager中转换为根据玩家id遍历的多个effect……？）
+——或者用一个to_all_character ?
+
+ability 技能效果
+	passive_ability
+	active_ability
+
+equipment_effect 装备效果（包括元素……？）
+	element_effect
+	weapon_effect
+	armor_effect
+
+
+#区分attack与damage
+attack #由攻击牌发动
+	mental_attack
+	physical_attack
+	magic_attack
+damage
+	mental_damage
+	physical_damage
+	magic_damage
+	true_damage #真伤，可能并不由攻击牌造成
+
+equip
+
+
+ranged 范围限制

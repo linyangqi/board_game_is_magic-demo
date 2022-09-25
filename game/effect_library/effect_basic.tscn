@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2fs71aijfcsg"]
+
+[ext_resource type="Script" path="res://game/effect_library/effect_basic.gd" id="1_hvx8j"]
+
+[node name="Effect" type="Node"]
+script = ExtResource("1_hvx8j")
+tags = []

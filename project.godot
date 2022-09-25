@@ -97,7 +97,7 @@ _global_script_classes=[{
 "base": "Node",
 "class": &"Effect",
 "language": &"GDScript",
-"path": "res://game/effect_library/effect/effect_basic.gd"
+"path": "res://game/effect_library/effect_basic.gd"
 }, {
 "base": "ToolCard",
 "class": &"EffectCard",
@@ -204,6 +204,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/game_ui/patterns/single_card/checkable_card/selectable_card/selectable_card.gd"
 }, {
+"base": "Object",
+"class": &"TagBoard",
+"language": &"GDScript",
+"path": "res://game/effect_library/tag_board.gd"
+}, {
 "base": "PlayableCard",
 "class": &"ToolCard",
 "language": &"GDScript",
@@ -269,6 +274,7 @@ _global_script_class_icons={
 "Player": "",
 "PlayerRound": "",
 "SelectableCard": "",
+"TagBoard": "",
 "ToolCard": "",
 "UUID": "",
 "Unicorn": "",
@@ -289,6 +295,7 @@ MusicDj="*res://ui/audio/music/music_dj.tscn"
 DefaultShortcut="*res://ui/display/default_shortcut.tscn"
 SignalAgent="*res://game/helper/signal_agent/signal_agent.tscn"
 LocalizationManager="*res://addons/localization_editor/LocalizationManager.gd"
+EffectBoard="*res://game/effect_library/effect_board.gd"
 
 [display]
 

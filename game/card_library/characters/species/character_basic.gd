@@ -52,7 +52,8 @@ enum EquipmentIndex{element,weapon,armor,backup}
 var equipment_limits:Array[int] = [1,1,1,1] #这样设计至少能保证狮狮，星璇的话当成buff吧
 
 
-var armor_value:int = 0 # 护甲值
+#var armor_value:int = 0 # 护甲值
+#新设计模式下护甲值视作加成效果而非基础属性了
 var collection_count:int = 0
 
 
@@ -64,4 +65,8 @@ var collection_count:int = 0
 #@onready var abilities = $Abilities
 #子节点这种方式差不多相当于挂代码了√——大概能比数组方式更适合用来作“技能”吧
 
-
+#2022.9.25新设计模式下，区分”主动技能“和”被动技能“
+#被动技能自动注册到”效果注册表“上，而主动技能不会自动注册
+#或者，某些特殊情况下发动的主动技能，其实也可以注册的
+#嘛，那这样其实就不好直接区分主动/被动技能了……
+#那主动技能在调取的时候检查一下吧？

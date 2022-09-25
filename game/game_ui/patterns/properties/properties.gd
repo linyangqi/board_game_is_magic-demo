@@ -83,7 +83,8 @@ func _update(): #update()被父类用了
 	text = "[font_size=40]%s[/font_size]" % character.character_name #角色名
 	#ps：这里的数字不代表”初始值“，而是数字的颜色化显示用的参考值
 	text += "\n体力： %s / %s" % [colored_int("health",10),colored_int("max_health",2)]
-	text += "\n护甲： %s / 4" % colored_int("armor_value",10)
+	#text += "\n护甲： %s / 4" % colored_int("armor_value",10)
+		#新设计模式下护甲值视作效果加成，而非基本属性了
 	text += "\n心理伤害： %s" % colored_int("mental_attack",2)
 	text += "\n物理伤害： %s" % colored_int("physical_attack",2)
 	text += "\n法术伤害： %s" % colored_int("magic_attack",2)

@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bu3r710x3jkn"]
+[gd_scene load_steps=4 format=3 uid="uid://byyg7158sg6o0"]
 
 [ext_resource type="PackedScene" path="res://game/card_library/playable/actions/action_card.tscn" id="1_5fw2t"]
 [ext_resource type="Script" path="res://game/card_library/playable/actions/attacks/attack_card.gd" id="2_nj3ye"]
+[ext_resource type="PackedScene" path="res://game/effect_library/effect_type/card_effect/action/attack/attack.tscn" id="3_43g7r"]
 
 [node name="AttackCard" instance=ExtResource("1_5fw2t")]
 script = ExtResource("2_nj3ye")
+
+[node name="Attack" parent="." index="0" instance=ExtResource("3_43g7r")]

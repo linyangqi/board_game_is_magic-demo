@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://dy7a3orgfqgfj"]
 
-[ext_resource type="PackedScene" path="res://game/card_library/playable/playable_card.tscn" id="1_n4e15"]
+[ext_resource type="PackedScene" uid="uid://b706hkp66q8dn" path="res://game/card_library/playable/playable_card.tscn" id="1_n4e15"]
 [ext_resource type="Script" path="res://game/card_library/playable/actions/action_card.gd" id="2_30j3x"]
+[ext_resource type="Script" path="res://game/effect_library/effect_type/compound_effect/compound_effect.gd" id="3_ixso5"]
 
 [node name="ActionCard" instance=ExtResource("1_n4e15")]
 script = ExtResource("2_30j3x")
 card_name = "行动牌"
+
+[node name="CardEffect" parent="." index="0"]
+script = ExtResource("3_ixso5")

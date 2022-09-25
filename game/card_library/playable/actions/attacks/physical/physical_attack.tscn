@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://du32uvtc8yav6"]
 
 [ext_resource type="PackedScene" uid="uid://bu3r710x3jkn" path="res://game/card_library/playable/actions/attacks/attack_card.tscn" id="1_rwwbr"]
-[ext_resource type="Texture2D" path="res://game/card_library/playable/actions/attacks/physical/物理攻击.png" id="2_4bdhj"]
+[ext_resource type="Texture2D" uid="uid://cr3ft3jh8uj1m" path="res://game/card_library/playable/actions/attacks/physical/物理攻击.png" id="2_4bdhj"]
 
 [node name="PhysicalAttack" instance=ExtResource("1_rwwbr")]
 texture = ExtResource("2_4bdhj")
 card_name = "物理攻击"
+
+[node name="Attack" parent="." index="0"]
+tags = ["attack", "physical_attack"]
