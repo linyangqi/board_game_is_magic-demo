@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://game/effect_library/effect/attack/attack.gd" id="1_fitux"]
+
+[node name="Attack"]
+script = ExtResource("1_fitux")
+type = null
+strength = null

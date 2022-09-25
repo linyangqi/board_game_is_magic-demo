@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3]
-
-[ext_resource type="PackedScene" path="res://game/main/effect_manage/effect_logic/effect/effect_basic.tscn" id="1_6ohql"]
-[ext_resource type="Script" path="res://game/main/effect_manage/effect_logic/effect/attack/attack.gd" id="2_0u1to"]
-
-[node name="Attack" instance=ExtResource("1_6ohql")]
-script = ExtResource("2_0u1to")
-strength = null

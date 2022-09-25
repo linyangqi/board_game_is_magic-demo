@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://game/effect_library/conditions/condition_basic.tscn" id="1_bdlsd"]
+[ext_resource type="Script" path="res://game/effect_library/conditions/time/round_countdown/round_countdown.gd" id="2_66gd6"]
+
+[node name="RoundCountDown" instance=ExtResource("1_bdlsd")]
+script = ExtResource("2_66gd6")

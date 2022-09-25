@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5me3wlpcwq2p"]
+
+[ext_resource type="Script" path="res://game/effect_library/effect_board.gd" id="1_e73mp"]
+
+[node name="EffectBoard" type="Node"]
+script = ExtResource("1_e73mp")
+
+[node name="DrawingCards" type="Node" parent="."]
+
+[node name="StartPlayingCards" type="Node" parent="."]
+
+[node name="Discarding" type="Node" parent="."]
+
+[node name="Attacking" type="Node" parent="."]
+
+[node name="Attacked" type="Node" parent="."]
+
+[node name="Healing" type="Node" parent="."]
+
+[node name="Moving" type="Node" parent="."]
+
+[node name="Dicing" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]

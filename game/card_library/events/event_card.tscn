@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhiy70c2vs3kh"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="Texture2D" path="res://game/card_library/events/事件牌堆.png" id="1_ryft8"]
+[ext_resource type="Texture2D" uid="uid://cwm4on0hs4ltb" path="res://game/card_library/events/事件牌堆.png" id="1_ryft8"]
 [ext_resource type="Script" path="res://game/card_library/events/event_card.gd" id="2_cgemf"]
-[ext_resource type="PackedScene" path="res://game/main/effect_manage/effect_logic/conditions/condition_manager.tscn" id="3_gqti1"]
+[ext_resource type="PackedScene" path="res://game/effect_library/conditions/condition_manager.tscn" id="3_gqti1"]
 
 [node name="EventCard" type="Sprite2D"]
 texture = ExtResource("1_ryft8")

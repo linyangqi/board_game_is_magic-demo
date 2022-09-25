@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://game/effect_library/conditions/condition_basic.gd" id="1_4386j"]
+
+[node name="ConditionBasic" type="Node"]
+script = ExtResource("1_4386j")
