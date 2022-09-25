@@ -84,11 +84,6 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/deck_plan.gd"
 }, {
-"base": "Object",
-"class": &"DropdownItem",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/ui_extensions/dropdown/DropdownItem.gd"
-}, {
 "base": "CharacterBasic",
 "class": &"EarthPony",
 "language": &"GDScript",
@@ -128,41 +123,6 @@ _global_script_classes=[{
 "class": &"HealingCard",
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/heal/healing_card.gd"
-}, {
-"base": "Resource",
-"class": &"LocalizationData",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/model/LocalizationData.gd"
-}, {
-"base": "RefCounted",
-"class": &"LocalizationKeys",
-"language": &"GDScript",
-"path": "res://ui/localization/LocalizationKeys.gd"
-}, {
-"base": "Object",
-"class": &"LocalizationLocaleSingle",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/model/LocalizationLocaleSingle.gd"
-}, {
-"base": "Object",
-"class": &"LocalizationLocalesList",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/model/LocalizationLocalesList.gd"
-}, {
-"base": "RefCounted",
-"class": &"LocalizationPlaceholders",
-"language": &"GDScript",
-"path": "res://ui/localization/LocalizationPlaceholders.gd"
-}, {
-"base": "Resource",
-"class": &"LocalizationPlaceholdersData",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/model/LocalizationPlaceholdersData.gd"
-}, {
-"base": "Resource",
-"class": &"LocalizationSave",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/model/LocalizationSave.gd"
 }, {
 "base": "Object",
 "class": &"MapLibrary",
@@ -214,11 +174,6 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/tool_card.gd"
 }, {
-"base": "Node",
-"class": &"UUID",
-"language": &"GDScript",
-"path": "res://addons/localization_editor/uuid/uuid.gd"
-}, {
 "base": "CharacterBasic",
 "class": &"Unicorn",
 "language": &"GDScript",
@@ -250,7 +205,6 @@ _global_script_class_icons={
 "Condition": "",
 "Deck": "",
 "DeckPlan": "",
-"DropdownItem": "",
 "EarthPony": "",
 "Effect": "",
 "EffectCard": "",
@@ -259,13 +213,6 @@ _global_script_class_icons={
 "GrabableScroll": "",
 "HandCardInUI": "",
 "HealingCard": "",
-"LocalizationData": "",
-"LocalizationKeys": "",
-"LocalizationLocaleSingle": "",
-"LocalizationLocalesList": "",
-"LocalizationPlaceholders": "",
-"LocalizationPlaceholdersData": "",
-"LocalizationSave": "",
 "MapLibrary": "",
 "MultiCharacter": "",
 "OtherSpecies": "",
@@ -276,7 +223,6 @@ _global_script_class_icons={
 "SelectableCard": "",
 "TagBoard": "",
 "ToolCard": "",
-"UUID": "",
 "Unicorn": "",
 "WeaponCard": "",
 "dice_syntax": ""
@@ -294,7 +240,6 @@ config/icon="res://ui/pictures/icon.png"
 MusicDj="*res://ui/audio/music/music_dj.tscn"
 DefaultShortcut="*res://ui/display/default_shortcut.tscn"
 SignalAgent="*res://game/helper/signal_agent/signal_agent.tscn"
-LocalizationManager="*res://addons/localization_editor/LocalizationManager.gd"
 EffectBoard="*res://game/effect_library/effect_board.gd"
 
 [display]
@@ -306,7 +251,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/annotations_tree/plugin.cfg", "res://addons/dice_syntax/plugin.cfg", "res://addons/localization_editor/plugin.cfg")
+enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/annotations_tree/plugin.cfg", "res://addons/dice_syntax/plugin.cfg")
 
 [input]
 

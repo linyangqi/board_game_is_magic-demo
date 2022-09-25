@@ -13,3 +13,6 @@ max_health = 15
 mental_attack = 0
 physical_attack = 3
 magic_attack = 0
+
+[node name="Abilities" parent="." index="0"]
+script = null
