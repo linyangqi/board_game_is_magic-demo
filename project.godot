@@ -19,6 +19,16 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/characters/species/alicorn/alicorn.gd"
 }, {
+"base": "EditorPlugin",
+"class": &"AnnotationPlugin",
+"language": &"GDScript",
+"path": "res://addons/annotations_tree/annotation_plugin.gd"
+}, {
+"base": "PanelContainer",
+"class": &"AnnotationsArea",
+"language": &"GDScript",
+"path": "res://addons/annotations_tree/annotations_area.gd"
+}, {
 "base": "ToolCard",
 "class": &"ArmorCard",
 "language": &"GDScript",
@@ -74,6 +84,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/deck_plan.gd"
 }, {
+"base": "Object",
+"class": &"DropdownItem",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/ui_extensions/dropdown/DropdownItem.gd"
+}, {
 "base": "CharacterBasic",
 "class": &"EarthPony",
 "language": &"GDScript",
@@ -118,6 +133,46 @@ _global_script_classes=[{
 "class": &"HealingCard",
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/heal/healing_card.gd"
+}, {
+"base": "Resource",
+"class": &"LocalizationData",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/model/LocalizationData.gd"
+}, {
+"base": "RefCounted",
+"class": &"LocalizationKeys",
+"language": &"GDScript",
+"path": "res://localization/LocalizationKeys.gd"
+}, {
+"base": "Object",
+"class": &"LocalizationLocaleSingle",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/model/LocalizationLocaleSingle.gd"
+}, {
+"base": "Object",
+"class": &"LocalizationLocalesList",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/model/LocalizationLocalesList.gd"
+}, {
+"base": "RefCounted",
+"class": &"LocalizationPlaceholders",
+"language": &"GDScript",
+"path": "res://localization/LocalizationPlaceholders.gd"
+}, {
+"base": "Resource",
+"class": &"LocalizationPlaceholdersData",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/model/LocalizationPlaceholdersData.gd"
+}, {
+"base": "RefCounted",
+"class": &"LocalizationRemaps",
+"language": &"GDScript",
+"path": "res://localization/LocalizationRemaps.gd"
+}, {
+"base": "Resource",
+"class": &"LocalizationSave",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/model/LocalizationSave.gd"
 }, {
 "base": "Object",
 "class": &"MapLibrary",
@@ -164,6 +219,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/tool_card.gd"
 }, {
+"base": "Node",
+"class": &"UUID",
+"language": &"GDScript",
+"path": "res://addons/localization_editor/uuid/uuid.gd"
+}, {
 "base": "CharacterBasic",
 "class": &"Unicorn",
 "language": &"GDScript",
@@ -173,10 +233,17 @@ _global_script_classes=[{
 "class": &"WeaponCard",
 "language": &"GDScript",
 "path": "res://game/card_library/playable/tools/types/weapon/weapon_card.gd"
+}, {
+"base": "GDScript",
+"class": &"dice_syntax",
+"language": &"GDScript",
+"path": "res://addons/dice_syntax/dice_syntax.gd"
 }]
 _global_script_class_icons={
 "ActionCard": "",
 "Alicorn": "",
+"AnnotationPlugin": "",
+"AnnotationsArea": "",
 "ArmorCard": "",
 "AttackCard": "",
 "CardInDeck": "",
@@ -188,6 +255,7 @@ _global_script_class_icons={
 "Condition": "",
 "Deck": "",
 "DeckPlan": "",
+"DropdownItem": "",
 "EarthPony": "",
 "Effect": "",
 "EffectBasic": "",
@@ -197,6 +265,14 @@ _global_script_class_icons={
 "GrabableScroll": "",
 "HandCardInUI": "",
 "HealingCard": "",
+"LocalizationData": "",
+"LocalizationKeys": "",
+"LocalizationLocaleSingle": "",
+"LocalizationLocalesList": "",
+"LocalizationPlaceholders": "",
+"LocalizationPlaceholdersData": "",
+"LocalizationRemaps": "",
+"LocalizationSave": "",
 "MapLibrary": "",
 "MultiCharacter": "",
 "OtherSpecies": "",
@@ -206,8 +282,10 @@ _global_script_class_icons={
 "PlayerRound": "",
 "SelectableCard": "",
 "ToolCard": "",
+"UUID": "",
 "Unicorn": "",
-"WeaponCard": ""
+"WeaponCard": "",
+"dice_syntax": ""
 }
 
 [application]
@@ -222,6 +300,7 @@ config/icon="res://ui/pictures/icon.png"
 MusicDj="*res://ui/audio/music/music_dj.tscn"
 DefaultShortcut="*res://ui/display/default_shortcut.tscn"
 SignalAgent="*res://game/helper/signal_agent/signal_agent.tscn"
+LocalizationManager="*res://addons/localization_editor/LocalizationManager.gd"
 
 [display]
 
@@ -229,6 +308,10 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/fullscreen=true
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/annotations_tree/plugin.cfg", "res://addons/dice_syntax/plugin.cfg", "res://addons/localization_editor/plugin.cfg")
 
 [input]
 
@@ -310,6 +393,14 @@ click={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/localizations.en.translation", "res://localization/localizations.de.translation", "res://localization/localizations.ru.translation", "res://localization/localizations.zh.translation", "res://localization/localizations.zh_CN.translation")
+
+[localization_editor]
+
+locales_visibility=["zh", "ru", "de"]
 
 [rendering]
 
