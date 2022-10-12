@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lcn7yxm6t02t"]
+[gd_scene load_steps=8 format=3]
 
-[ext_resource type="Theme" uid="uid://b74fnelnu1wk1" path="res://ui/theme/ui_theme.tres" id="1_73fjc"]
-[ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/background/backgroung.png" id="2_pmeqg"]
+[ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1_73fjc"]
+[ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/backgroung.png" id="2_pmeqg"]
 [ext_resource type="Script" path="res://ui/scripts/change_scene_button.gd" id="3_8p7hp"]
-[ext_resource type="Texture2D" uid="uid://bjg0vwowogrls" path="res://ui/pictures/me/wbw.png" id="4_p7u4y"]
+[ext_resource type="Texture2D" path="res://ui/pictures/wbw.png" id="4_p7u4y"]
 [ext_resource type="Script" path="res://ui/scripts/link_button.gd" id="5_y2jpx"]
-[ext_resource type="Texture2D" uid="uid://cm0bvt5v43dav" path="res://ui/pictures/qq_group/icon1.jpg" id="6_ox8f6"]
+[ext_resource type="Texture2D" uid="uid://cm0bvt5v43dav" path="res://ui/pictures/icon1.jpg" id="6_ox8f6"]
 
 [sub_resource type="Shortcut" id="4"]
 

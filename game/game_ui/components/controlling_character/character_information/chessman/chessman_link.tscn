@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://di0pkpf41vtut"]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/character_information/chessman/chessman_link.gd" id="1_n24pj"]
-[ext_resource type="Texture2D" uid="uid://dl8sv0vni6b17" path="res://ui/pictures/map/chessman/chessman.png" id="2_tl3an"]
+[ext_resource type="Texture2D" path="res://ui/pictures/chessman.png" id="2_tl3an"]
 [ext_resource type="Script" path="res://game/game_ui/components/controlling_character/character_information/chessman/ChessmanButton.gd" id="3_fj2uu"]
 
 [node name="Chessman" type="VBoxContainer"]

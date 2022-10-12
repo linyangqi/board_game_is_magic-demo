@@ -1,15 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://cix1y7nyohd0f"]
+[gd_scene load_steps=10 format=3 uid="uid://cm0gcxss77muh"]
 
 [ext_resource type="Script" path="res://game/main/world_map/world_map.gd" id="1_rvtek"]
-[ext_resource type="PackedScene" uid="uid://bfdckkaig32l4" path="res://game/main/world_map/maps/list/map_equestria.tscn" id="2_0lj5e"]
+[ext_resource type="PackedScene" path="res://game/main/world_map/maps/list/map_equestria.tscn" id="2_0lj5e"]
 [ext_resource type="Script" path="res://game/main/world_map/map_camera.gd" id="2_6ardm"]
-[ext_resource type="Texture2D" uid="uid://b3i2do5wxmwr3" path="res://ui/pictures/map/indicator/indicator.png" id="3_pr3la"]
+[ext_resource type="Texture2D" path="res://ui/pictures/indicator.png" id="3_lpv8p"]
 [ext_resource type="Script" path="res://game/main/world_map/indicator_layer/indicator_layer.gd" id="3_vssxc"]
 [ext_resource type="Script" path="res://game/main/world_map/chessman_manager.gd" id="4_8b3l3"]
-[ext_resource type="PackedScene" uid="uid://b3m26y2k70xpr" path="res://game/main/world_map/chessman/chessman.tscn" id="5_r57i3"]
+[ext_resource type="PackedScene" path="res://game/main/world_map/chessman/chessman.tscn" id="5_r57i3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lraop"]
-texture = ExtResource("3_pr3la")
+texture = ExtResource("3_lpv8p")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 1:0/0 = 0

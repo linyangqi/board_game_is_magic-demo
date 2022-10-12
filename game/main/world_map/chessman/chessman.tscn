@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3m26y2k70xpr"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dl8sv0vni6b17" path="res://ui/pictures/map/chessman/chessman.png" id="1_sqcmo"]
+[ext_resource type="Texture2D" path="res://ui/pictures/chessman.png" id="1_sqcmo"]
 [ext_resource type="Script" path="res://game/main/world_map/chessman/chessman.gd" id="2_mp6m5"]
 
 [node name="Chessman" type="Sprite2D"]

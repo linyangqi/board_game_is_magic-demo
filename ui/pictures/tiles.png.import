@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by1mhu6rs3m46"
-path="res://.godot/imported/wbw_furry.jpg-ede166b3b4d0c86132216e5c65d4270e.ctex"
+uid="uid://d10as2m43sooo"
+path="res://.godot/imported/tiles.png-e259027e8deae2a15f8bb14fca9f1cc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/pictures/me/wbw_furry.jpg"
-dest_files=["res://.godot/imported/wbw_furry.jpg-ede166b3b4d0c86132216e5c65d4270e.ctex"]
+source_file="res://ui/pictures/tiles.png"
+dest_files=["res://.godot/imported/tiles.png-e259027e8deae2a15f8bb14fca9f1cc8.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

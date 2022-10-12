@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm0bvt5v43dav"
-path="res://.godot/imported/icon1.jpg-8cc1f2f9b8eac60feff6f3a84d70d108.ctex"
+uid="uid://dl8sv0vni6b17"
+path="res://.godot/imported/chessman.png-01debe8373ba6c5d97b61bf72653479c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/pictures/qq_group/icon1.jpg"
-dest_files=["res://.godot/imported/icon1.jpg-8cc1f2f9b8eac60feff6f3a84d70d108.ctex"]
+source_file="res://ui/pictures/chessman.png"
+dest_files=["res://.godot/imported/chessman.png-01debe8373ba6c5d97b61bf72653479c.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

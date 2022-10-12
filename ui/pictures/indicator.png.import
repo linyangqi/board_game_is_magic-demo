@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjg0vwowogrls"
-path="res://.godot/imported/wbw.png-405402d257fa431531dd5c8d55af32ec.ctex"
+uid="uid://b3i2do5wxmwr3"
+path="res://.godot/imported/indicator.png-134180a13d2f42057db9972bba8f72b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/pictures/me/wbw.png"
-dest_files=["res://.godot/imported/wbw.png-405402d257fa431531dd5c8d55af32ec.ctex"]
+source_file="res://ui/pictures/indicator.png"
+dest_files=["res://.godot/imported/indicator.png-134180a13d2f42057db9972bba8f72b3.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

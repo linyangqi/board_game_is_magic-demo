@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7xce4puagbut"]
+[gd_scene load_steps=7 format=3]
 
-[ext_resource type="Texture2D" uid="uid://d10as2m43sooo" path="res://ui/pictures/map/tiles/tiles.png" id="1_bvatp"]
+[ext_resource type="Texture2D" path="res://ui/pictures/tiles.png" id="1_bvatp"]
 [ext_resource type="Script" path="res://game/main/world_map/maps/special_locations/special_locations.gd" id="2_0e2si"]
 [ext_resource type="Script" path="res://game/main/world_map/maps/map_basic.gd" id="2_f2en0"]
 

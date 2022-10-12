@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://ua1d56wtrfhp"]
+[gd_scene load_steps=12 format=3]
 
 [ext_resource type="Theme" uid="uid://ct5ygn8cvjtw1" path="res://ui/theme/ui_theme.tres" id="1"]
 [ext_resource type="Script" path="res://ui/scripts/exit_button.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://bxlufmwu82pua" path="res://ui/pictures/background/backgroung.png" id="3_0oyjn"]
+[ext_resource type="Texture2D" path="res://ui/pictures/backgroung.png" id="3_0oyjn"]
 [ext_resource type="PackedScene" uid="uid://dey7kmfed3e3f" path="res://ui/audio/music/change_music.tscn" id="6"]
 [ext_resource type="Script" path="res://ui/scripts/change_scene_button.gd" id="7"]
 [ext_resource type="Script" path="res://ui/scripts/SkipAnimation.gd" id="10"]

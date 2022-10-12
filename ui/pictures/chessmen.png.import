@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj882l4wtvjww"
-path="res://.godot/imported/chessmen.png-c48b2b4a3395970406be4eab1508586d.ctex"
+path="res://.godot/imported/chessmen.png-7b37bdd08766aa6f8d68f33295d84a49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/pictures/map/chessman/chessmen.png"
-dest_files=["res://.godot/imported/chessmen.png-c48b2b4a3395970406be4eab1508586d.ctex"]
+source_file="res://ui/pictures/chessmen.png"
+dest_files=["res://.godot/imported/chessmen.png-7b37bdd08766aa6f8d68f33295d84a49.ctex"]
 
 [params]
 
