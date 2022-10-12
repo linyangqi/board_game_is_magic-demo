@@ -3,7 +3,7 @@ class_name Chessman
 
 
 @onready var manager = get_parent()
-@onready var map = manager.get_node("../Map")
+@onready var map:TileMap = manager.get_node("../Map")
 
 const CHESSMAN_COLORS:Array[Color] = [
 	Color.YELLOW,
@@ -68,7 +68,8 @@ func randomize_coords(avoid_water:bool = true):
 	var option_id := 0 #这里要求一定要有可落脚点（地图至少有一块）……
 	if avoid_water:
 		while option_id < options.size():
-			if map.get_cell_custom_data(0,options[option_id],"terrain_tag") != "water":
+			print("1"+map.get_cell_tile_data(0,options[option_id]).get_custom_data_by_layer_id(0))
+			if map.get_cell_tile_data(0,options[option_id]).get_custom_data("terrain_tag") != "lake":
 				break
 			else:
 				option_id += 1

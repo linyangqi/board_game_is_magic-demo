@@ -14,6 +14,6 @@ extends TileMap
 
 #然后下面这个是自写函数，架构里Map只用了一层
 #不过为了写法统一，还是把layer放前面吧
-func get_cell_custom_data(layer:int,coords:Vector2i,layer_name:String)->Variant:
-	var tile_data = get_cell_tile_data(layer,coords,false)
-	return tile_data.get_custom_data(layer_name)
+#func get_cell_custom_data(layer:int,coords:Vector2i,layer_name:String)->Variant:
+#	var tile_data = get_cell_tile_data(layer,coords,false)
+#	return tile_data.get_custom_data(layer_name)

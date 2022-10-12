@@ -19,16 +19,6 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://game/card_library/characters/species/alicorn/alicorn.gd"
 }, {
-"base": "EditorPlugin",
-"class": &"AnnotationPlugin",
-"language": &"GDScript",
-"path": "res://addons/annotations_tree/annotation_plugin.gd"
-}, {
-"base": "PanelContainer",
-"class": &"AnnotationsArea",
-"language": &"GDScript",
-"path": "res://addons/annotations_tree/annotations_area.gd"
-}, {
 "base": "ToolCard",
 "class": &"ArmorCard",
 "language": &"GDScript",
@@ -192,8 +182,6 @@ _global_script_classes=[{
 _global_script_class_icons={
 "ActionCard": "",
 "Alicorn": "",
-"AnnotationPlugin": "",
-"AnnotationsArea": "",
 "ArmorCard": "",
 "AttackCard": "",
 "CardInDeck": "",
@@ -232,7 +220,7 @@ _global_script_class_icons={
 
 config/name="Board Game Is Magic-demo"
 run/main_scene="res://ui/menu/menu.tscn"
-config/features=PackedStringArray("4.0", "Vulkan Mobile")
+config/features=PackedStringArray("4.0")
 config/icon="res://ui/pictures/icon.png"
 
 [autoload]
@@ -246,12 +234,12 @@ EffectBoard="*res://game/effect_library/effect_board.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/fullscreen=true
 window/stretch/mode="canvas_items"
+window/size/fullscreen=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/annotations_tree/plugin.cfg", "res://addons/dice_syntax/plugin.cfg")
+enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/dice_syntax/plugin.cfg")
 
 [input]
 
@@ -344,5 +332,5 @@ locales_visibility=["zh", "ru", "de"]
 
 [rendering]
 
-vulkan/rendering/back_end=1
 environment/defaults/default_clear_color=Color(0.184314, 0.509804, 0.482353, 1)
+vulkan/rendering/back_end=1
